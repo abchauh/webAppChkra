@@ -92,4 +92,27 @@ Meteor.startup(function() {
             }
         });
     }
+    
+   /* Accounts.createUser({
+            email: "dfd3434emo@dfmetddeoris.me",
+            password: "df3243dddemo",
+            profile:{
+                name: "s6j8demo",
+                mugenRoleGroupId: "1",
+                lastLogin: new Date(),
+                
+                bio: "sxzdds2",
+                country: "UK",
+                city: "Leicester",
+                address: "s6j8demosxxce2",
+                ImgThumb: "s6j8dem24zzo",
+                ImgLarge: "s6j2221128demo",
+                ImgHeader: "s2226j8demo",
+                Avatar: "22s6j8demo",
+                dob: "s6j8demo",
+                sex: "Male",
+                lastLogin: new Date(),
+            }
+        });
+*/
 });
