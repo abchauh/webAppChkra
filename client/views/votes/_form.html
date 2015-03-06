@@ -1,0 +1,48 @@
+<template name="votes_form">
+    <form id="votes_form"> 
+        <div class="form-group {{#if error 'userID'}}has-error{{/if}}">
+<label for="userID" class="control-label">user id </label>
+<input type="text" id="userID" value="{{userID}}" placeholder="user id" class="form-control">
+<span class="help-block">{{error "userID"}}</span>
+</div>
+<div class="form-group {{#if error 'votedItem'}}has-error{{/if}}">
+<label for="votedItem" class="control-label">Voted Item </label>
+<input type="text" id="votedItem" value="{{votedItem}}" placeholder="Voted Item" class="form-control">
+<span class="help-block">{{error "votedItem"}}</span>
+</div>
+<div class="form-group {{#if error 'votedItemID'}}has-error{{/if}}">
+<label for="votedItemID" class="control-label">Voted Item ID </label>
+<input type="text" id="votedItemID" value="{{votedItemID}}" placeholder="Voted Item ID" class="form-control">
+<span class="help-block">{{error "votedItemID"}}</span>
+</div>
+<div class="form-group {{#if error 'votedAt'}}has-error{{/if}}">
+<label for="votedAt" class="control-label">Voted At </label>
+<input type="text" id="votedAt" value="{{meteorisFormatterDate votedAt 'L'}}" placeholder="Voted At" class="form-control">
+<span class="help-block">{{error "votedAt"}}</span>
+</div>
+<div class="form-group {{#if error 'votedOrDemoted'}}has-error{{/if}}">
+<label for="votedOrDemoted" class="control-label">Voted / Demoted </label>
+<input type="text" id="votedOrDemoted" value="{{votedOrDemoted}}" placeholder="Voted / Demoted" class="form-control">
+<span class="help-block">{{error "votedOrDemoted"}}</span>
+</div>
+<div class="form-group {{#if error 'status'}}has-error{{/if}}">
+<label for="status" class="control-label">Status </label>
+<input type="text" id="status" value="{{status}}" placeholder="Status" class="form-control">
+<span class="help-block">{{error "status"}}</span>
+</div>
+<div class="form-group {{#if error 'statusChsngedBy'}}has-error{{/if}}">
+<label for="statusChsngedBy" class="control-label">Status Changed by UserID </label>
+<input type="text" id="statusChsngedBy" value="{{statusChsngedBy}}" placeholder="Status Changed by UserID" class="form-control">
+<span class="help-block">{{error "statusChsngedBy"}}</span>
+</div>
+<div class="form-group {{#if error 'statusChangedAt'}}has-error{{/if}}">
+<label for="statusChangedAt" class="control-label">Status Changed At </label>
+<input type="text" id="statusChangedAt" value="{{meteorisFormatterDate statusChangedAt 'L'}}" placeholder="Status Changed At" class="form-control">
+<span class="help-block">{{error "statusChangedAt"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'votesIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

@@ -1,0 +1,83 @@
+<template name="messagesView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'messagesIndex'}}">Messages</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View Messages #{{_id}}</h3>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'messagesIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'messagesUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>ownerID</b></td>
+<td>{{ownerId}}</td>
+</tr>
+<tr>
+<td><b>userID</b></td>
+<td>{{userID}}</td>
+</tr>
+<tr>
+<td><b>Seen At</b></td>
+<td>{{meteorisFormatter 'date' seenAt}}</td>
+</tr>
+<tr>
+<td><b>Read At</b></td>
+<td>{{meteorisFormatter 'date' readAt}}</td>
+</tr>
+<tr>
+<td><b>Sent At</b></td>
+<td>{{meteorisFormatter 'date' sentAt}}</td>
+</tr>
+<tr>
+<td><b>Subject</b></td>
+<td>{{subject}}</td>
+</tr>
+<tr>
+<td><b>Message</b></td>
+<td>{{msgDetail}}</td>
+</tr>
+<tr>
+<td><b>Files Attached</b></td>
+<td>{{filesAtt}}</td>
+</tr>
+<tr>
+<td><b>Type of Message</b></td>
+<td>{{msgType}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

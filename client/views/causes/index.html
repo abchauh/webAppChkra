@@ -1,0 +1,98 @@
+<template name="causesIndex">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'causesIndex'}}">Causes</a></li>
+            <li class="active">index</li>
+        </ol>
+
+        <div class="title">
+            <h3 class="pull-left">Causes</h3>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="toolbar">
+            <div class="pull-left">
+                <a class="btn btn-success" href="{{pathFor 'causesInsert'}}">Insert</a>
+                <a id="btnRemoveAll" class="btn btn-danger">Remove Selection</a>
+            </div>   
+            <div class="quick-search pull-right col-xs-12 col-md-3">
+                <div class="input-group">
+                    <input type="text" id="search" class="form-control" placeholder="Type Here to Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        {{#if isEmpty}}
+        <p>No Data Found</p>
+        {{else}}
+        <div class=" table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
+                        <th id="btnSorttitle" class="{{meteorisGridViewSortClass 'title'}}">Title</th>
+<th id="btnSorttag" class="{{meteorisGridViewSortClass 'tag'}}">Tag</th>
+<th id="btnSorttype" class="{{meteorisGridViewSortClass 'type'}}">Type</th>
+<th id="btnSortshortDesc" class="{{meteorisGridViewSortClass 'shortDesc'}}">Short Description</th>
+<th id="btnSortlongDesc" class="{{meteorisGridViewSortClass 'longDesc'}}">Long Description</th>
+<th id="btnSortimgThumb" class="{{meteorisGridViewSortClass 'imgThumb'}}">Thumbnail Image</th>
+<th id="btnSortimgLarge" class="{{meteorisGridViewSortClass 'imgLarge'}}">Large Image</th>
+<th id="btnSortgalleries" class="{{meteorisGridViewSortClass 'galleries'}}">Galleries</th>
+<th id="btnSortcauseStart" class="{{meteorisGridViewSortClass 'causeStart'}}">Cause Started</th>
+<th id="btnSortcauseEnd" class="{{meteorisGridViewSortClass 'causeEnd'}}">Cause End Date</th>
+<th id="btnSortcauseStatus" class="{{meteorisGridViewSortClass 'causeStatus'}}">Status</th>
+<th id="btnSortcauseUpdated" class="{{meteorisGridViewSortClass 'causeUpdated'}}">Last Updated</th>
+<th id="btnSortcauseWeb" class="{{meteorisGridViewSortClass 'causeWeb'}}">Website</th>
+<th id="btnSortcauseSocialMedia" class="{{meteorisGridViewSortClass 'causeSocialMedia'}}">Social Media Links</th>
+
+                        <!--<th>Image</th>-->                    
+                        <th>Created by</th>                    
+                        <th style="width: 145px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each models}}
+                    <tr>
+                        <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
+                        <td>{{title}}</td>
+<td>{{tag}}</td>
+<td>{{type}}</td>
+<td>{{shortDesc}}</td>
+<td>{{longDesc}}</td>
+<td>{{imgThumb}}</td>
+<td>{{imgLarge}}</td>
+<td>{{galleries}}</td>
+<td>{{meteorisFormatter 'date' causeStart}}</td>
+<td>{{meteorisFormatter 'date' causeEnd}}</td>
+<td>{{causeStatus}}</td>
+<td>{{meteorisFormatter 'date' causeUpdated}}</td>
+<td>{{causeWeb}}</td>
+<td>{{causeSocialMedia}}</td>
+
+                        <!--<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>-->
+                        <td>{{createdUser.profile.name}}</td>
+                        <td>
+                            <a href="{{pathFor 'causesView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                            <a href="{{pathFor 'causesUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{#if hasMore}}
+        <a class="btn btn-default load-more btn-block" href="{{hasMore}}">Load More ...</a>
+        {{/if}}
+        {{#unless ready}}
+        {{> spinner}}
+        {{/unless}}
+        {{/if}}
+    </div>
+</template>

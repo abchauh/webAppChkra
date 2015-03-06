@@ -1,0 +1,79 @@
+<template name="followListsView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'followListsIndex'}}">FollowLists</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View FollowLists #{{_id}}</h3>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'followListsIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'followListsUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>User ID</b></td>
+<td>{{userID}}</td>
+</tr>
+<tr>
+<td><b>User Name</b></td>
+<td>{{profileName}}</td>
+</tr>
+<tr>
+<td><b>Users followed</b></td>
+<td>{{users}}</td>
+</tr>
+<tr>
+<td><b>FollowingUsers(de-norm)</b></td>
+<td>{{usersFollowing}}</td>
+</tr>
+<tr>
+<td><b>Campaigns Following</b></td>
+<td>{{campaigns}}</td>
+</tr>
+<tr>
+<td><b>Causes</b></td>
+<td>{{causes}}</td>
+</tr>
+<tr>
+<td><b>LikedPosts</b></td>
+<td>{{likedPosts}}</td>
+</tr>
+<tr>
+<td><b>Projects</b></td>
+<td>{{projects}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

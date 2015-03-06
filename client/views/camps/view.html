@@ -1,0 +1,100 @@
+<template name="campsView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'campsIndex'}}">Camps</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View Camps #{{_id}}</h3>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'campsIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'campsUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>UserId</b></td>
+<td>{{userId}}</td>
+</tr>
+<tr>
+<td><b>Title</b></td>
+<td>{{title}}</td>
+</tr>
+<tr>
+<td><b>Short Description</b></td>
+<td>{{shortDesc}}</td>
+</tr>
+<tr>
+<td><b>Long Description</b></td>
+<td>{{longDesc}}</td>
+</tr>
+<tr>
+<td><b>Cover Image</b></td>
+<td>{{coverImg}}</td>
+<img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/>
+</tr>
+<tr>
+<td><b>Image Source Text</b></td>
+<td>{{imgSrcText}}</td>
+</tr>
+<tr>
+<td><b>List of Causes</b></td>
+<td>{{causes}}</td>
+</tr>
+<tr>
+<td><b>Created At</b></td>
+<td>{{meteorisFormatter 'date' campCreatedAt}}</td>
+</tr>
+<tr>
+<td><b>Campaign End Date</b></td>
+<td>{{meteorisFormatter 'date' campEndDate}}</td>
+</tr>
+<tr>
+<td><b>Last Updated</b></td>
+<td>{{meteorisFormatter 'date' campLastUpdate}}</td>
+</tr>
+<tr>
+<td><b>Address</b></td>
+<td>{{address}}</td>
+</tr>
+<tr>
+<td><b>Country</b></td>
+<td>{{country}}</td>
+</tr>
+<tr>
+<td><b>City/Town</b></td>
+<td>{{city}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

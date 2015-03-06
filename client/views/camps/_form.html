@@ -1,0 +1,73 @@
+<template name="camps_form">
+    <form id="camps_form"> 
+        <div class="form-group {{#if error 'userId'}}has-error{{/if}}">
+<label for="userId" class="control-label">UserId </label>
+<input type="text" id="userId" value="{{CurrentUserID}}" placeholder="UserId" disabled class="form-control">
+<span class="help-block">{{error "userId"}}</span>
+</div>
+<div class="form-group {{#if error 'title'}}has-error{{/if}}">
+<label for="title" class="control-label">Title </label>
+<input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
+<span class="help-block">{{error "title"}}</span>
+</div>
+<div class="form-group {{#if error 'shortDesc'}}has-error{{/if}}">
+<label for="shortDesc" class="control-label">Short Description </label>
+<input type="text" id="shortDesc" value="{{shortDesc}}" placeholder="Short Description" class="form-control">
+<span class="help-block">{{error "shortDesc"}}</span>
+</div>
+<div class="form-group {{#if error 'longDesc'}}has-error{{/if}}">
+<label for="longDesc" class="control-label">Long Description </label>
+<input type="text" id="longDesc" value="{{longDesc}}" placeholder="Long Description" class="form-control">
+<span class="help-block">{{error "longDesc"}}</span>
+</div>
+<div class="form-group {{#if error 'coverImg'}}has-error{{/if}}">
+<label for="coverImg" class="control-label">Cover Image </label>
+<input type="file" id="coverImg" class="form-control">
+<span class="help-block">{{error "coverImg"}}</span>
+</div>
+<div class="form-group {{#if error 'imgSrcText'}}has-error{{/if}}">
+<label for="imgSrcText" class="control-label">Image Source Text </label>
+<input type="text" id="imgSrcText" value="{{imgSrcText}}" placeholder="Image Source Text" class="form-control">
+<span class="help-block">{{error "imgSrcText"}}</span>
+</div>
+<div class="form-group {{#if error 'causes'}}has-error{{/if}}">
+<label for="causes" class="control-label">List of Causes </label>
+<input type="text" id="causes" value="{{causes}}" placeholder="List of Causes" class="form-control">
+<span class="help-block">{{error "causes"}}</span>
+</div>
+<div class="form-group {{#if error 'campCreatedAt'}}has-error{{/if}}">
+<label for="campCreatedAt" class="control-label">Created At </label>
+<input type="text" id="campCreatedAt" value="{{meteorisFormatterDate campCreatedAt 'L'}}" placeholder="Created At" class="form-control">
+<span class="help-block">{{error "campCreatedAt"}}</span>
+</div>
+<div class="form-group {{#if error 'campEndDate'}}has-error{{/if}}">
+<label for="campEndDate" class="control-label">Campaign End Date </label>
+<input type="text" id="campEndDate" value="{{meteorisFormatterDate campEndDate 'L'}}" placeholder="Campaign End Date" class="form-control">
+<span class="help-block">{{error "campEndDate"}}</span>
+</div>
+<div class="form-group {{#if error 'campLastUpdate'}}has-error{{/if}}">
+<label for="campLastUpdate" class="control-label">Last Updated </label>
+<input type="text" id="campLastUpdate" value="{{meteorisFormatterDate campLastUpdate 'L'}}" placeholder="Last Updated" class="form-control">
+<span class="help-block">{{error "campLastUpdate"}}</span>
+</div>
+<div class="form-group {{#if error 'address'}}has-error{{/if}}">
+<label for="address" class="control-label">Address </label>
+<input type="text" id="address" value="{{address}}" placeholder="Address" class="form-control">
+<span class="help-block">{{error "address"}}</span>
+</div>
+<div class="form-group {{#if error 'country'}}has-error{{/if}}">
+<label for="country" class="control-label">Country </label>
+<input type="text" id="country" value="{{country}}" placeholder="Country" class="form-control">
+<span class="help-block">{{error "country"}}</span>
+</div>
+<div class="form-group {{#if error 'city'}}has-error{{/if}}">
+<label for="city" class="control-label">City/Town </label>
+<input type="text" id="city" value="{{city}}" placeholder="City/Town" class="form-control">
+<span class="help-block">{{error "city"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'campsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

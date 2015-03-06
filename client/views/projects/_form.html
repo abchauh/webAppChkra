@@ -1,0 +1,83 @@
+<template name="projects_form">
+    <form id="projects_form"> 
+        <div class="form-group {{#if error 'userId'}}has-error{{/if}}">
+<label for="userId" class="control-label">UserId </label>
+<input type="text" id="userId" value="{{userId}}" placeholder="UserId" class="form-control">
+<span class="help-block">{{error "userId"}}</span>
+</div>
+<div class="form-group {{#if error 'title'}}has-error{{/if}}">
+<label for="title" class="control-label">Title </label>
+<input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
+<span class="help-block">{{error "title"}}</span>
+</div>
+<div class="form-group {{#if error 'shortDesc'}}has-error{{/if}}">
+<label for="shortDesc" class="control-label">Short Description </label>
+<input type="text" id="shortDesc" value="{{shortDesc}}" placeholder="Short Description" class="form-control">
+<span class="help-block">{{error "shortDesc"}}</span>
+</div>
+<div class="form-group {{#if error 'lingDesc'}}has-error{{/if}}">
+<label for="lingDesc" class="control-label">Long Description </label>
+<input type="text" id="lingDesc" value="{{lingDesc}}" placeholder="Long Description" class="form-control">
+<span class="help-block">{{error "lingDesc"}}</span>
+</div>
+<div class="form-group {{#if error 'coverImg'}}has-error{{/if}}">
+<label for="coverImg" class="control-label">Cover Image </label>
+<input type="text" id="coverImg" value="{{coverImg}}" placeholder="Cover Image" class="form-control">
+<span class="help-block">{{error "coverImg"}}</span>
+</div>
+<div class="form-group {{#if error 'imgSrcText'}}has-error{{/if}}">
+<label for="imgSrcText" class="control-label">Image Source Text </label>
+<input type="text" id="imgSrcText" value="{{imgSrcText}}" placeholder="Image Source Text" class="form-control">
+<span class="help-block">{{error "imgSrcText"}}</span>
+</div>
+<div class="form-group {{#if error 'status'}}has-error{{/if}}">
+<label for="status" class="control-label">Status </label>
+<input type="text" id="status" value="{{status}}" placeholder="Status" class="form-control">
+<span class="help-block">{{error "status"}}</span>
+</div>
+<div class="form-group {{#if error 'projStart'}}has-error{{/if}}">
+<label for="projStart" class="control-label">Start Date </label>
+<input type="text" id="projStart" value="{{meteorisFormatterDate projStart 'L'}}" placeholder="Start Date" class="form-control">
+<span class="help-block">{{error "projStart"}}</span>
+</div>
+<div class="form-group {{#if error 'projEnd'}}has-error{{/if}}">
+<label for="projEnd" class="control-label">Project End Date </label>
+<input type="text" id="projEnd" value="{{meteorisFormatterDate projEnd 'L'}}" placeholder="Project End Date" class="form-control">
+<span class="help-block">{{error "projEnd"}}</span>
+</div>
+<div class="form-group {{#if error 'projLastUpdate'}}has-error{{/if}}">
+<label for="projLastUpdate" class="control-label">Last Updated </label>
+<input type="text" id="projLastUpdate" value="{{meteorisFormatterDate projLastUpdate 'L'}}" placeholder="Last Updated" class="form-control">
+<span class="help-block">{{error "projLastUpdate"}}</span>
+</div>
+<div class="form-group {{#if error 'projCountry'}}has-error{{/if}}">
+<label for="projCountry" class="control-label">Country </label>
+<input type="text" id="projCountry" value="{{projCountry}}" placeholder="Country" class="form-control">
+<span class="help-block">{{error "projCountry"}}</span>
+</div>
+<div class="form-group {{#if error 'projCity'}}has-error{{/if}}">
+<label for="projCity" class="control-label">City </label>
+<input type="text" id="projCity" value="{{projCity}}" placeholder="City" class="form-control">
+<span class="help-block">{{error "projCity"}}</span>
+</div>
+<div class="form-group {{#if error 'projWeb'}}has-error{{/if}}">
+<label for="projWeb" class="control-label">Website </label>
+<input type="text" id="projWeb" value="{{projWeb}}" placeholder="Website" class="form-control">
+<span class="help-block">{{error "projWeb"}}</span>
+</div>
+<div class="form-group {{#if error 'projFacebook'}}has-error{{/if}}">
+<label for="projFacebook" class="control-label">Facebook </label>
+<input type="text" id="projFacebook" value="{{projFacebook}}" placeholder="Facebook" class="form-control">
+<span class="help-block">{{error "projFacebook"}}</span>
+</div>
+<div class="form-group {{#if error 'projSocialLinks'}}has-error{{/if}}">
+<label for="projSocialLinks" class="control-label">SocialMediaLinks </label>
+<input type="text" id="projSocialLinks" value="{{projSocialLinks}}" placeholder="SocialMediaLinks" class="form-control">
+<span class="help-block">{{error "projSocialLinks"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'projectsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

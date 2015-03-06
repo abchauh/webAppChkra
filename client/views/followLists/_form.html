@@ -1,0 +1,48 @@
+<template name="followLists_form">
+    <form id="followLists_form"> 
+        <div class="form-group {{#if error 'userID'}}has-error{{/if}}">
+<label for="userID" class="control-label">User ID </label>
+<input type="text" id="userID" value="{{userID}}" placeholder="User ID" class="form-control">
+<span class="help-block">{{error "userID"}}</span>
+</div>
+<div class="form-group {{#if error 'profileName'}}has-error{{/if}}">
+<label for="profileName" class="control-label">User Name </label>
+<input type="text" id="profileName" value="{{profileName}}" placeholder="User Name" class="form-control">
+<span class="help-block">{{error "profileName"}}</span>
+</div>
+<div class="form-group {{#if error 'users'}}has-error{{/if}}">
+<label for="users" class="control-label">Users followed </label>
+<input type="text" id="users" value="{{users}}" placeholder="Users followed" class="form-control">
+<span class="help-block">{{error "users"}}</span>
+</div>
+<div class="form-group {{#if error 'usersFollowing'}}has-error{{/if}}">
+<label for="usersFollowing" class="control-label">FollowingUsers(de-norm) </label>
+<input type="text" id="usersFollowing" value="{{usersFollowing}}" placeholder="FollowingUsers(de-norm)" class="form-control">
+<span class="help-block">{{error "usersFollowing"}}</span>
+</div>
+<div class="form-group {{#if error 'campaigns'}}has-error{{/if}}">
+<label for="campaigns" class="control-label">Campaigns Following </label>
+<input type="text" id="campaigns" value="{{campaigns}}" placeholder="Campaigns Following" class="form-control">
+<span class="help-block">{{error "campaigns"}}</span>
+</div>
+<div class="form-group {{#if error 'causes'}}has-error{{/if}}">
+<label for="causes" class="control-label">Causes </label>
+<input type="text" id="causes" value="{{causes}}" placeholder="Causes" class="form-control">
+<span class="help-block">{{error "causes"}}</span>
+</div>
+<div class="form-group {{#if error 'likedPosts'}}has-error{{/if}}">
+<label for="likedPosts" class="control-label">LikedPosts </label>
+<input type="text" id="likedPosts" value="{{likedPosts}}" placeholder="LikedPosts" class="form-control">
+<span class="help-block">{{error "likedPosts"}}</span>
+</div>
+<div class="form-group {{#if error 'projects'}}has-error{{/if}}">
+<label for="projects" class="control-label">Projects </label>
+<input type="text" id="projects" value="{{projects}}" placeholder="Projects" class="form-control">
+<span class="help-block">{{error "projects"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'followListsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

@@ -1,0 +1,71 @@
+<template name="onwersView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'onwersIndex'}}">Onwers</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View Onwers #{{_id}}</h3>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'onwersIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'onwersUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>FoundersID</b></td>
+<td>{{foundersID}}</td>
+</tr>
+<tr>
+<td><b>OwnedItemType</b></td>
+<td>{{ownedItemType}}</td>
+</tr>
+<tr>
+<td><b>OwnedItemId</b></td>
+<td>{{ownedItemId}}</td>
+</tr>
+<tr>
+<td><b>Admins</b></td>
+<td>{{admins}}</td>
+</tr>
+<tr>
+<td><b>Organisers</b></td>
+<td>{{organisers}}</td>
+</tr>
+<tr>
+<td><b>Contributers</b></td>
+<td>{{contributers}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

@@ -1,0 +1,100 @@
+<template name="projectsIndex">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'projectsIndex'}}">Projects</a></li>
+            <li class="active">index</li>
+        </ol>
+
+        <div class="title">
+            <h3 class="pull-left">Projects</h3>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="toolbar">
+            <div class="pull-left">
+                <a class="btn btn-success" href="{{pathFor 'projectsInsert'}}">Insert</a>
+                <a id="btnRemoveAll" class="btn btn-danger">Remove Selection</a>
+            </div>   
+            <div class="quick-search pull-right col-xs-12 col-md-3">
+                <div class="input-group">
+                    <input type="text" id="search" class="form-control" placeholder="Type Here to Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        {{#if isEmpty}}
+        <p>No Data Found</p>
+        {{else}}
+        <div class=" table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
+                        <th id="btnSortuserId" class="{{meteorisGridViewSortClass 'userId'}}">UserId</th>
+<th id="btnSorttitle" class="{{meteorisGridViewSortClass 'title'}}">Title</th>
+<th id="btnSortshortDesc" class="{{meteorisGridViewSortClass 'shortDesc'}}">Short Description</th>
+<th id="btnSortlingDesc" class="{{meteorisGridViewSortClass 'lingDesc'}}">Long Description</th>
+<th id="btnSortcoverImg" class="{{meteorisGridViewSortClass 'coverImg'}}">Cover Image</th>
+<th id="btnSortimgSrcText" class="{{meteorisGridViewSortClass 'imgSrcText'}}">Image Source Text</th>
+<th id="btnSortstatus" class="{{meteorisGridViewSortClass 'status'}}">Status</th>
+<th id="btnSortprojStart" class="{{meteorisGridViewSortClass 'projStart'}}">Start Date</th>
+<th id="btnSortprojEnd" class="{{meteorisGridViewSortClass 'projEnd'}}">Project End Date</th>
+<th id="btnSortprojLastUpdate" class="{{meteorisGridViewSortClass 'projLastUpdate'}}">Last Updated</th>
+<th id="btnSortprojCountry" class="{{meteorisGridViewSortClass 'projCountry'}}">Country</th>
+<th id="btnSortprojCity" class="{{meteorisGridViewSortClass 'projCity'}}">City</th>
+<th id="btnSortprojWeb" class="{{meteorisGridViewSortClass 'projWeb'}}">Website</th>
+<th id="btnSortprojFacebook" class="{{meteorisGridViewSortClass 'projFacebook'}}">Facebook</th>
+<th id="btnSortprojSocialLinks" class="{{meteorisGridViewSortClass 'projSocialLinks'}}">SocialMediaLinks</th>
+
+                        <!--<th>Image</th>-->                    
+                        <th>Created by</th>                    
+                        <th style="width: 145px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each models}}
+                    <tr>
+                        <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
+                        <td>{{userId}}</td>
+<td>{{title}}</td>
+<td>{{shortDesc}}</td>
+<td>{{lingDesc}}</td>
+<td>{{coverImg}}</td>
+<td>{{imgSrcText}}</td>
+<td>{{status}}</td>
+<td>{{meteorisFormatter 'date' projStart}}</td>
+<td>{{meteorisFormatter 'date' projEnd}}</td>
+<td>{{meteorisFormatter 'date' projLastUpdate}}</td>
+<td>{{projCountry}}</td>
+<td>{{projCity}}</td>
+<td>{{projWeb}}</td>
+<td>{{projFacebook}}</td>
+<td>{{projSocialLinks}}</td>
+
+                        <!--<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>-->
+                        <td>{{createdUser.profile.name}}</td>
+                        <td>
+                            <a href="{{pathFor 'projectsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                            <a href="{{pathFor 'projectsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{#if hasMore}}
+        <a class="btn btn-default load-more btn-block" href="{{hasMore}}">Load More ...</a>
+        {{/if}}
+        {{#unless ready}}
+        {{> spinner}}
+        {{/unless}}
+        {{/if}}
+    </div>
+</template>

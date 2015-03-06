@@ -1,0 +1,53 @@
+<template name="notifications_form">
+    <form id="notifications_form"> 
+        <div class="form-group {{#if error 'userID'}}has-error{{/if}}">
+<label for="userID" class="control-label">User ID </label>
+<input type="text" id="userID" value="{{userID}}" placeholder="User ID" class="form-control">
+<span class="help-block">{{error "userID"}}</span>
+</div>
+<div class="form-group {{#if error 'ownerID'}}has-error{{/if}}">
+<label for="ownerID" class="control-label">Owner ID </label>
+<input type="text" id="ownerID" value="{{ownerID}}" placeholder="Owner ID" class="form-control">
+<span class="help-block">{{error "ownerID"}}</span>
+</div>
+<div class="form-group {{#if error 'seenAt'}}has-error{{/if}}">
+<label for="seenAt" class="control-label">Seen At </label>
+<input type="text" id="seenAt" value="{{meteorisFormatterDate seenAt 'L'}}" placeholder="Seen At" class="form-control">
+<span class="help-block">{{error "seenAt"}}</span>
+</div>
+<div class="form-group {{#if error 'readAt'}}has-error{{/if}}">
+<label for="readAt" class="control-label">Read At </label>
+<input type="text" id="readAt" value="{{meteorisFormatterDate readAt 'L'}}" placeholder="Read At" class="form-control">
+<span class="help-block">{{error "readAt"}}</span>
+</div>
+<div class="form-group {{#if error 'sentAt'}}has-error{{/if}}">
+<label for="sentAt" class="control-label">Sent At </label>
+<input type="text" id="sentAt" value="{{meteorisFormatterDate sentAt 'L'}}" placeholder="Sent At" class="form-control">
+<span class="help-block">{{error "sentAt"}}</span>
+</div>
+<div class="form-group {{#if error 'subject'}}has-error{{/if}}">
+<label for="subject" class="control-label">Subject </label>
+<input type="text" id="subject" value="{{subject}}" placeholder="Subject" class="form-control">
+<span class="help-block">{{error "subject"}}</span>
+</div>
+<div class="form-group {{#if error 'detail'}}has-error{{/if}}">
+<label for="detail" class="control-label">Notification Detail </label>
+<input type="text" id="detail" value="{{detail}}" placeholder="Notification Detail" class="form-control">
+<span class="help-block">{{error "detail"}}</span>
+</div>
+<div class="form-group {{#if error 'filesAtt'}}has-error{{/if}}">
+<label for="filesAtt" class="control-label">Files Attached </label>
+<input type="text" id="filesAtt" value="{{filesAtt}}" placeholder="Files Attached" class="form-control">
+<span class="help-block">{{error "filesAtt"}}</span>
+</div>
+<div class="form-group {{#if error 'notType'}}has-error{{/if}}">
+<label for="notType" class="control-label">Notification Type </label>
+<input type="text" id="notType" value="{{notType}}" placeholder="Notification Type" class="form-control">
+<span class="help-block">{{error "notType"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'notificationsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

@@ -1,0 +1,19 @@
+<template name="onwersInsert">    
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'onwersIndex'}}">Onwers</a></li>
+            <li class="active">insert</li>
+        </ol>
+
+        <div id="basic-form">
+            <div class="title">
+                <h3 class="pull-left">Insert Onwers</h3>
+            </div>
+            <div class="clearfix"></div>
+
+            {{> onwers_form}}  
+        </div>        
+    </div>
+</template>

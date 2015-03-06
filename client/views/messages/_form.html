@@ -1,0 +1,53 @@
+<template name="messages_form">
+    <form id="messages_form"> 
+        <div class="form-group {{#if error 'ownerId'}}has-error{{/if}}">
+<label for="ownerId" class="control-label">ownerID Message Sent By</label>
+<input type="text" id="ownerId" value="{{CurrentUserID}}" placeholder="{{CurrentUserID}}" class="form-control" disabled>
+<span class="help-block">{{error "ownerId"}}</span>
+</div>
+<div class="form-group {{#if error 'userID'}}has-error{{/if}}">
+<label for="userID" class="control-label">userID Message Received By</label>
+<input type="text" id="userID" value="{{userID}}" placeholder="userID" class="form-control">
+<span class="help-block">{{error "userID"}}</span>
+</div>
+<div class="form-group {{#if error 'seenAt'}}has-error{{/if}}">
+<label for="seenAt" class="control-label">Last Seen At </label>
+<input type="text" id="seenAt" value="{{meteorisFormatterDate msgSeenAt 'L'}}"  placeholder="{{meteorisFormatterDate msgSeenAt 'L'}}" class="form-control" disabled>
+<span class="help-block">{{error "seenAt"}}</span>
+</div>
+<div class="form-group {{#if error 'readAt'}}has-error{{/if}}">
+<label for="readAt" class="control-label">First Read At </label>
+<input type="text" id="readAt" value="{{meteorisFormatterDate readAt 'L'}}"  placeholder="{{meteorisFormatterDate msgSeenAt 'L'}}" disabled class="form-control">
+<span class="help-block">{{error "readAt"}}</span>
+</div>
+<div class="form-group {{#if error 'sentAt'}}has-error{{/if}}">
+<label for="sentAt" class="control-label">Sent At </label>
+<input type="text" id="sentAt" value="{{meteorisFormatterDate sentAt 'L'}}" placeholder="Sent At" class="form-control">
+<span class="help-block">{{error "sentAt"}}</span>
+</div>
+<div class="form-group {{#if error 'subject'}}has-error{{/if}}">
+<label for="subject" class="control-label">Subject </label>
+<input type="text" id="subject" value="{{subject}}" placeholder="Subject" class="form-control">
+<span class="help-block">{{error "subject"}}</span>
+</div>
+<div class="form-group {{#if error 'msgDetail'}}has-error{{/if}}">
+<label for="msgDetail" class="control-label">Message </label>
+<input type="text" id="msgDetail" value="{{msgDetail}}" placeholder="Message" class="form-control">
+<span class="help-block">{{error "msgDetail"}}</span>
+</div>
+<div class="form-group {{#if error 'filesAtt'}}has-error{{/if}}">
+<label for="filesAtt" class="control-label">Files Attached </label>
+<input type="text" id="filesAtt" value="{{filesAtt}}" placeholder="Files Attached" class="form-control">
+<span class="help-block">{{error "filesAtt"}}</span>
+</div>
+<div class="form-group {{#if error 'msgType'}}has-error{{/if}}">
+<label for="msgType" class="control-label">Type of Message </label>
+<input type="text" id="msgType" value="{{msgType}}" placeholder="Type of Message" class="form-control">
+<span class="help-block">{{error "msgType"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'messagesIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+
