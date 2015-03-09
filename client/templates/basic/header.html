@@ -65,4 +65,13 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+    
+      {{> headerHello}}
+      
+</template>
+
+<template name="headerHello">
+    
+   <button id="btnSess" type="submit" class="btn btn-success">Session_show</button>   
+  <p>Session storage message: {{postClass}}</p>
 </template>

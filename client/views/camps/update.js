@@ -4,5 +4,8 @@ Template.campsUpdate.events = {
         Router.current()._post = true;
         Router.current().update(t);        
         Router.current()._post = false;
+        
+        Session.set('freeM', "btn saved ");
+        Meteor.call('insertingCamp');
     },
 };

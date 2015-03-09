@@ -25,11 +25,13 @@ Meteor.publishComposite('projects', function(doc, sort) {
 
 Meteor.methods({
     "Projects.insert": function(doc) {
+        console.log("Hello world");
         var _id = Projects.insert(doc);
         return {
             _id: _id,
         }
     },
+    //console.log(Projects.title);
 });
 
 /* observing collection */

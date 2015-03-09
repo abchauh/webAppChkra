@@ -4,5 +4,10 @@ Template.campsInsert.events = {
         Router.current()._post = true;
         Router.current().insert(t);   
         Router.current()._post = false;
+
+        Meteor.call('insertingCamp');
+        Session.set(chkName);
     },
 };
+Template.campsInsert.helpers = {
+}

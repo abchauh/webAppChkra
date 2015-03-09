@@ -10,4 +10,7 @@ Template.usersProfile.events = {
 };
 
 Template.usersProfile.helpers({
+    getSelected: function (acctType, currentValue) {
+        if (currentValue == acctType) return 'selected'
+    }
 });

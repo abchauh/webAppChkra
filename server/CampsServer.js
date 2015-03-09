@@ -29,12 +29,23 @@ Meteor.publishComposite('camps', function(doc, sort) {
 
 
 Meteor.methods({
+    insertingCamp: function(){
+         chkName = "inserted the camps";
+    },
+    
     "Camps.insert": function(doc) {
+        chkName = "inserted s";
         var _id = Camps.insert(doc);
         return {
             _id: _id,
         }
     },
+    'sayHello': function(name) {
+        
+        var campp = Camps.findOne({_id: "FgNfLTqjbiZX6gPSS"}, {title: 1}).title;
+        return 'Hello, ' + campp;
+    }
+
 });
 
 /* observing collection */

@@ -4,5 +4,6 @@ Template.causesInsert.events = {
         Router.current()._post = true;
         Router.current().insert(t);   
         Router.current()._post = false;
+
     },
 };
