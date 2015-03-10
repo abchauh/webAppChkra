@@ -34,16 +34,26 @@ Meteor.methods({
     },
     
     "Camps.insert": function(doc) {
-        chkName = "inserted s";
         var _id = Camps.insert(doc);
+       
         return {
             _id: _id,
         }
     },
     'sayHello': function(name) {
         
-        var campp = Camps.findOne({_id: "FgNfLTqjbiZX6gPSS"}, {title: 1}).title;
-        return 'Hello, ' + campp;
+        //var campp = Camps.findOne({_id: "FgNfLTqjbiZX6gPSS"}, {title: 1}).title;
+        return 'Hello, ';
+    },
+    //Moved_Update_to_server
+    'campsUpdateServer': function(_id, doc){
+        var campp_title = Camps.findOne({_id: _id}, {title: 1}).title;
+        var campp_cityChanged = Camps.findOne({_id: _id}, {cityChanged: 1}).cityChanged;
+        if (campp_cityChanged == "100") {
+            doc.title = campp_title;
+        }
+        doc.cityChanged = 1; //only just before update
+        Camps.update(_id, {$set: doc})
     }
 
 });
@@ -56,3 +66,18 @@ Meteor.methods({
          Images.remove(model.coverImg);
     }
  });
+//permissionsServer
+Camps.allow({
+    insert: function(userId, doc) {
+        var result = Meteor.call('MugenRoleActions.getRoles', 'camps', 'insert');
+        return result;
+    },
+    update: function(userId, doc) {
+        var result = Meteor.call('MugenRoleActions.getRoles', 'camps', 'update');
+        return result;
+    },
+    remove: function(userId, doc) {
+        var result = Meteor.call('MugenRoleActions.getRoles', 'camps', 'remove');
+        return result;
+    },
+});
