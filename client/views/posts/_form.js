@@ -3,4 +3,7 @@ Template.posts_form.helpers({
     error: function(field) {
         return MeteorisSimpleSchema.error(Posts, field);
     },
+    CurrentUserID: function(){
+        return Meteor.userId();
+    },
 });

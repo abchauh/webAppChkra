@@ -1,0 +1,67 @@
+<template name="suggestsView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'suggestsIndex'}}">Suggests</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View Suggests #{{_id}}</h3>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'suggestsIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'suggestsUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>UserID</b></td>
+<td>{{userId}}</td>
+</tr>
+<tr>
+<td><b>DateCreated</b></td>
+<td>{{meteorisFormatter 'date' dateCreated}}</td>
+</tr>
+<tr>
+<td><b>Status</b></td>
+<td>{{status}}</td>
+</tr>
+<tr>
+<td><b>ItemType</b></td>
+<td>{{itemType}}</td>
+</tr>
+<tr>
+<td><b>ItemID</b></td>
+<td>{{itemID}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

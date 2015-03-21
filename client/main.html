@@ -10,7 +10,11 @@
         <!--{{>yield region="templateBasicHeader"}}-->
         {{> templateBasicHeader}}
         {{> status}}
-        {{>yield}}
+
+        <!--{{#transitioner}}-->
+            {{>yield}}
+        <!--{{#transitioner}}-->
+
     </div>
     <!--{{>yield region="templateBasicFooter"}}-->
     {{> templateBasicFooter}}

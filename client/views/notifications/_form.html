@@ -1,9 +1,9 @@
 <template name="notifications_form">
     <form id="notifications_form"> 
-        <div class="form-group {{#if error 'userID'}}has-error{{/if}}">
-<label for="userID" class="control-label">User ID </label>
-<input type="text" id="userID" value="{{userID}}" placeholder="User ID" class="form-control">
-<span class="help-block">{{error "userID"}}</span>
+        <div class="form-group {{#if error 'userId'}}has-error{{/if}}">
+<label for="userId" class="control-label">User ID </label>
+<input type="text" id="userId" value="{{CurrentUserID}}" disabled placeholder="User ID" class="form-control">
+<span class="help-block">{{error "userId"}}</span>
 </div>
 <div class="form-group {{#if error 'ownerID'}}has-error{{/if}}">
 <label for="ownerID" class="control-label">Owner ID </label>

@@ -1,4 +1,4 @@
-Template.onwersUpdate.events = {
+Template.ownersUpdate.events = {
     'click #btnSave': function(e, t) {
         e.preventDefault();
         Router.current()._post = true;

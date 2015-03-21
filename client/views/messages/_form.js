@@ -12,10 +12,10 @@ Template.messages_form.helpers({
         if (this._id === _id)
             return "selected";
     },
-    CurrentUserID: function(){
-        return Meteor.userId();
-    },
-    msgSeenAt:  function(){
+    msgSeenAt:  function() {
         return (new Date);
-    }
+    },
+    CurrentUserID: function(){
+    return Meteor.userId();
+    },
 });

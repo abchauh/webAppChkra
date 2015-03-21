@@ -1,20 +1,20 @@
-<template name="onwersIndex">
+<template name="userProfileIndex">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-            <li><a href="{{pathFor 'onwersIndex'}}">Onwers</a></li>
+            <li><a href="{{pathFor 'userProfileIndex'}}">UserProfile</a></li>
             <li class="active">index</li>
         </ol>
 
         <div class="title">
-            <h3 class="pull-left">Onwers</h3>
+            <h3 class="pull-left">UserProfile</h3>
         </div>
         <div class="clearfix"></div>
 
         <div class="toolbar">
             <div class="pull-left">
-                <a class="btn btn-success" href="{{pathFor 'onwersInsert'}}">Insert</a>
+                <a class="btn btn-success" href="{{pathFor 'userProfileInsert'}}">Insert</a>
                 <a id="btnRemoveAll" class="btn btn-danger">Remove Selection</a>
             </div>   
             <div class="quick-search pull-right col-xs-12 col-md-3">
@@ -36,12 +36,16 @@
                 <thead>
                     <tr>
                         <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
-                        <th id="btnSortfoundersID" class="{{meteorisGridViewSortClass 'foundersID'}}">FoundersID</th>
-<th id="btnSortownedItemType" class="{{meteorisGridViewSortClass 'ownedItemType'}}">OwnedItemType</th>
-<th id="btnSortownedItemId" class="{{meteorisGridViewSortClass 'ownedItemId'}}">OwnedItemId</th>
-<th id="btnSortadmins" class="{{meteorisGridViewSortClass 'admins'}}">Admins</th>
-<th id="btnSortorganisers" class="{{meteorisGridViewSortClass 'organisers'}}">Organisers</th>
-<th id="btnSortcontributers" class="{{meteorisGridViewSortClass 'contributers'}}">Contributers</th>
+                        <th id="btnSortuserID" class="{{meteorisGridViewSortClass 'userId'}}">UserID</th>
+<th id="btnSortfname" class="{{meteorisGridViewSortClass 'fname'}}">First Name</th>
+<th id="btnSortlname" class="{{meteorisGridViewSortClass 'lname'}}">Last Name</th>
+<th id="btnSortdisplayName" class="{{meteorisGridViewSortClass 'displayName'}}">Display Name</th>
+<th id="btnSortuserBio" class="{{meteorisGridViewSortClass 'userBio'}}">User Bio</th>
+<th id="btnSortlocation" class="{{meteorisGridViewSortClass 'location'}}">Location</th>
+<th id="btnSortimage" class="{{meteorisGridViewSortClass 'image'}}">Image</th>
+<th id="btnSortavatar" class="{{meteorisGridViewSortClass 'avatar'}}">Avatar</th>
+<th id="btnSortdob" class="{{meteorisGridViewSortClass 'dob'}}">Date of Birth</th>
+<th id="btnSortsex" class="{{meteorisGridViewSortClass 'sex'}}">Sex</th>
 
                         <!--<th>Image</th>-->                    
                         <th>Created by</th>                    
@@ -52,18 +56,22 @@
                     {{#each models}}
                     <tr>
                         <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
-                        <td>{{foundersID}}</td>
-<td>{{ownedItemType}}</td>
-<td>{{ownedItemId}}</td>
-<td>{{admins}}</td>
-<td>{{organisers}}</td>
-<td>{{contributers}}</td>
+                        <td>{{userId}}</td>
+<td>{{fname}}</td>
+<td>{{lname}}</td>
+<td>{{displayName}}</td>
+<td>{{userBio}}</td>
+<td>{{location}}</td>
+<td>{{image}}</td>
+<td>{{avatar}}</td>
+<td>{{meteorisFormatter 'date' dob}}</td>
+<td>{{sex}}</td>
 
                         <!--<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>-->
                         <td>{{createdUser.profile.name}}</td>
                         <td>
-                            <a href="{{pathFor 'onwersView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
-                            <a href="{{pathFor 'onwersUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            <a href="{{pathFor 'userProfileView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                            <a href="{{pathFor 'userProfileUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
                             <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
                         </td>
                     </tr>

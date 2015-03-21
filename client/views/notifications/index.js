@@ -10,7 +10,7 @@ Template.notificationsIndex.events = {
     },
     /* sorting by parameter */
 'click #btnSortuserID': function(e) {
-MeteorisGridView.sort('userID');
+MeteorisGridView.sort('userId');
 },
 /* sorting by parameter */
 'click #btnSortownerID': function(e) {

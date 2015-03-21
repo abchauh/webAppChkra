@@ -1,36 +1,32 @@
-Template.onwersIndex.helpers({
+Template.newsFeedIndex.helpers({
 
 });
 
-Template.onwersIndex.events = {
+Template.newsFeedIndex.events = {
     'click #btnRemove': function(e) {
         e.preventDefault();
         if (confirm("Are you sure want to remove this data?"))
             Router.current().remove(this._id);
     },
     /* sorting by parameter */
-'click #btnSortfoundersID': function(e) {
-MeteorisGridView.sort('foundersID');
+'click #btnSortuserID': function(e) {
+MeteorisGridView.sort('userId');
 },
 /* sorting by parameter */
-'click #btnSortownedItemType': function(e) {
-MeteorisGridView.sort('ownedItemType');
+'click #btnSortdateCreated': function(e) {
+MeteorisGridView.sort('dateCreated');
 },
 /* sorting by parameter */
-'click #btnSortownedItemId': function(e) {
-MeteorisGridView.sort('ownedItemId');
+'click #btnSortdateStatusChanged': function(e) {
+MeteorisGridView.sort('dateStatusChanged');
 },
 /* sorting by parameter */
-'click #btnSortadmins': function(e) {
-MeteorisGridView.sort('admins');
+'click #btnSortstatus': function(e) {
+MeteorisGridView.sort('status');
 },
 /* sorting by parameter */
-'click #btnSortorganisers': function(e) {
-MeteorisGridView.sort('organisers');
-},
-/* sorting by parameter */
-'click #btnSortcontributers': function(e) {
-MeteorisGridView.sort('contributers');
+'click #btnSortpostID': function(e) {
+MeteorisGridView.sort('postID');
 },
 
     'keyup #search': function(e, t) {

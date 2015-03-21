@@ -1,9 +1,9 @@
-Meteor.publishComposite('onwers', function(doc, sort) {
+Meteor.publishComposite('suggests', function(doc, sort) {
     doc.appId = App.id;
-    console.log("subscribing some Onwers with it's relation in App Id = " + App.id);
+    console.log("subscribing some Suggests with it's relation in App Id = " + App.id);
     return{
         find: function() {
-            return Onwers.find(doc, sort);
+            return Suggests.find(doc, sort);
         },
         children: [
             /* return all related Users */
@@ -24,8 +24,8 @@ Meteor.publishComposite('onwers', function(doc, sort) {
 
 
 Meteor.methods({
-    "Onwers.insert": function(doc) {
-        var _id = Onwers.insert(doc);
+    "Suggests.insert": function(doc) {
+        var _id = Suggests.insert(doc);
         return {
             _id: _id,
         }
@@ -34,7 +34,7 @@ Meteor.methods({
 
 /* observing collection */
 /* uncomment to use
- var query = Onwers.find({});
+ var query = Suggests.find({});
  var handle = query.observe({
  removed: function(model) {
  //removing related image, when post removed

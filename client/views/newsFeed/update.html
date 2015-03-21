@@ -1,19 +1,19 @@
-<template name="onwersInsert">    
+<template name="newsFeedUpdate">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-            <li><a href="{{pathFor 'onwersIndex'}}">Onwers</a></li>
-            <li class="active">insert</li>
+            <li><a href="{{pathFor 'newsFeedIndex'}}">NewsFeed</a></li>
+            <li class="active">update</li>
         </ol>
 
         <div id="basic-form">
             <div class="title">
-                <h3 class="pull-left">Insert Onwers</h3>
+                <h3 class="pull-left">Update NewsFeed</h3>
             </div>
             <div class="clearfix"></div>
 
-            {{> onwers_form}}  
+            {{> newsFeed_form model}}  
         </div>        
     </div>
 </template>

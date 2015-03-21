@@ -19,9 +19,12 @@ Meteor.methods({
      //movved
     'usersUpdateServer': function(_id, t){
         var name = t.find('#name').value;
-        var acctType = t.find('#acctType').value;
- 
-        var fName = t.find('#fName').value;
+        //var acctType = t.find('#acctType').value;
+        var acctType = "1";
+
+        //var fName = t.find('#fName').value;
+        var fName = "sdfdsfsdffdsfdsf3434";
+
         var lName = t.find('#lName').value;
         
         var bio = t.find('#bio').value;

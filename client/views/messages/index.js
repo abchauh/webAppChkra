@@ -14,7 +14,7 @@ MeteorisGridView.sort('ownerId');
 },
 /* sorting by parameter */
 'click #btnSortuserID': function(e) {
-MeteorisGridView.sort('userID');
+MeteorisGridView.sort('userId');
 },
 /* sorting by parameter */
 'click #btnSortseenAt': function(e) {

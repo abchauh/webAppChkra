@@ -1,18 +1,18 @@
-<template name="onwersView">
+<template name="userProfileView">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-            <li><a href="{{pathFor 'onwersIndex'}}">Onwers</a></li>
+            <li><a href="{{pathFor 'userProfileIndex'}}">UserProfile</a></li>
             <li class="active">view</li>
         </ol>
 
         {{#with model}}
         <div class="title">
-            <h3 class="pull-left">View Onwers #{{_id}}</h3>
+            <h3 class="pull-left">View UserProfile #{{_id}}</h3>
             <div class="toolbar pull-right">
-                <a href="{{pathFor 'onwersIndex'}}" class="btn btn-default">Back</a> 
-                <a href="{{pathFor 'onwersUpdate'}}" class="btn btn-info">Update</a>
+                <a href="{{pathFor 'userProfileIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'userProfileUpdate'}}" class="btn btn-info">Update</a>
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
             </div>
         </div>
@@ -20,28 +20,44 @@
         <table class="table">
             <tbody>
                 <tr>
-<td><b>FoundersID</b></td>
-<td>{{foundersID}}</td>
+<td><b>UserID</b></td>
+<td>{{userId}}</td>
 </tr>
 <tr>
-<td><b>OwnedItemType</b></td>
-<td>{{ownedItemType}}</td>
+<td><b>First Name</b></td>
+<td>{{fname}}</td>
 </tr>
 <tr>
-<td><b>OwnedItemId</b></td>
-<td>{{ownedItemId}}</td>
+<td><b>Last Name</b></td>
+<td>{{lname}}</td>
 </tr>
 <tr>
-<td><b>Admins</b></td>
-<td>{{admins}}</td>
+<td><b>Display Name</b></td>
+<td>{{displayName}}</td>
 </tr>
 <tr>
-<td><b>Organisers</b></td>
-<td>{{organisers}}</td>
+<td><b>User Bio</b></td>
+<td>{{userBio}}</td>
 </tr>
 <tr>
-<td><b>Contributers</b></td>
-<td>{{contributers}}</td>
+<td><b>Location</b></td>
+<td>{{location}}</td>
+</tr>
+<tr>
+<td><b>Image</b></td>
+<td>{{image}}</td>
+</tr>
+<tr>
+<td><b>Avatar</b></td>
+<td>{{avatar}}</td>
+</tr>
+<tr>
+<td><b>Date of Birth</b></td>
+<td>{{meteorisFormatter 'date' dob}}</td>
+</tr>
+<tr>
+<td><b>Sex</b></td>
+<td>{{sex}}</td>
 </tr>
 
 <!--                <tr>

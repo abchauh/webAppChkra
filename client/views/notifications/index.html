@@ -36,7 +36,7 @@
                 <thead>
                     <tr>
                         <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
-                        <th id="btnSortuserID" class="{{meteorisGridViewSortClass 'userID'}}">User ID</th>
+                        <th id="btnSortuserID" class="{{meteorisGridViewSortClass 'userId'}}">User ID</th>
 <th id="btnSortownerID" class="{{meteorisGridViewSortClass 'ownerID'}}">Owner ID</th>
 <th id="btnSortseenAt" class="{{meteorisGridViewSortClass 'seenAt'}}">Seen At</th>
 <th id="btnSortreadAt" class="{{meteorisGridViewSortClass 'readAt'}}">Read At</th>
@@ -55,7 +55,7 @@
                     {{#each models}}
                     <tr>
                         <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
-                        <td>{{userID}}</td>
+                        <td>{{userId}}</td>
 <td>{{ownerID}}</td>
 <td>{{meteorisFormatter 'date' seenAt}}</td>
 <td>{{meteorisFormatter 'date' readAt}}</td>

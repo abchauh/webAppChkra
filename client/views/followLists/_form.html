@@ -1,9 +1,9 @@
 <template name="followLists_form">
     <form id="followLists_form"> 
-        <div class="form-group {{#if error 'userID'}}has-error{{/if}}">
-<label for="userID" class="control-label">User ID </label>
-<input type="text" id="userID" value="{{userID}}" placeholder="User ID" class="form-control">
-<span class="help-block">{{error "userID"}}</span>
+        <div class="form-group {{#if error 'userId'}}has-error{{/if}}">
+<label for="userId" class="control-label">User ID </label>
+<input type="text" id="userId" value="{{userId}}" disabled  placeholder="{{userId}}" class="form-control">
+<span class="help-block">{{error "userId"}}</span>
 </div>
 <div class="form-group {{#if error 'profileName'}}has-error{{/if}}">
 <label for="profileName" class="control-label">User Name </label>

@@ -1,12 +1,12 @@
-Template.onwersView.events = {
+Template.newsFeedView.events = {
     'click #btnRemove': function(e) {
         e.preventDefault();
         if (confirm("Are you sure want to remove this data?")) {
             Router.current().remove(this._id);
-            Router.go("onwersIndex")
+            Router.go("newsFeedIndex")
         }
     },
 };
 
-Template.onwersView.helpers({
+Template.newsFeedView.helpers({
 });

@@ -37,4 +37,7 @@ dburles:collection-helpers
 rajit:bootstrap3-datepicker
 summernote:summernote
 email
+gadicohen:famous-views
 accounts-ui
+ccorcos:transitioner
+coffeescript

@@ -12,5 +12,8 @@ Template.projects_form.helpers({
         if (this._id === _id)
             return "selected";
     },
+    CurrentUserID: function(){
+    return Meteor.userId();
+},
     
 });
