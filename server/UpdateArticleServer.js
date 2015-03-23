@@ -1,9 +1,9 @@
-Meteor.publishComposite('projects', function(doc, sort) {
+Meteor.publishComposite('updateArticle', function(doc, sort) {
     doc.appId = App.id;
-    console.log("subscribing some Projects with it's relation in App Id = " + App.id);
+    console.log("subscribing some UpdateArticle with it's relation in App Id = " + App.id);
     return{
         find: function() {
-            return Projects.find(doc, sort);
+            return UpdateArticle.find(doc, sort);
         },
         children: [
             /* return all related Users */
@@ -24,19 +24,17 @@ Meteor.publishComposite('projects', function(doc, sort) {
 
 
 Meteor.methods({
-    "Projects.insert": function(doc) {
-        console.log("Hello world");
-        var _id = Projects.insert(doc);
+    "UpdateArticle.insert": function(doc) {
+        var _id = UpdateArticle.insert(doc);
         return {
             _id: _id,
         }
     },
-    //console.log(Projects.title);
 });
 
 /* observing collection */
 /* uncomment to use
- var query = Projects.find({});
+ var query = UpdateArticle.find({});
  var handle = query.observe({
  removed: function(model) {
  //removing related image, when post removed

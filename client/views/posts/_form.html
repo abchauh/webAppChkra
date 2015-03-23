@@ -1,12 +1,6 @@
 <template name="posts_form">
     <form id="posts_form">
 
-        <div class="form-group {{#if error 'userId'}}has-error{{/if}}">
-            <label for="userId" class="control-label">User ID </label>
-            <input type="text" id="userId" value="{{userId}}" disabled placeholder="{{userId}}" class="form-control">
-            <span class="help-block">{{error "userId"}}</span>
-        </div>
-
         <div class="form-group {{#if error 'title'}}has-error{{/if}}">
             <label for="title" class="control-label">Title *</label>
             <input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control" autofocus="true">
@@ -17,6 +11,7 @@
             <textarea id="content" class="form-control" rows="3" placeholder="Content">{{content}}</textarea>
             <span class="help-block">{{error "content"}}</span>
         </div>
+
         <div class="form-group {{#if error 'parenttype'}}has-error{{/if}}">
             <label for="parenttype" class="control-label">Parent Type</label>
             <select id="parenttype" class="form-control">

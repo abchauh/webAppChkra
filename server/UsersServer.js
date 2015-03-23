@@ -119,6 +119,7 @@ function get_visitor_ip(uid) {
 
 /* auto insert into Meteor.users "@" and "admin" when collection still empty */
 Meteor.startup(function() {
+
     var users = Meteor.users.find();
     if (users.count() == 0) {
         Accounts.createUser({

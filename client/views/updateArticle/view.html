@@ -1,18 +1,18 @@
-<template name="campsView">
+<template name="updateArticleView">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-            <li><a href="{{pathFor 'campsIndex'}}">Camps</a></li>
+            <li><a href="{{pathFor 'updateArticleIndex'}}">UpdateArticle</a></li>
             <li class="active">view</li>
         </ol>
 
         {{#with model}}
         <div class="title">
-            <h3 class="pull-left">View Camps #{{_id}}</h3>
+            <h3 class="pull-left">View UpdateArticle #{{_id}}</h3>
             <div class="toolbar pull-right">
-                <a href="{{pathFor 'campsIndex'}}" class="btn btn-default">Back</a> 
-                <a href="{{pathFor 'campsUpdate'}}" class="btn btn-info">Update</a>
+                <a href="{{pathFor 'updateArticleIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'updateArticleUpdate'}}" class="btn btn-info">Update</a>
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
             </div>
         </div>
@@ -20,57 +20,12 @@
         <table class="table">
             <tbody>
                 <tr>
-<td><b>User Id</b></td>
-<td>{{userId}}</td>
+<td><b>Update Message</b></td>
+<td>{{content}}</td>
 </tr>
 <tr>
-<td><b>Title</b></td>
-<td>{{title}}</td>
-</tr>
-<tr>
-<td><b>Short Description</b></td>
-<td>{{shortDesc}}</td>
-</tr>
-<tr>
-<td><b>Long Description</b></td>
-<td>{{longDesc}}</td>
-</tr>
-<tr>
-<td><b>Cover Image</b></td>
-<td>{{coverImg}}</td>
-<img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/>
-</tr>
-<tr>
-<td><b>Image Source Text</b></td>
-<td>{{imgSrcText}}</td>
-</tr>
-<tr>
-<td><b>List of Causes</b></td>
-<td>{{causes}}</td>
-</tr>
-<tr>
-<td><b>Created At</b></td>
-<td>{{meteorisFormatter 'date' campCreatedAt}}</td>
-</tr>
-<tr>
-<td><b>Campaign End Date</b></td>
-<td>{{meteorisFormatter 'date' campEndDate}}</td>
-</tr>
-<tr>
-<td><b>Last Updated</b></td>
-<td>{{meteorisFormatter 'date' campLastUpdate}}</td>
-</tr>
-<tr>
-<td><b>Address</b></td>
-<td>{{address}}</td>
-</tr>
-<tr>
-<td><b>Country</b></td>
-<td>{{country}}</td>
-</tr>
-<tr>
-<td><b>City/Town</b></td>
-<td>{{city}}</td>
+<td><b>Type of Update Article</b></td>
+<td>{{type}}</td>
 </tr>
 
 <!--                <tr>

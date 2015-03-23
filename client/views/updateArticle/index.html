@@ -1,20 +1,20 @@
-<template name="projectsIndex">
+<template name="updateArticleIndex">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-            <li><a href="{{pathFor 'projectsIndex'}}">Projects</a></li>
+            <li><a href="{{pathFor 'updateArticleIndex'}}">UpdateArticle</a></li>
             <li class="active">index</li>
         </ol>
 
         <div class="title">
-            <h3 class="pull-left">Projects</h3>
+            <h3 class="pull-left">UpdateArticle</h3>
         </div>
         <div class="clearfix"></div>
 
         <div class="toolbar">
             <div class="pull-left">
-                <a class="btn btn-success" href="{{pathFor 'projectsInsert'}}">Insert</a>
+                <a class="btn btn-success" href="{{pathFor 'updateArticleInsert'}}">Insert</a>
                 <a id="btnRemoveAll" class="btn btn-danger">Remove Selection</a>
             </div>   
             <div class="quick-search pull-right col-xs-12 col-md-3">
@@ -36,21 +36,8 @@
                 <thead>
                     <tr>
                         <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
-                        <th id="btnSortuserId" class="{{meteorisGridViewSortClass 'userId'}}">UserId</th>
-<th id="btnSorttitle" class="{{meteorisGridViewSortClass 'title'}}">Title</th>
-<th id="btnSortshortDesc" class="{{meteorisGridViewSortClass 'shortDesc'}}">Short Description</th>
-<th id="btnSortlingDesc" class="{{meteorisGridViewSortClass 'lingDesc'}}">Long Description</th>
-<th id="btnSortcoverImg" class="{{meteorisGridViewSortClass 'coverImg'}}">Cover Image</th>
-<th id="btnSortimgSrcText" class="{{meteorisGridViewSortClass 'imgSrcText'}}">Image Source Text</th>
-<th id="btnSortstatus" class="{{meteorisGridViewSortClass 'status'}}">Status</th>
-<th id="btnSortprojStart" class="{{meteorisGridViewSortClass 'projStart'}}">Start Date</th>
-<th id="btnSortprojEnd" class="{{meteorisGridViewSortClass 'projEnd'}}">Project End Date</th>
-<th id="btnSortprojLastUpdate" class="{{meteorisGridViewSortClass 'projLastUpdate'}}">Last Updated</th>
-<th id="btnSortprojCountry" class="{{meteorisGridViewSortClass 'projCountry'}}">Country</th>
-<th id="btnSortprojCity" class="{{meteorisGridViewSortClass 'projCity'}}">City</th>
-<th id="btnSortprojWeb" class="{{meteorisGridViewSortClass 'projWeb'}}">Website</th>
-<th id="btnSortprojFacebook" class="{{meteorisGridViewSortClass 'projFacebook'}}">Facebook</th>
-<th id="btnSortprojSocialLinks" class="{{meteorisGridViewSortClass 'projSocialLinks'}}">SocialMediaLinks</th>
+                        <th id="btnSortcontent" class="{{meteorisGridViewSortClass 'content'}}">Update Message</th>
+<th id="btnSorttype" class="{{meteorisGridViewSortClass 'type'}}">Type of Update Article</th>
 
                         <!--<th>Image</th>-->                    
                         <th>Created by</th>                    
@@ -61,27 +48,14 @@
                     {{#each models}}
                     <tr>
                         <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
-                        <td>{{userId}}</td>
-<td>{{title}}</td>
-<td>{{shortDesc}}</td>
-<td>{{lingDesc}}</td>
-<td>{{coverImg}}</td>
-<td>{{imgSrcText}}</td>
-<td>{{status}}</td>
-<td>{{meteorisFormatter 'date' projStart}}</td>
-<td>{{meteorisFormatter 'date' projEnd}}</td>
-<td>{{meteorisFormatter 'date' projLastUpdate}}</td>
-<td>{{projCountry}}</td>
-<td>{{projCity}}</td>
-<td>{{projWeb}}</td>
-<td>{{projFacebook}}</td>
-<td>{{projSocialLinks}}</td>
+                        <td>{{content}}</td>
+<td>{{type}}</td>
 
                         <!--<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>-->
                         <td>{{createdUser.profile.name}}</td>
                         <td>
-                            <a href="{{pathFor 'projectsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
-                            <a href="{{pathFor 'projectsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            <a href="{{pathFor 'updateArticleView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                            <a href="{{pathFor 'updateArticleUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
                             <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
                         </td>
                     </tr>

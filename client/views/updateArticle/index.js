@@ -1,72 +1,20 @@
-Template.projectsIndex.helpers({
+Template.updateArticleIndex.helpers({
 
 });
 
-Template.projectsIndex.events = {
+Template.updateArticleIndex.events = {
     'click #btnRemove': function(e) {
         e.preventDefault();
         if (confirm("Are you sure want to remove this data?"))
             Router.current().remove(this._id);
     },
     /* sorting by parameter */
-'click #btnSortuserId': function(e) {
-MeteorisGridView.sort('userId');
+'click #btnSortcontent': function(e) {
+MeteorisGridView.sort('content');
 },
 /* sorting by parameter */
-'click #btnSorttitle': function(e) {
-MeteorisGridView.sort('title');
-},
-/* sorting by parameter */
-'click #btnSortshortDesc': function(e) {
-MeteorisGridView.sort('shortDesc');
-},
-/* sorting by parameter */
-'click #btnSortlingDesc': function(e) {
-MeteorisGridView.sort('lingDesc');
-},
-/* sorting by parameter */
-'click #btnSortcoverImg': function(e) {
-MeteorisGridView.sort('coverImg');
-},
-/* sorting by parameter */
-'click #btnSortimgSrcText': function(e) {
-MeteorisGridView.sort('imgSrcText');
-},
-/* sorting by parameter */
-'click #btnSortstatus': function(e) {
-MeteorisGridView.sort('status');
-},
-/* sorting by parameter */
-'click #btnSortprojStart': function(e) {
-MeteorisGridView.sort('projStart');
-},
-/* sorting by parameter */
-'click #btnSortprojEnd': function(e) {
-MeteorisGridView.sort('projEnd');
-},
-/* sorting by parameter */
-'click #btnSortprojLastUpdate': function(e) {
-MeteorisGridView.sort('projLastUpdate');
-},
-/* sorting by parameter */
-'click #btnSortprojCountry': function(e) {
-MeteorisGridView.sort('projCountry');
-},
-/* sorting by parameter */
-'click #btnSortprojCity': function(e) {
-MeteorisGridView.sort('projCity');
-},
-/* sorting by parameter */
-'click #btnSortprojWeb': function(e) {
-MeteorisGridView.sort('projWeb');
-},
-/* sorting by parameter */
-'click #btnSortprojFacebook': function(e) {
-MeteorisGridView.sort('projFacebook');
-},
-/* sorting by parameter */
-'click #btnSortprojSocialLinks': function(e) {
-MeteorisGridView.sort('projSocialLinks');
+'click #btnSorttype': function(e) {
+MeteorisGridView.sort('type');
 },
 
     'keyup #search': function(e, t) {
