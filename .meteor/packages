@@ -20,7 +20,6 @@ cfs:standard-packages
 cfs:filesystem
 cfs:ejson-file
 cfs:gridfs
-twbs:bootstrap
 francocatena:status
 accounts-facebook
 accounts-google

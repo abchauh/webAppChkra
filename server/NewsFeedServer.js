@@ -34,7 +34,7 @@ Meteor.methods({
         console.log("inserting Updated Messages");
         var uALength = UpdateArticle.find().count();
         var uFLength = NewsFeed.find().count();
-        var uA_ids = UpdateArticle.find().fetch();
+        var uA_ids = UpdateArticle.find({createdUserId:"R89M42qQqMhyhpo93"}).fetch();
         var nF_ids = NewsFeed.find({}).fetch();
         var uArticlerr = [];
         var newsFeedExisting = [];
@@ -93,7 +93,7 @@ Meteor.methods({
         console.log("newsFeedExisting "+newsFeedExisting);
         console.log("uArticlerr "+uArticlerr);
         //console.log("newFeed "+ newFeed);
-        newFeedArrayMerged = newsFeedExisting.concat(uArticlerr).unique(); // Merges both arrays
+        newFeedArrayMerged = newsFeedExisting.concat(uArticlerr); // Merges both arrays
 console.log(newFeedArrayMerged);
         //
         //for (i = 0; i < uALength; i++) {

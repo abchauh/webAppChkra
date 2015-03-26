@@ -16,7 +16,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Items <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">CRUDs<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{pathFor 'userProfileIndex'}}">User Profiles</a></li>
                             <li><a href="{{pathFor 'followListsIndex'}}">Follow Lists</a></li>
@@ -26,20 +26,27 @@
                             <li><a href="{{pathFor 'messagesIndex'}}">Messages</a></li>
                             <li><a href="{{pathFor 'notificationsIndex'}}">Notifications</a></li>
                             <li class="divider"></li>
-                            <li><a href="{{pathFor 'updateArticleIndex'}}">Update Messages</a></li>
-                            <li><a href="{{pathFor 'postsIndex'}}">Posts</a></li>
+                            <li><a href="{{pathFor 'updateArticleIndex'}}">UpdateArticle</a></li>
                             <li class="divider"></li>
                             <li><a href="{{pathFor 'votesIndex'}}">Votes</a></li>
                             <li><a href="{{pathFor 'ownersIndex'}}">Owners</a></li>
-                            <li class="divider"></li>
-                            <li><a href="{{pathFor 'teamsIndex'}}">Teams</a></li>
-                            <li><a href="{{pathFor 'jobsIndex'}}">Jobs</a></li>
+
                             
                             <!--<li><a href="{{pathFor 'mugenRoleActions'}}">Role Actions</a></li>-->
                         </ul>
                     </li>
+
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purge em <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{pathFor 'postsIndex'}}">Posts</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{pathFor 'teamsIndex'}}">Teams</a></li>
+                        <li><a href="{{pathFor 'jobsIndex'}}">Jobs</a></li>
+                    </ul>
+                    </li>
+
                     <li><a href="{{pathFor 'usersIndex'}}">Users</a></li>
-                    <li><a href="{{pathFor 'postsIndex'}}">Posts</a></li>
                     {{#if app 'activateMugen'}}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mugen <span class="caret"></span></a>
