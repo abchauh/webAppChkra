@@ -16,7 +16,7 @@ Meteor.methods({
         Accounts.createUser(doc);
         return true;
     },
-     //movved
+     // TODO: Seems, method this method is deprecated
     'usersUpdateServer': function(_id, t){
         var name = t.find('#name').value;
         //var acctType = t.find('#acctType').value;
