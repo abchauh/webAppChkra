@@ -1,6 +1,6 @@
 Template.usersProfile.events = {
     'click #btnChangeProfile': function(e, t){
-        e.preventDefault();        
+        e.preventDefault();
         Router.current().changeProfile(t);
     },
     'click #btnChangePassword': function(e, t){
