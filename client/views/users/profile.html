@@ -25,14 +25,14 @@
                 <tr>
                     <td><b>Created at</b></td>
                     <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                </tr>                            
+                </tr>
             </tbody>
-        </table>        
+        </table>
         <hr/>
 
         <h4>Change Profile</h4>
 
-        <form id="change_profile_form">        
+        <form id="change_profile_form">
             <div class="form-group">
                 <label for="name" class="control-label">Name *</label>
                 <input type="text" id="name" value="{{profile.name}}" placeholder="Name" disabled class="form-control">
@@ -55,8 +55,7 @@
                 
                 <label for="bio" class="control-label">User Bio</label>
                 <input type="text" id="bio" value="{{profile.bio}}" placeholder="bio" class="form-control">
-                <label for="country" class="control-label">Country</label>
-                <input type="text" id="country" value="{{profile.country}}" placeholder="country" class="form-control">
+                {{> countryInput}}
                 <label for="city" class="control-label">City</label>
                 <input type="text" id="city" value="{{profile.city}}" placeholder="City" class="form-control">
                 <label for="address" class="control-label">Address</label>
@@ -73,8 +72,7 @@
                 <input type="text" id="dob" value="{{profile.dob}}" placeholder="dob" class="form-control">
                 <label for="sex" class="control-label">Sex</label>
                 <input type="text" id="sex" value="{{profile.sex}}" placeholder="sex" class="form-control">
-                
-            </div>            
+            </div>
             <button id="btnChangeProfile" type="submit" class="btn btn-success">Submit</button>                
         </form>
 
@@ -83,7 +81,7 @@
 
         <h4>Change Password</h4>
 
-        <form id="change_password_form">        
+        <form id="change_password_form">
             <div class="form-group">
                 <label for="oldPassword" class="control-label">Old Password *</label>
                 <input type="password" id="oldPassword" placeholder="Old Password" class="form-control">
@@ -96,7 +94,7 @@
                 <label for="confirmNewPassword" class="control-label">Confirm New Password *</label>
                 <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" class="form-control">
             </div>
-            <button id="btnChangePassword" type="submit" class="btn btn-success">Submit</button>                
+            <button id="btnChangePassword" type="submit" class="btn btn-success">Submit</button>
         </form>
     </div>
 </template>
