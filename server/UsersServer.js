@@ -16,52 +16,6 @@ Meteor.methods({
         Accounts.createUser(doc);
         return true;
     },
-     // TODO: Seems, method this method is deprecated
-    'usersUpdateServer': function(_id, t){
-        var name = t.find('#name').value;
-        //var acctType = t.find('#acctType').value;
-        var acctType = "1";
-
-        //var fName = t.find('#fName').value;
-        var fName = "sdfdsfsdffdsfdsf3434";
-
-        var lName = t.find('#lName').value;
-        
-        var bio = t.find('#bio').value;
-        var country = t.find('#country').value;
-        var city = t.find('#city').value;
-        var address = t.find('#address').value;
-        var ImgThumb = t.find('#ImgThumb').value;
-        var ImgLarge = t.find('#ImgLarge').value;
-        var ImgHeader = t.find('#ImgHeader').value;
-        var Avatar = t.find('#Avatar').value;
-        var dob = t.find('#dob').value;
-        var sex =  t.find('#sex').value;
-        // var userTypeChanged =  Meteor.users.findOne({_id: _id}, {profile: 1}).profile.userTypeChanged;
-        // var user_acctType = Meteor.users.findOne({_id: _id}, {profile: 1}).profile.acctType;
-        
-        // if (userTypeChanged == "1") {
-        //     doc.profile.acctType = user_acctType;
-        // }
-        // doc.profile.userTypeChanged = 1; //only just before update
-        
-        Meteor.users.update(_id, {$set: {'profile.name': name, 'profile.acctType': acctType,
-                    'profile.fName': fName, 'profile.lName' : lName,
-                    'profile.bio': bio,
-                    'profile.country': country,
-                    'profile.city': city,
-                    'profile.address': address,
-                    'profile.ImgThumb': ImgThumb,
-                    'profile.ImgLarge': ImgLarge,
-                    'profile.ImgHeader': ImgHeader,
-                    'profile.Avatar': Avatar,
-                    'profile.dob': dob,
-                    'profile.sex': sex,
-            
-        }}
-        );
-        return "sdfdf";
-    }
 });
 
 
