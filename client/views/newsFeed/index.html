@@ -75,12 +75,14 @@
                                 <a href="{{pathFor 'newsFeedView'}}" class="btn btn-default">
                                   <i class="glyphicon glyphicon-eye-open"></i>
                                 </a>
-                                <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-default">
-                                  <i class="glyphicon glyphicon-pencil"></i>
-                                </a>
-                                <a id="btnRemove" class="btn btn-danger">
-                                  <i class="glyphicon glyphicon-trash"></i>
-                                </a>
+                                {{#if isOwner}}
+                                    <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-default">
+                                      <i class="glyphicon glyphicon-pencil"></i>
+                                    </a>
+                                    <a id="btnRemove" class="btn btn-danger">
+                                      <i class="glyphicon glyphicon-trash"></i>
+                                    </a>
+                                {{/if}}
                             </td>
                         </tr>
                         {{/each}}

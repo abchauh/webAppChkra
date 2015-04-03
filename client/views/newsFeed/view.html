@@ -12,8 +12,10 @@
             <h3 class="pull-left">View NewsFeed #{{_id}}</h3>
             <div class="toolbar pull-right">
                 <a href="{{pathFor 'newsFeedIndex'}}" class="btn btn-default">Back</a>
-                <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-info">Update</a>
-                <a id="btnRemove" class="btn btn-danger">Remove</a>
+                {{#if isOwner}}
+                    <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-info">Update</a>
+                    <a id="btnRemove" class="btn btn-danger">Remove</a>
+                {{/if}}
             </div>
         </div>
         <div class="clearfix"></div>

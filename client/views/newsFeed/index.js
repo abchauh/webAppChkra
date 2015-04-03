@@ -1,4 +1,8 @@
-Template.newsFeedIndex.helpers({});
+Template.newsFeedIndex.helpers({
+    isOwner: function() {
+        return this.data.userId === Meteor.userId();
+    }
+});
 
 Template.newsFeedIndex.events = {
     'click #btnRemove': function (e) {

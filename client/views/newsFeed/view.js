@@ -9,4 +9,7 @@ Template.newsFeedView.events = {
 };
 
 Template.newsFeedView.helpers({
+    isOwner: function() {
+        return this.data.userId === Meteor.userId();
+    }
 });
