@@ -12,23 +12,30 @@
             <h3 class="pull-left">User Profile #{{_id}}</h3>
         </div>
         <div class="clearfix"></div>
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td><b>Email</b></td>
-                    <td>{{emails.[0].address}}</td>
-                </tr>
-                <tr>
-                    <td><b>Mugen Role Group</b></td>
-                    <td>{{mugenRoleGroup.name}}</td>
-                </tr>    
-                <tr>
-                    <td><b>Created at</b></td>
-                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr/>
+        <div class="row">
+          <div class="col-xs-3">
+            {{> avatar}}
+          </div>
+          <div class="col-xs-9">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>{{emails.[0].address}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Mugen Role Group</b></td>
+                        <td>{{mugenRoleGroup.name}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Created at</b></td>
+                        <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+                <hr/>
 
         <h4>Change Profile</h4>
 
@@ -52,7 +59,7 @@
                 <label for="lName" class="control-label">Last Name</label>
                 <input type="text" id="lName" value="{{profile.lName}}" placeholder="Last Name" class="form-control">
                 <label for="lName" class="control-label">Last Name</label>
-                
+
                 <label for="bio" class="control-label">User Bio</label>
                 <input type="text" id="bio" value="{{profile.bio}}" placeholder="bio" class="form-control">
                 {{> countryInput}}
@@ -73,7 +80,7 @@
                 <label for="sex" class="control-label">Sex</label>
                 <input type="text" id="sex" value="{{profile.sex}}" placeholder="sex" class="form-control">
             </div>
-            <button id="btnChangeProfile" type="submit" class="btn btn-success">Submit</button>                
+            <button id="btnChangeProfile" type="submit" class="btn btn-success">Submit</button>
         </form>
 
         {{/with}}

@@ -1,0 +1,79 @@
+<template name="selector">
+  <div class="avatar-picker-step1">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Upload an image
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <span class="btn btn-primary btn-file">
+                      Browse <input type="file" id="avatar-picker-file">
+                    </span>
+                  </span>
+                  <input type="text" class="form-control" readonly id="avatar-picker-filename">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>  <!-- /.panel -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Paste image URL
+          </div>
+          <div class="panel-body">
+            <form class="form-inline">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-globe"></i>
+                  </div>
+                  <input type="text" id="avatar-picker-url" class="form-control" placeholder="https://example.com/avatar.png">
+                </div>
+              </div>
+              <button id="avatar-picker-url-btn" class="btn btn-primary">
+                <i class="fa fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>  <!-- /.panel -->
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Or select image from gallery
+          </div>
+          <div class="panel-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="/no_image.jpg" alt="No image!" class="img-rounded">
+                </div>
+                {{#each avatars}}
+                  <div class="col-md-3">
+                    <img src="{{url}}" class="img-rounded">
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
