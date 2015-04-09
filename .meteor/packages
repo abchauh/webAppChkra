@@ -47,3 +47,6 @@ sergeyt:typeahead
 chipcastle:countries
 fourseven:scss
 comerc:bs-typeahead
+cfs:graphicsmagick
+cfs:s3
+cfs:ui

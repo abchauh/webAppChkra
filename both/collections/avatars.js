@@ -22,5 +22,6 @@ var checkPermission = function() {
 Avatars.allow({
   insert: checkPermission,
   update: checkPermission,
-  remove: checkPermission
+  remove: checkPermission,
+  download: checkPermission
 });

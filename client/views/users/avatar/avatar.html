@@ -1,3 +1,12 @@
 <template name="avatar">
-  <img src="/images/avatars/no_image.jpg" />
+{{> AvatarPicker}}
+{{#with currentUser}}
+<a href="#" data-toggle="modal" data-target=".avatar-picker">
+	{{#if avatar}}
+	<img src="{{avatar.url}}">
+	{{else}}
+	<img src="/images/avatars/no_image.jpg" alt="No image!" class="img-rounded">
+	{{/if}}
+</a>
+{{/with}}
 </template>

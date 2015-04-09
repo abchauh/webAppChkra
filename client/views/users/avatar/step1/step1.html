@@ -1,4 +1,4 @@
-<template name="selector">
+<template name="Step1">
   <div class="avatar-picker-step1">
 
     <div class="row">
@@ -61,11 +61,12 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-3">
-                  <img src="/no_image.jpg" alt="No image!" class="img-rounded">
+                  <img src="/images/avatars/no_image.jpg" alt="No image!" class="img-rounded">
                 </div>
                 {{#each avatars}}
                   <div class="col-md-3">
                     <img src="{{url}}" class="img-rounded">
+                    {{> FS.DeleteButton class="btn btn-danger btn-xs"}}
                   </div>
                 {{/each}}
               </div>

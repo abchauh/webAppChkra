@@ -1,0 +1,28 @@
+.avatar-picker-step1 .panel {
+  margin-bottom: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.avatar-picker-step1 .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.avatar-picker-step1 .btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+.avatar-picker-step1 input#avatar-picker-filename {
+  background-color: white !important;
+  cursor: text !important;
+}

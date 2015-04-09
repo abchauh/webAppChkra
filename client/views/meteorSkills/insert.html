@@ -1,0 +1,19 @@
+<template name="meteorSkillsInsert">    
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'meteorSkillsIndex'}}">MeteorSkills</a></li>
+            <li class="active">insert</li>
+        </ol>
+
+        <div id="basic-form">
+            <div class="title">
+                <h3 class="pull-left">Insert MeteorSkills</h3>
+            </div>
+            <div class="clearfix"></div>
+
+            {{> meteorSkills_form}}  
+        </div>        
+    </div>
+</template>
