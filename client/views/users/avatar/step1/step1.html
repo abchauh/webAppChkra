@@ -60,13 +60,13 @@
           <div class="panel-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-3">
+                <div class="avatar-ready-image col-md-3">
                   <img src="/images/avatars/no_image.jpg" alt="No image!" class="img-rounded">
                 </div>
                 {{#each avatars}}
-                  <div class="col-md-3">
+                  <div class="avatar-ready-image col-md-3">
                     <img src="{{url}}" class="img-rounded">
-                    {{> FS.DeleteButton class="btn btn-danger btn-xs"}}
+                    {{#FS.DeleteButton class="btn btn-danger btn-xs"}}<i class="fa fa-trash"></i>{{/FS.DeleteButton}}
                   </div>
                 {{/each}}
               </div>
