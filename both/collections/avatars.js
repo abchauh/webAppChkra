@@ -4,10 +4,12 @@ var transformAvatar = function(fileObj, readStream, writeStream) {
 };
 
 Avatars = new FS.Collection('avatars', {
-  stores: [ new FS.Store.GridFS('avatars', { transformWrite: transformAvatar }) ],
+  stores: [new FS.Store.GridFS('avatars', {
+    transformWrite: transformAvatar
+  })],
   filter: {
     allow: {
-      contentTypes: ['image/*']  // allow only images in this collection
+      contentTypes: ['image/*'] // allow only images in this collection
     }
   }
 });
@@ -25,3 +27,16 @@ Avatars.allow({
   remove: checkPermission,
   download: checkPermission
 });
+
+// Avatars.after.remove(function(userId, doc) {
+//   var userAvatars = Meteor.users.findOne(userId).avatars;
+//   var index = userAvatars.indexOf(doc._id);
+//   userAvatars.splice(index, 1);
+//   Meteor.users.update({
+//     _id: this.userId
+//   }, {
+//     $set: {
+//       'avatars': userAvatars
+//     }
+//   })
+// });

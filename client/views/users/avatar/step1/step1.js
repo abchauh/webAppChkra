@@ -28,6 +28,7 @@ Template.Step1.events({
     avatarImage.metadata = {
       owner: Meteor.userId()
     };
+    console.log(avatarImage);
     Avatars.insert(avatarImage, function(err, res) {
       clear(tmpl);
       !!err && console.log(err);
@@ -37,27 +38,11 @@ Template.Step1.events({
         $set: {
           'profile.image': res._id,
           'profile.upgraded': new Date()
+        },
+        $push: {
+          'avatars': res._id
         }
       });
-    });
-  },
-  'click #avatar-picker-url-btn': function(e, tmpl) {
-    e.preventDefault();
-    var imgUrl = $('#avatar-picker-url').val();
-    var file = new FS.File({
-      name: 'image.jpg'
-    });
-    console.log(file);
-    file.attachData(imgUrl, {type: "image/*"},function(err) {
-      console.log('attachData');
-      if (!err) {
-        console.log('file ===>', file);
-        Avatars.insert(file, function(err, res) {
-          $('#avatar-picker-url').val('');
-          !!err && console.log(err);
-          console.log('res', res);
-        });
-      }
     });
   },
   'click .avatar-ready-image': function(e, tmpl) {
@@ -77,8 +62,12 @@ Template.Step1.events({
 
 Template.Step1.helpers({
   avatars: function() {
-    var avatars = Avatars.find();
-    return Avatars.find();
+    var avatars = Avatars.find({
+      _id: {
+        $in: Meteor.user().avatars
+      }
+    });
+    return avatars;
   }
 });
 
