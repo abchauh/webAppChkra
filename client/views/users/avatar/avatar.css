@@ -1,0 +1,36 @@
+.avatar-wrapper {
+  min-height: 150px;
+  min-width: 150px;
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+  position: relative;
+}
+
+.cur-avatar-image span {
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  background-color: rgba(50, 50, 50, 0.8);
+  position: absolute;
+  bottom: 10px;
+  left: 17px;
+  line-height: 47px;
+  font-size: 33px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+}
+
+.cur-avatar-image:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.profile-info {
+  display: inline-block;
+  width: 80%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
