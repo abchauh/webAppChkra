@@ -1,26 +1,26 @@
 <template name="Step1">
-  <div class="avatar-picker-step1">
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            Upload an image
-          </div>
-          <div class="panel-body">
-            <form>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <span class="btn btn-primary btn-file">
-                      Browse <input type="file" id="avatar-picker-file">
-                    </span>
+<div class="avatar-picker-step1">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Upload an image
+          <button type="button" class="close close-avatar-modal-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    Browse <input type="file" id="avatar-picker-file">
                   </span>
-                  <input type="text" class="form-control" readonly id="avatar-picker-filename">
-                </div>
+                </span>
+                <input type="text" class="form-control" readonly id="avatar-picker-filename">
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
+        </div>
         </div>  <!-- /.panel -->
       </div>
     </div>
@@ -37,17 +37,19 @@
                   <img src="/images/avatars/no_image.jpg" alt="No image!" class="img-rounded">
                 </div>
                 {{#each avatars}}
-                  <div class="avatar-ready-image col-md-3">
-                    <img src="{{url}}" class="img-rounded">
-                    {{#FS.DeleteButton class="btn btn-danger btn-xs"}}<i class="fa fa-trash"></i>{{/FS.DeleteButton}}
-                  </div>
+                <div class="avatar-ready-image col-md-3">
+                  <img src="{{url}}" class="img-rounded">
+                  {{#FS.DeleteButton class="btn btn-danger btn-xs"}}<i class="fa fa-trash"></i>{{/FS.DeleteButton}}
+                </div>
                 {{/each}}
               </div>
             </div>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
-</template>
+  </template>

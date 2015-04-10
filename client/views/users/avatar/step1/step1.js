@@ -69,6 +69,9 @@ Template.Step1.events({
         'profile.upgraded': new Date()
       }
     });
+  },
+  'click .close-avatar-modal-btn': function(e, tmpl) {
+    $('.modal').hide();
   }
 });
 
