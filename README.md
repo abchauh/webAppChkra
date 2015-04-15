@@ -18,8 +18,6 @@ METEORIS v0.9.8 (Meteor v1.0.3.1) <a href="https://www.paypal.com/cgi-bin/webscr
 
 
 
-
-
 ###WHAT IS METEORIS?
 Meteoris is a Realtime Javascript Boilerplate based on Meteor Js framework v1.0. 
 It helps you structure your Meteor Js apps and includes many useful packages.
