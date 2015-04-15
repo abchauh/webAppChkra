@@ -6,11 +6,20 @@ Template.usersProfile.events = {
     'click #btnChangePassword': function(e, t){
         e.preventDefault();        
         Router.current().changePassword(t);
+    },
+    'click .change-username-btn': function(e, t){
+        var element = $('#name')[0];
+        Meteor.call('UserProfile.changeUsername', element.value, function(err, res){
+            console.log(err || res);
+        });
     }
 };
 
 Template.usersProfile.helpers({
     getSelected: function (acctType, currentValue) {
         if (currentValue == acctType) return 'selected'
+    },
+    allowChangeName: function(){
+        return !Meteor.user().usernameEdited
     }
 });

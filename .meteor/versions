@@ -40,6 +40,7 @@ cfs:upload-http@0.0.20
 cfs:worker@0.1.4
 check@1.0.5
 chipcastle:countries@1.0.2
+chrismbeckett:toastr@2.1.0
 coffeescript@1.0.6
 comerc:bs-typeahead@1.0.2
 dandv:caret-position@2.1.1
