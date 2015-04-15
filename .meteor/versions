@@ -41,6 +41,7 @@ cfs:worker@0.1.4
 check@1.0.5
 chipcastle:countries@1.0.2
 chrismbeckett:toastr@2.1.0
+cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
 comerc:bs-typeahead@1.0.2
 dandv:caret-position@2.1.1
@@ -65,6 +66,7 @@ ground:minimax@1.1.2
 ground:servertime@0.0.3
 ground:store@0.1.1
 ground:util@0.1.13
+handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0

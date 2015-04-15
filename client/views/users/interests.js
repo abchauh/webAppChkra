@@ -10,18 +10,15 @@ Template.Interests.helpers({
 Template.Interests.events({
   'click .add-interest-btn': function(e, t) {
     var interestName = $('#new-interest-name')[0];
-    var interestOrder = $('#new-interest-order')[0];
     Interests.insert({
       owner: Meteor.userId(),
-      interestName: interestName.value,
-      order: interestOrder.value
+      interestName: interestName.value
     }, function(err, res) {
       if (err) {
         toastr.error(err.name);
       } else {
         toastr.success('Added interest');
         interestName.value = '';
-        interestOrder.value = '';
       }
     })
   },

@@ -1,3 +1,3 @@
-Meteor.publish('', function(){
-  return Interests.find({owner: this.userId || Meteor.userId && Meteor.userId()});
+Meteor.publish('interests', function(userId){
+  return Interests.find({owner: userId});
 })

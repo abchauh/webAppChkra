@@ -1,3 +1,7 @@
+Template.usersProfile.created = function(){
+    Meteor.subscribe('interests', Meteor.userId());
+}
+
 Template.usersProfile.events = {
     'click #btnChangeProfile': function(e, t){
         e.preventDefault();
