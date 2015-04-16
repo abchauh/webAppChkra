@@ -8,7 +8,7 @@ AdminMessages.config = function(options) {
     sendingHours: Match.Optional(Number),
     lastNDays: Match.Optional(Number)
   });
-  options.sendingHours = options.hours || '20';
+  options.sendingHours = options.hours || 17;
   options.footer = options.footer || 'copyright © PT. Piyiku Global Sinergi.';
   options.from = options.from || 'system@meteoris.com';
   options.to = options.to || ['nazaryablonskiy@gmail.com'];
@@ -67,7 +67,8 @@ AdminMessages.trySendMessage = function(nDays) {
 AdminMessages.init = function(){
   console.log('init timer');
   var now = new Date();
-  var later = now;
+  var later = new Date();
+  later.setMinutes(0);
   later.setHours(this.configData.sendingHours);
   Meteor.setTimeout(function(){
     AdminMessages.trySendMessage();
