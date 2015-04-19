@@ -1,0 +1,127 @@
+<template name="projectsView">
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'projectsIndex'}}">Projects</a></li>
+            <li class="active">view</li>
+        </ol>
+
+        {{#with model}}
+        <div class="title">
+            <h3 class="pull-left">View Blocks #{{_id}}</h3>
+            <div class="toolbar pull-right">
+
+                <a href="{{pathFor 'ProjUpdateInsertProjUpdatesBlogId'}}" class="btn btn-default">Add Project Update</a>
+
+                <a href="{{pathFor 'projectsIndex'}}" class="btn btn-default">Back</a>
+                <a href="{{pathFor 'projectsUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
+            </div>
+        </div>
+            {{> projUpdatesList model}}
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>Title</b></td>
+<td>{{title}}</td>
+</tr>
+<tr>
+<td><b>Header Image</b></td>
+<td>{{headerImg}}</td>
+</tr>
+<tr>
+<td><b>About</b></td>
+<td>{{about}}</td>
+</tr>
+<tr>
+<td><b>Supporters</b></td>
+<td>{{supporters}}</td>
+</tr>
+<tr>
+<td><b>Promote</b></td>
+<td>{{promoteCount}}</td>
+</tr>
+<tr>
+<td><b>Share</b></td>
+<td>{{sharedCount}}</td>
+</tr>
+<tr>
+<td><b>Country</b></td>
+<td>{{country}}</td>
+</tr>
+<tr>
+<td><b>City</b></td>
+<td>{{city}}</td>
+</tr>
+<tr>
+<td><b>ownerid</b></td>
+<td>{{ownerid}}</td>
+</tr>
+<tr>
+<td><b>Owner</b></td>
+<td>{{ownernickname}}</td>
+</tr>
+<tr>
+<td><b>Type</b></td>
+<td>{{type}}</td>
+</tr>
+<tr>
+<td><b>Links to other blocks</b></td>
+<td>{{linkedToBlocks}}</td>
+</tr>
+<tr>
+<td><b>Status</b></td>
+<td>{{status}}</td>
+</tr>
+<tr>
+<td><b>Images</b></td>
+<td>{{imgs}}</td>
+</tr>
+<tr>
+<td><b>Thumbnail</b></td>
+<td>{{thumbnail}}</td>
+</tr>
+<tr>
+<td><b>Contributers</b></td>
+<td>{{contributers}}</td>
+</tr>
+<tr>
+<td><b>Organisers</b></td>
+<td>{{organisers}}</td>
+</tr>
+<tr>
+<td><b>Administrators</b></td>
+<td>{{admins}}</td>
+</tr>
+<tr>
+<td><b>Tags, Keywords</b></td>
+<td>{{tags}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>Created at</b></td>
+                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated at</b></td>
+                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Created by</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>                
+                <tr>
+                    <td><b>Updated By</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>                
+            </tbody>
+        </table>        
+        {{/with}}
+    </div>
+</template>

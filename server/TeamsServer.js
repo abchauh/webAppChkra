@@ -25,7 +25,7 @@ Meteor.publishComposite('teams', function(doc, sort) {
                 /* return all related Jobs */
             {
                 find: function(collection) {
-                return Jobs.find(collection.job);
+                return Posts.find(collection.post);
                 }
             },
         ],

@@ -16,5 +16,8 @@ Template.newsFeed_form.helpers({
         return Meteor.userId();
     },
 
+    dateCreated: function () {
+        return moment(this.dateCreated).format('DD/MM/YYYY');
+    },
     
 });

@@ -23,10 +23,14 @@ Meteor.publishComposite('posts', function(doc, sort) {
                     });
                 }
             },
+            {
+                find: function(collection) {
+                    return LikePost.find();
+                }
+            },
         ],
     }
 });
-
 
 Meteor.methods({
     "Posts.insert": function(doc) {
@@ -35,6 +39,19 @@ Meteor.methods({
             _id: _id,
         }
     },
+    'postLikePost': function(item_id){
+        console.log("dddddd: "+ item_id);
+        var likeD = LikePost.findOne({itemId:item_id,  createdUserId:Meteor.user()._id});
+        if (likeD != undefined) {
+            //console.log(likeD);
+            console.log("Liked Already ... removing");
+            LikePost.remove({itemId:item_id, createdUserId:Meteor.user()._id});
+        }else{
+            console.log("Liked is not defined !");
+            LikePost.insert({itemId:item_id}); //Inserting liked item -- likePost
+        }
+
+    }
 });
 
 /* observing collection */

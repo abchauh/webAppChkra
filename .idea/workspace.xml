@@ -2,7 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="513a55f5-6984-42aa-93aa-b6fb1a15b582" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/Blog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/CampUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CampUpdatesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CampUpdatesServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CampaignsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CausesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CausesServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/CausesUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CausesUpdatesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CausesUpdatesServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/ProjUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/ProjUpdatesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/ProjUpdatesServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/Projects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/blog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/campUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdatesList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdatesList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/campaigns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/causes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesShareBar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/causesUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdatesList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdatesList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/insert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/insert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/insert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/insert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/insert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/insert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/insert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/insert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/postsList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/postsList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/projUpdates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/projUpdatesList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/projUpdatesList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/projects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/view.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/updateArticle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/userProfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/posts/single.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/posts/single.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/updateArticle/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/userProfile/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/userProfile/_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/Posts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/_form.js" afterPath="$PROJECT_DIR$/client/views/campaigns/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/index.html" afterPath="$PROJECT_DIR$/client/views/campUpdates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/index.js" afterPath="$PROJECT_DIR$/client/views/campUpdates/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/insert.html" afterPath="$PROJECT_DIR$/client/views/projects/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/insert.js" afterPath="$PROJECT_DIR$/client/views/projects/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/update.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/update.js" afterPath="$PROJECT_DIR$/client/views/campaigns/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/view.html" afterPath="$PROJECT_DIR$/client/views/campUpdates/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/view.js" afterPath="$PROJECT_DIR$/client/views/projects/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/index.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/index.js" afterPath="$PROJECT_DIR$/client/views/projUpdates/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/insert.html" afterPath="$PROJECT_DIR$/client/views/campaigns/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/insert.js" afterPath="$PROJECT_DIR$/client/views/campaigns/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/update.html" afterPath="$PROJECT_DIR$/client/views/campaigns/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/update.js" afterPath="$PROJECT_DIR$/client/views/blog/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/view.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/view.js" afterPath="$PROJECT_DIR$/client/views/causesUpdates/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections/UpdateArticle.js" afterPath="$PROJECT_DIR$/lib/collections/Campaigns.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections/UserProfile.js" afterPath="$PROJECT_DIR$/lib/collections/Causes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/controllers/UpdateArticleController.js" afterPath="$PROJECT_DIR$/lib/controllers/ProjectsController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/controllers/UserProfileController.js" afterPath="$PROJECT_DIR$/lib/controllers/BlogController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/UpdateArticleServer.js" afterPath="$PROJECT_DIR$/server/ProjectsServer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/UserProfileServer.js" afterPath="$PROJECT_DIR$/server/BlogServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/NewsFeedController.js" afterPath="$PROJECT_DIR$/lib/controllers/NewsFeedController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/NewsFeedServer.js" afterPath="$PROJECT_DIR$/server/NewsFeedServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/PostsController.js" afterPath="$PROJECT_DIR$/lib/controllers/PostsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/PostsServer.js" afterPath="$PROJECT_DIR$/server/PostsServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/TeamsServer.js" afterPath="$PROJECT_DIR$/server/TeamsServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/_form.html" afterPath="$PROJECT_DIR$/client/views/posts/_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/newsFeed/_form.js" afterPath="$PROJECT_DIR$/client/views/newsFeed/_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/_form.js" afterPath="$PROJECT_DIR$/client/views/posts/_form.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/basic/header.html" afterPath="$PROJECT_DIR$/client/templates/basic/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/routers/posts.js" afterPath="$PROJECT_DIR$/client/routers/posts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="appChkra.iws" />
@@ -26,74 +143,14 @@
     <favorites_list name="appChkra" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6508097">
+    <splitter split-orientation="horizontal" split-proportion="0.52714646">
       <split-first>
         <leaf>
-          <file leaf-file-name="NewsFeedServer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/NewsFeedServer.js">
+          <file leaf-file-name="_form.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-20.555555" vertical-offset="540" max-vertical-offset="2280">
-                  <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PostsController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/PostsController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-24.444445" vertical-offset="135" max-vertical-offset="2160">
-                  <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Posts.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/collections/Posts.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1640" max-vertical-offset="2145">
-                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/basic/header.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.607843" vertical-offset="659" max-vertical-offset="1275">
-                  <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NotificationsController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/NotificationsController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2325">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Notifications.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/collections/Notifications.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21341464" vertical-offset="0" max-vertical-offset="2115">
-                  <caret line="7" column="51" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="51" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="OwnersController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/OwnersController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2265">
-                  <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+                <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1350">
+                  <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -102,28 +159,38 @@
           <file leaf-file-name="PostsServer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1035">
+                  <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insert.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/views/posts/insert.html">
+          <file leaf-file-name="Posts_LikePosts.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/collections/Posts_LikePosts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.70561457" vertical-offset="0" max-vertical-offset="3645">
+                  <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FollowListsController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/FollowListsController.js">
+          <file leaf-file-name="causesShareBar.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="2310">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="540">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="causesShareBar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+                  <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -133,11 +200,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_form.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
+          <file leaf-file-name="_form.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8974359" vertical-offset="525" max-vertical-offset="1065">
-                  <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+                <state vertical-scroll-proportion="0.82589287" vertical-offset="0" max-vertical-offset="672">
+                  <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LikePostController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/controllers/LikePostController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="aShareBar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/aShareBar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -153,57 +240,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/views/userProfile/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/votes/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/projects/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/suggests/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/votes/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/followLists/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/causes/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/notifications/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/messages/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/suggests/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/projects/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/onwers/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/notifications/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/newsFeed/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/messages/_form.js" />
-        <option value="$PROJECT_DIR$/client/views/onwers/_form.html" />
-        <option value="$PROJECT_DIR$/client/views/camps/view.html" />
-        <option value="$PROJECT_DIR$/client/views/followLists/_form.html" />
-        <option value="$PROJECT_DIR$/lib/controllers/CampsController.js" />
-        <option value="$PROJECT_DIR$/lib/collections/Teams.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/FollowListsController.js" />
-        <option value="$PROJECT_DIR$/lib/collections/Messages.js" />
-        <option value="$PROJECT_DIR$/client/views/messages/view.html" />
-        <option value="$PROJECT_DIR$/client/views/newsFeed/_form.html" />
-        <option value="$PROJECT_DIR$/lib/collections/NewsFeed.js" />
-        <option value="$PROJECT_DIR$/client/views/newsFeed/index.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/index.html" />
-        <option value="$PROJECT_DIR$/../sample/sample.js" />
-        <option value="$PROJECT_DIR$/../sample/sample.html" />
-        <option value="$PROJECT_DIR$/../sample/pubsublocal/client/client.js" />
-        <option value="$PROJECT_DIR$/server/UsersServer.js" />
-        <option value="$PROJECT_DIR$/client/views/posts/view.html" />
-        <option value="$PROJECT_DIR$/client/templates/basic/header.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/views/posts/indexposts.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/indexposts.js" />
-        <option value="$PROJECT_DIR$/client/views/posts/_form.js" />
-        <option value="$PROJECT_DIR$/client/routers/posts.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/NewsFeedController.js" />
-        <option value="$PROJECT_DIR$/client/templates/energetic/header.html" />
+        <option value="$PROJECT_DIR$/client/views/projUpdates/view.js" />
+        <option value="$PROJECT_DIR$/client/routers/projects.js" />
+        <option value="$PROJECT_DIR$/client/views/projects/projUpdatesList.html" />
+        <option value="$PROJECT_DIR$/client/views/projects/projUpdatesList.js" />
+        <option value="$PROJECT_DIR$/client/views/projects/view.html" />
+        <option value="$PROJECT_DIR$/client/routers/projUpdates.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/ProjUpdatesController.js" />
+        <option value="$PROJECT_DIR$/server/ProjectsServer.js" />
+        <option value="$PROJECT_DIR$/server/ProjUpdatesServer.js" />
+        <option value="$PROJECT_DIR$/client/routers/causesUpdates.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/_form.html" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/_form.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/index.html" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/index.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/insert.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/update.html" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/update.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/view.html" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/view.js" />
+        <option value="$PROJECT_DIR$/client/views/campaigns/causesUpdatesList.html" />
+        <option value="$PROJECT_DIR$/client/views/campaigns/causesUpdatesList.js" />
+        <option value="$PROJECT_DIR$/lib/collections/CausesUpdates.js" />
+        <option value="$PROJECT_DIR$/client/views/causesUpdates/insert.html" />
+        <option value="$PROJECT_DIR$/server/CausesUpdatesServer.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/CausesUpdatesController.js" />
+        <option value="$PROJECT_DIR$/client/views/causes/causesUpdatesList.js" />
+        <option value="$PROJECT_DIR$/client/routers/causes.js" />
+        <option value="$PROJECT_DIR$/client/views/causes/view.html" />
+        <option value="$PROJECT_DIR$/client/views/causes/causesUpdatesList.html" />
+        <option value="$PROJECT_DIR$/server/aShareBar" />
+        <option value="$PROJECT_DIR$/lib/controllers/CausesController.js" />
+        <option value="$PROJECT_DIR$/lib/collections/Causes.js" />
+        <option value="$PROJECT_DIR$/server/CausesServer.js" />
+        <option value="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
+        <option value="$PROJECT_DIR$/mup.json" />
         <option value="$PROJECT_DIR$/lib/router.js" />
-        <option value="$PROJECT_DIR$/client/main.html" />
-        <option value="$PROJECT_DIR$/client/templates/energetic/icons.html" />
-        <option value="$PROJECT_DIR$/server/NewsFeedServer.js" />
-        <option value="$PROJECT_DIR$/client/templates/energetic/index.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/_form.html" />
-        <option value="$PROJECT_DIR$/lib/collections/Posts.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/OwnersController.js" />
         <option value="$PROJECT_DIR$/lib/controllers/PostsController.js" />
-        <option value="$PROJECT_DIR$/client/templates/basic/header.html" />
-        <option value="$PROJECT_DIR$/lib/collections/Notifications.js" />
+        <option value="$PROJECT_DIR$/lib/collections/Posts.js" />
+        <option value="$PROJECT_DIR$/client/views/campaigns/_form.html" />
+        <option value="$PROJECT_DIR$/lib/controllers/CampaignsController.js" />
+        <option value="$PROJECT_DIR$/server/CampaignsServer.js" />
+        <option value="$PROJECT_DIR$/lib/collections/Campaigns.js" />
+        <option value="$PROJECT_DIR$/client/views/campaigns/index.html" />
+        <option value="$PROJECT_DIR$/client/views/campaigns/view.html" />
+        <option value="$PROJECT_DIR$/client/views/posts/_form.html" />
+        <option value="$PROJECT_DIR$/server/aShareBar.js" />
+        <option value="$PROJECT_DIR$/client/views/causes/causesShareBar.html" />
+        <option value="$PROJECT_DIR$/client/views/posts/_form.js" />
+        <option value="$PROJECT_DIR$/server/PostsServer.js" />
+        <option value="$PROJECT_DIR$/lib/collections/LikePost.js" />
+        <option value="$PROJECT_DIR$/lib/collections/Posts_LikePosts.js" />
       </list>
     </option>
   </component>
@@ -211,10 +298,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1846" />
-    <option name="y" value="203" />
-    <option name="width" value="1338" />
-    <option name="height" value="815" />
+    <option name="y" value="64" />
+    <option name="width" value="1920" />
+    <option name="height" value="769" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -239,7 +325,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,24 +368,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,34 +457,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
+              <option name="myItemId" value="causes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,7 +475,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="configurable.group.tools" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -433,16 +483,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/templates/energetic" />
-      <recent name="$PROJECT_DIR$/client/views/posts" />
-      <recent name="$PROJECT_DIR$/../UVChkra" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/lib/controllers" />
+      <recent name="$PROJECT_DIR$/lib/collections" />
+      <recent name="$PROJECT_DIR$/client/views/campaigns" />
+      <recent name="$PROJECT_DIR$/client/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/views/causes" />
+      <recent name="$PROJECT_DIR$/client/views/projects" />
+      <recent name="$PROJECT_DIR$/client/views/campaigns" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -450,10 +511,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -493,27 +550,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1846" y="203" width="1338" height="815" extended-state="0" />
+    <frame x="0" y="64" width="1920" height="769" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2855228" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26158446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14114584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28285715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -533,397 +590,376 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../sample/pubsublocal/client/client.js">
+    <entry file="file://$PROJECT_DIR$/client/routers/causes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="696">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdatesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdatesList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22421524" vertical-offset="0" max-vertical-offset="669">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../sample/pubsublocal/client/options.html">
+    <entry file="file://$PROJECT_DIR$/client/views/causes/insert.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5543478" vertical-offset="0" max-vertical-offset="460">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39589444" vertical-offset="0" max-vertical-offset="682">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/view.html">
+    <entry file="file://$PROJECT_DIR$/server/BlocksServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="945">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="735">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/users/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60126585" vertical-offset="405" max-vertical-offset="1575">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/promoted/_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Promoted.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="1665">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Causes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8344923" vertical-offset="0" max-vertical-offset="2850">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/CausesUpdatesServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/CausesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2640">
+          <caret line="114" column="33" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbproject/project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15393387" vertical-offset="0" max-vertical-offset="877">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbproject/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.123239435" vertical-offset="0" max-vertical-offset="852">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appChkraSSHKey">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/applications/meteoris/configs/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5810617" vertical-offset="0" max-vertical-offset="697">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6879643" vertical-offset="2" max-vertical-offset="675">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8708752" vertical-offset="38" max-vertical-offset="735">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/UsersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13657056" vertical-offset="0" max-vertical-offset="4680">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/CausesServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38988096" vertical-offset="128" max-vertical-offset="825">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0273142" vertical-offset="1336" max-vertical-offset="1995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/posts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/single.js">
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16925247" vertical-offset="0" max-vertical-offset="3120">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/_form.html">
+    <entry file="file://$PROJECT_DIR$/client/views/posts/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08928572" vertical-offset="0" max-vertical-offset="960">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/routers/updateArticle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021156559" vertical-offset="0" max-vertical-offset="709">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/routers/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.528914" vertical-offset="0" max-vertical-offset="709">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/UsersServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34626436" vertical-offset="1559" max-vertical-offset="2565">
-          <caret line="120" column="27" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2961918" vertical-offset="0" max-vertical-offset="709">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/UpdateArticleServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5905172" vertical-offset="39" max-vertical-offset="735">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4017857" vertical-offset="0" max-vertical-offset="672">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/view.js">
+    <entry file="file://$PROJECT_DIR$/client/views/posts/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.11811024" vertical-offset="375" max-vertical-offset="1140">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/view.html">
+    <entry file="file://$PROJECT_DIR$/server/CampaignsServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15625" vertical-offset="105" max-vertical-offset="900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="855">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/insert.js">
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/_form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40086207" vertical-offset="279" max-vertical-offset="975">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/updateArticle/_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/insert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0905173" vertical-offset="759" max-vertical-offset="1455">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/userProfile/_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38081804" vertical-offset="0" max-vertical-offset="709">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/CampaignsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="2625">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333" vertical-offset="220" max-vertical-offset="945">
+          <caret line="36" column="13" selection-start-line="35" selection-start-column="20" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28346458" vertical-offset="300" max-vertical-offset="1995">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/PostsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2505">
+          <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.496063" vertical-offset="585" max-vertical-offset="1425">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Campaigns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7098214" vertical-offset="2208" max-vertical-offset="2880">
+          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/campaigns/_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="195" max-vertical-offset="1770">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/FollowLists.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="2040">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/LikeProj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Blocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="540">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/LikePostController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/NewsFeed.js">
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1725">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/UpdateArticleController.js">
+    <entry file="file://$PROJECT_DIR$/server/aShareBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2115">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/NewsFeedController.js">
+    <entry file="file://$PROJECT_DIR$/server/PromotedServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2640">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6473214" vertical-offset="0" max-vertical-offset="735">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/UpdateArticle.js">
+    <entry file="file://$PROJECT_DIR$/server/LikePostServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1560">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35" vertical-offset="897" max-vertical-offset="2940">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1891892" vertical-offset="29" max-vertical-offset="510">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/basic/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23762377" vertical-offset="0" max-vertical-offset="505">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/basic/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24948025" vertical-offset="0" max-vertical-offset="481">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/FollowListsServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/FollowListsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="2310">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Suggests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/insert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/insert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Owners.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5247525" vertical-offset="770" max-vertical-offset="1950">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/SitesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/NewsFeedServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.555555" vertical-offset="540" max-vertical-offset="2280">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/OwnersController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2265">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.66964287" vertical-offset="0" max-vertical-offset="735">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8974359" vertical-offset="525" max-vertical-offset="1065">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1350">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/PostsController.js">
+    <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.444445" vertical-offset="135" max-vertical-offset="2160">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1035">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
+    <entry file="file://$PROJECT_DIR$/lib/collections/LikePost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32673267" vertical-offset="30" max-vertical-offset="735">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1640" max-vertical-offset="2145">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/basic/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.607843" vertical-offset="659" max-vertical-offset="1275">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/NotificationsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Notifications.js">
+    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21341464" vertical-offset="0" max-vertical-offset="2115">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.82589287" vertical-offset="0" max-vertical-offset="672">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Posts_LikePosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70561457" vertical-offset="0" max-vertical-offset="3645">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding />
         </state>
       </provider>

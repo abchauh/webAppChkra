@@ -1,5 +1,23 @@
+<template name="likedOrNot">
+
+{{#if LikedIdOrNot}}
+    <a href="#" class="btnLiked">Liked</a>
+{{else}} <a href="#" class="btnLiked">Like</a>
+{{/if}}
+
+</template>
+
 <template name="posts_form">
     <form id="posts_form">
+
+        {{> likedOrNot}}
+
+        <label for="_id" class="control-label">_id: {{_id}} </label>
+        <div class="form-group {{#if error 'blogId'}}has-error{{/if}}">
+            <label for="blogId" class="control-label">blogId *</label>
+            <input type="text" id="blogId" value="{{blogId}}" placeholder="blogId" class="form-control" autofocus="true">
+            <span class="help-block">{{error "blogId"}}</span>
+        </div>
 
         <div class="form-group {{#if error 'title'}}has-error{{/if}}">
             <label for="title" class="control-label">Title *</label>
@@ -32,7 +50,7 @@
             <label for="URL" class="control-label">URL</label>
             <input type="text" id="URL" class="form-control">
             <span class="help-block">{{error "URL"}}</span>
-        </div>
+        </div>¡€
         <div class="form-group {{#if error 'status'}}has-error{{/if}}">
             <label for="status" class="control-label">Status</label>
             <select id="status" class="form-control">
@@ -52,6 +70,7 @@
             <label for="tags" class="control-label">Tags</label>
             <input type="text" id="tags" class="form-control">
             <span class="help-block">{{error "tags"}}</span>
+
         </div>
         <div class="form-group {{#if error 'image'}}has-error{{/if}}">
             <label for="image" class="control-label">File</label>
