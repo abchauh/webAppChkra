@@ -6,7 +6,11 @@
             <li><a href="{{pathFor 'causesIndex'}}">Causes</a></li>
             <li class="active">view</li>
         </ol>
-
+        {{#if equals title '@sdfd000000006666'}}
+            {{v1}} is EQual to {{title}}
+        {{else}}
+            {{v1}} is NOT equal to {{v2}}
+        {{/if}}
         {{> causesShareBar model}}
 
 
@@ -39,6 +43,7 @@
 <td><b>About</b></td>
 <td>{{about}}</td>
 </tr>
+
 <tr>
 <td><b>Supporters</b></td>
 <td>{{supporters}}</td>
@@ -47,14 +52,22 @@
 <td><b>Promote</b></td>
 <td>{{promoteCount}}</td>
 </tr>
+
+
+{{#if v2 'w2ww'}}
+
+    {{v1}} is equal to {{v2}}
 <tr>
 <td><b>Share</b></td>
 <td>{{sharedCount}}</td>
 </tr>
+{{/if}}
+
 <tr>
 <td><b>Country</b></td>
 <td>{{country}}</td>
 </tr>
+
 <tr>
 <td><b>City</b></td>
 <td>{{city}}</td>

@@ -2,124 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="513a55f5-6984-42aa-93aa-b6fb1a15b582" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/Blog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/CampUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CampUpdatesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CampUpdatesServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CampaignsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CausesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CausesServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/CausesUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/CausesUpdatesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/CausesUpdatesServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/ProjUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/ProjUpdatesController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/ProjUpdatesServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/Projects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/blog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/campUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdatesList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdatesList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/campaigns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/causes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesShareBar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/causesUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdatesList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdatesList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/postsList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/postsList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/projUpdates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/projUpdatesList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/projUpdatesList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/routers/projects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/causesUpdates/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projects/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/blog/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campUpdates/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/campaigns/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/projUpdates/view.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/updateArticle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/userProfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/posts/single.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/posts/single.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/updateArticle/_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/userProfile/_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/userProfile/_form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/Posts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/_form.js" afterPath="$PROJECT_DIR$/client/views/campaigns/_form.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/index.html" afterPath="$PROJECT_DIR$/client/views/campUpdates/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/index.js" afterPath="$PROJECT_DIR$/client/views/campUpdates/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/insert.html" afterPath="$PROJECT_DIR$/client/views/projects/insert.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/insert.js" afterPath="$PROJECT_DIR$/client/views/projects/insert.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/update.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/update.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/update.js" afterPath="$PROJECT_DIR$/client/views/campaigns/update.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/view.html" afterPath="$PROJECT_DIR$/client/views/campUpdates/view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/updateArticle/view.js" afterPath="$PROJECT_DIR$/client/views/projects/view.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/index.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/index.js" afterPath="$PROJECT_DIR$/client/views/projUpdates/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/insert.html" afterPath="$PROJECT_DIR$/client/views/campaigns/insert.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/insert.js" afterPath="$PROJECT_DIR$/client/views/campaigns/insert.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/update.html" afterPath="$PROJECT_DIR$/client/views/campaigns/update.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/update.js" afterPath="$PROJECT_DIR$/client/views/blog/update.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/view.html" afterPath="$PROJECT_DIR$/client/views/projUpdates/view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/userProfile/view.js" afterPath="$PROJECT_DIR$/client/views/causesUpdates/view.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections/UpdateArticle.js" afterPath="$PROJECT_DIR$/lib/collections/Campaigns.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections/UserProfile.js" afterPath="$PROJECT_DIR$/lib/collections/Causes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/controllers/UpdateArticleController.js" afterPath="$PROJECT_DIR$/lib/controllers/ProjectsController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/controllers/UserProfileController.js" afterPath="$PROJECT_DIR$/lib/controllers/BlogController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/UpdateArticleServer.js" afterPath="$PROJECT_DIR$/server/ProjectsServer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/UserProfileServer.js" afterPath="$PROJECT_DIR$/server/BlogServer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/NewsFeedController.js" afterPath="$PROJECT_DIR$/lib/controllers/NewsFeedController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/NewsFeedServer.js" afterPath="$PROJECT_DIR$/server/NewsFeedServer.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/employees.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/jobs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/newsFeed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routers/teams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/insert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/employees/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/insert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/jobs/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/insert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/newsFeed/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/insert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/teams/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/Employees.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/Jobs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/LikePost.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/NewsFeed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/collections/Teams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/controllers/EmployeesController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/controllers/JobsController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/controllers/LikePostController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/controllers/LikeProjController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/controllers/TeamsController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/EmployeesServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/JobsServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/LikePostServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/TeamsServer.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/_form.html" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/_form.js" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/index.html" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/index.js" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/insert.html" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/insert.js" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/update.html" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/update.js" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/view.html" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/campUpdates/view.js" afterPath="$PROJECT_DIR$/client/views/campaigns/campUpdates/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/_form.html" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/_form.js" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/index.html" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/index.js" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/insert.html" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/insert.js" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/update.html" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/update.js" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/view.html" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/causesUpdates/view.js" afterPath="$PROJECT_DIR$/client/views/causes/causesUpdates/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/_form.html" afterPath="$PROJECT_DIR$/client/views/posts/likePost/_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/_form.js" afterPath="$PROJECT_DIR$/client/views/posts/likePost/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/index.html" afterPath="$PROJECT_DIR$/client/views/posts/likePost/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/index.js" afterPath="$PROJECT_DIR$/client/views/posts/likePost/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/insert.html" afterPath="$PROJECT_DIR$/client/views/posts/likePost/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/insert.js" afterPath="$PROJECT_DIR$/client/views/posts/likePost/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/update.html" afterPath="$PROJECT_DIR$/client/views/posts/likePost/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/update.js" afterPath="$PROJECT_DIR$/client/views/posts/likePost/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/view.html" afterPath="$PROJECT_DIR$/client/views/posts/likePost/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likePost/view.js" afterPath="$PROJECT_DIR$/client/views/posts/likePost/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/_form.html" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/_form.js" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/index.html" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/index.js" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/insert.html" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/insert.js" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/update.html" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/update.js" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/view.html" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/likeProj/view.js" afterPath="$PROJECT_DIR$/client/views/projects/likeProj/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/_form.html" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/_form.js" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/index.html" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/index.js" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/insert.html" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/insert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/insert.js" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/insert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/update.html" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/update.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/update.js" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/update.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/view.html" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/projUpdates/view.js" afterPath="$PROJECT_DIR$/client/views/projects/projUpdates/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/collections/Blocks.js" afterPath="$PROJECT_DIR$/lib/zzz/Blocks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/controllers/BlocksController.js" afterPath="$PROJECT_DIR$/lib/zzz/BlocksController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/FollowLists.js" afterPath="$PROJECT_DIR$/lib/collections/FollowLists.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/PostsController.js" afterPath="$PROJECT_DIR$/lib/controllers/PostsController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/PostsServer.js" afterPath="$PROJECT_DIR$/server/PostsServer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/TeamsServer.js" afterPath="$PROJECT_DIR$/server/TeamsServer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/_form.html" afterPath="$PROJECT_DIR$/client/views/posts/_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/newsFeed/_form.js" afterPath="$PROJECT_DIR$/client/views/newsFeed/_form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/posts/_form.js" afterPath="$PROJECT_DIR$/client/views/posts/_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/causes/causesShareBar.js" afterPath="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/basic/header.html" afterPath="$PROJECT_DIR$/client/templates/basic/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/routers/posts.js" afterPath="$PROJECT_DIR$/client/routers/posts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/causes/view.html" afterPath="$PROJECT_DIR$/client/views/causes/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/causes/view.js" afterPath="$PROJECT_DIR$/client/views/causes/view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="appChkra.iws" />
@@ -149,8 +149,18 @@
           <file leaf-file-name="_form.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1350">
-                  <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1350">
+                  <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NewsFeedController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/controllers/NewsFeedController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2190">
+                  <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -159,18 +169,18 @@
           <file leaf-file-name="PostsServer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1035">
-                  <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1755">
+                  <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Posts_LikePosts.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/collections/Posts_LikePosts.js">
+          <file leaf-file-name="view.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.70561457" vertical-offset="0" max-vertical-offset="3645">
-                  <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+                <state vertical-scroll-proportion="0.6712963" vertical-offset="0" max-vertical-offset="2235">
+                  <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -179,8 +189,8 @@
           <file leaf-file-name="causesShareBar.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="540">
-                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+                  <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -189,8 +199,38 @@
           <file leaf-file-name="causesShareBar.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-                  <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="525">
+                  <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1695">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1995">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Causes.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/collections/Causes.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="2850">
+                  <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -200,21 +240,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_form.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_form.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82589287" vertical-offset="0" max-vertical-offset="672">
+                <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="645">
                   <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LikePostController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/controllers/LikePostController.js">
+          <file leaf-file-name="FollowLists.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/collections/FollowLists.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2055">
+                  <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="view.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/causes/view.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.51339287" vertical-offset="0" max-vertical-offset="672">
+                  <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -223,7 +273,7 @@
           <file leaf-file-name="aShareBar.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/aShareBar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="525">
                   <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
                   <folding />
                 </state>
@@ -240,10 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/views/projUpdates/view.js" />
-        <option value="$PROJECT_DIR$/client/routers/projects.js" />
-        <option value="$PROJECT_DIR$/client/views/projects/projUpdatesList.html" />
-        <option value="$PROJECT_DIR$/client/views/projects/projUpdatesList.js" />
         <option value="$PROJECT_DIR$/client/views/projects/view.html" />
         <option value="$PROJECT_DIR$/client/routers/projUpdates.js" />
         <option value="$PROJECT_DIR$/lib/controllers/ProjUpdatesController.js" />
@@ -267,16 +313,13 @@
         <option value="$PROJECT_DIR$/lib/controllers/CausesUpdatesController.js" />
         <option value="$PROJECT_DIR$/client/views/causes/causesUpdatesList.js" />
         <option value="$PROJECT_DIR$/client/routers/causes.js" />
-        <option value="$PROJECT_DIR$/client/views/causes/view.html" />
         <option value="$PROJECT_DIR$/client/views/causes/causesUpdatesList.html" />
         <option value="$PROJECT_DIR$/server/aShareBar" />
         <option value="$PROJECT_DIR$/lib/controllers/CausesController.js" />
         <option value="$PROJECT_DIR$/lib/collections/Causes.js" />
         <option value="$PROJECT_DIR$/server/CausesServer.js" />
-        <option value="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
         <option value="$PROJECT_DIR$/mup.json" />
         <option value="$PROJECT_DIR$/lib/router.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/PostsController.js" />
         <option value="$PROJECT_DIR$/lib/collections/Posts.js" />
         <option value="$PROJECT_DIR$/client/views/campaigns/_form.html" />
         <option value="$PROJECT_DIR$/lib/controllers/CampaignsController.js" />
@@ -284,13 +327,20 @@
         <option value="$PROJECT_DIR$/lib/collections/Campaigns.js" />
         <option value="$PROJECT_DIR$/client/views/campaigns/index.html" />
         <option value="$PROJECT_DIR$/client/views/campaigns/view.html" />
-        <option value="$PROJECT_DIR$/client/views/posts/_form.html" />
         <option value="$PROJECT_DIR$/server/aShareBar.js" />
         <option value="$PROJECT_DIR$/client/views/causes/causesShareBar.html" />
         <option value="$PROJECT_DIR$/client/views/posts/_form.js" />
-        <option value="$PROJECT_DIR$/server/PostsServer.js" />
         <option value="$PROJECT_DIR$/lib/collections/LikePost.js" />
         <option value="$PROJECT_DIR$/lib/collections/Posts_LikePosts.js" />
+        <option value="$PROJECT_DIR$/server/LikePostServer.js" />
+        <option value="$PROJECT_DIR$/server/PostsServer.js" />
+        <option value="$PROJECT_DIR$/lib/collections/FollowLists.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/PostsController.js" />
+        <option value="$PROJECT_DIR$/client/views/posts/_form.html" />
+        <option value="$PROJECT_DIR$/client/views/causes/causesShareBar.js" />
+        <option value="$PROJECT_DIR$/client/templates/basic/header.html" />
+        <option value="$PROJECT_DIR$/client/views/causes/view.js" />
+        <option value="$PROJECT_DIR$/client/views/causes/view.html" />
       </list>
     </option>
   </component>
@@ -298,8 +348,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="64" />
-    <option name="width" value="1920" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
     <option name="height" value="769" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -353,20 +403,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -385,7 +421,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
+              <option name="myItemId" value="zzz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,28 +454,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appChkra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,6 +476,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="causes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appChkra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appChkra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appChkra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appChkra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,9 +544,11 @@
       <recent name="$PROJECT_DIR$/client/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/views/causes" />
-      <recent name="$PROJECT_DIR$/client/views/projects" />
-      <recent name="$PROJECT_DIR$/client/views/campaigns" />
+      <recent name="$PROJECT_DIR$/lib/zzz" />
+      <recent name="$PROJECT_DIR$/client/views/zzz" />
+      <recent name="$PROJECT_DIR$/client/views" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/collections/zzz" />
     </key>
   </component>
   <component name="RunManager">
@@ -550,7 +606,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="64" width="1920" height="769" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="769" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -558,7 +614,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14114584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -596,41 +652,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/routers/causes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdatesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdatesList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22421524" vertical-offset="0" max-vertical-offset="669">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/causes/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="2040">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/causes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/causes/insert.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39589444" vertical-offset="0" max-vertical-offset="682">
@@ -663,13 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="1665">
           <caret line="58" column="40" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Causes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8344923" vertical-offset="0" max-vertical-offset="2850">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -827,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/PostsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2505">
-          <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/campaigns/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.496063" vertical-offset="585" max-vertical-offset="1425">
@@ -855,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/FollowLists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/LikeProj.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
@@ -869,33 +869,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Blocks.js">
+    <entry file="file://$PROJECT_DIR$/lib/zzz/Blocks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2850">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.html">
+    <entry file="file://$PROJECT_DIR$/server/PromotedServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="540">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.6473214" vertical-offset="0" max-vertical-offset="735">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/LikePostController.js">
+    <entry file="file://$PROJECT_DIR$/lib/controllers/PostsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Posts_LikePosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3645">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdates/_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesUpdates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/causes/causesShareBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1695">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/Causes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="2850">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1350">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/NewsFeedController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2190">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1755">
+          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/FollowLists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="2055">
+          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -908,58 +999,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/PromotedServer.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/basic/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6473214" vertical-offset="0" max-vertical-offset="735">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.9212598" vertical-offset="120" max-vertical-offset="1320">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/causes/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6712963" vertical-offset="0" max-vertical-offset="2235">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/LikePostServer.js">
+    <entry file="file://$PROJECT_DIR$/client/views/causes/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66964287" vertical-offset="0" max-vertical-offset="735">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/PostsServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1035">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/LikePost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82589287" vertical-offset="0" max-vertical-offset="672">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/Posts_LikePosts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70561457" vertical-offset="0" max-vertical-offset="3645">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.51339287" vertical-offset="0" max-vertical-offset="672">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding />
         </state>
       </provider>

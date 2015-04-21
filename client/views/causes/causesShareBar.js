@@ -4,7 +4,6 @@ promotedVar = 1;
 Template.causesShareBar.helpers({
 
     causesUpdates: function() {
-        //console.log(this);
         return CausesUpdates.find({blogId:blogIdVar});
     },
 

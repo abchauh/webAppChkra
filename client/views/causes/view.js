@@ -9,4 +9,16 @@ Template.causesView.events = {
 };
 
 Template.causesView.helpers({
+    v1: function(){
+        return "wwww";
+    },
+    v2: function() {
+        return "11";
+    },
+
+});
+
+UI.registerHelper('equals', function (a, b) {
+    //return a === b;
+    return a == b;
 });
