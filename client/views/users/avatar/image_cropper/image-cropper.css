@@ -1,0 +1,13 @@
+.img-container {
+    display: inline-block;
+}
+
+.preview-wrapper {
+    display: inline-block;
+}
+
+.image-preview {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
