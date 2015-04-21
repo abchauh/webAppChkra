@@ -23,12 +23,20 @@ var readFile = function (file, onFileLoaded, onError) {
     };
     reader.onerror = function (error) {
       onError(error);
-    }
+    };
+    reader.readAsDataURL(file);
   } else {
     onError(new Error('Incorrect file type'));
   }
+};
 
-  reader.readAsDataURL(file);
+var resetDialogContext = function (tmpl) {
+  tmpl.$('#avatar-picker-filename').val('');
+
+  var control = tmpl.$('#avatar-picker-file');
+  control.replaceWith(control.clone(true));
+
+  tmpl.image.set(false);
 };
 
 Template.Step1.onCreated(function () {
@@ -40,8 +48,7 @@ Template.Step1.onRendered(function () {
   var self = this;
 
   $('.modal.avatar-picker').on('hidden.bs.modal', function () {
-    self.$('#avatar-picker-filename').val('');
-    self.image.set(false);
+    resetDialogContext(self);
   });
 });
 
@@ -50,16 +57,20 @@ Template.Step1.events({
     e.target.blur();
     tmpl.find('#avatar-picker-file').click();
   },
+
   'change #avatar-picker-file': function (e, tmpl) {
     tmpl.find('#avatar-picker-filename').value = getFileName(e.target.value);
     tmpl.image.set(false);
-
-    readFile(e.target.files[0], function (url) {
-      tmpl.image.set({path: url});
-    }, function (error) {
-      alert(error.message);
-    });
+    var file = e.target.files[0];
+    if (file) {
+      readFile(file, function (url) {
+        tmpl.image.set({path: url});
+      }, function (error) {
+        alert(error.message);
+      });
+    }
   },
+
   'click .avatar-ready-image': function (e, tmpl) {
     Meteor.users.update({
       _id: Meteor.userId()
@@ -69,9 +80,6 @@ Template.Step1.events({
         'profile.upgraded': new Date()
       }
     });
-  },
-  'click .close-avatar-modal-btn': function (e, tmpl) {
-    $('.modal').hide();
   }
 });
 
