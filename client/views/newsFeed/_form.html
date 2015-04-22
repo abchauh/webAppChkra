@@ -1,0 +1,18 @@
+<template name="newsFeed_form">
+    <form id="newsFeed_form"> 
+        <div class="form-group {{#if error 'headerImg'}}has-error{{/if}}">
+<label for="headerImg" class="control-label">HeaderImg </label>
+<input type="text" id="headerImg" value="{{headerImg}}" placeholder="HeaderImg" class="form-control">
+<span class="help-block">{{error "headerImg"}}</span>
+</div>
+<div class="form-group {{#if error 'colorStyles'}}has-error{{/if}}">
+<label for="colorStyles" class="control-label">ColorStyles </label>
+<input type="text" id="colorStyles" value="{{colorStyles}}" placeholder="ColorStyles" class="form-control">
+<span class="help-block">{{error "colorStyles"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'newsFeedIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

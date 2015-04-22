@@ -39,18 +39,19 @@ Meteor.methods({
             _id: _id,
         }
     },
-    'postLikePost': function(item_id){
+    'postLikePost': function(item_id, itemType){
         console.log("dddddd: "+ item_id);
         var likeD = LikePost.findOne({itemId:item_id,  createdUserId:Meteor.user()._id});
         if (likeD != undefined) {
             //console.log(likeD);
             console.log("Liked Already ... removing");
             LikePost.remove({itemId:item_id, createdUserId:Meteor.user()._id});
+            Feeds.remove({itemId: item_id, createdUserId:Meteor.user()._id});
         }else{
-            console.log("Liked is not defined !");
+            console.log("Liked unDefined ... Adding now!");
             LikePost.insert({itemId:item_id}); //Inserting liked item -- likePost
+            Feeds.insert({itemId: item_id, itemType:itemType});
         }
-
     }
 });
 

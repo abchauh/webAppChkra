@@ -32,7 +32,8 @@ Template.posts_form.events({
         console.log("selected ", doc);
     },
     'click .btnLiked': function (event) {
-        item_id = this._id;
-        Meteor.call('postLikePost', item_id);
+        var item_id = this._id;
+        var itemType = "posts"
+        Meteor.call('postLikePost', item_id,  itemType);
     }
 });
