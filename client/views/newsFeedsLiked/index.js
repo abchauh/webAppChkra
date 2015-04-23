@@ -1,34 +1,21 @@
+Template.newsFeedsLikedIndex.helpers({
 
-Template.newsFeedIndex.helpers({
-    feeds: function () {
-       return Feeds.find(); //return Template.instance().myAsyncValue.get();
-    }
 });
-Template.newsFeedIndex.created = function (){
-    //var self = this;
-    //self.myAsyncValue = new ReactiveVar("Waiting for response from server...");
-    //Meteor.call('feedTitles', function (err, asyncValue) {
-    //    if (err)
-    //        console.log(err);
-    //    else
-    //        self.myAsyncValue.set(asyncValue);
-    //});
-}
 
-Template.newsFeedIndex.events = {
+Template.newsFeedsLikedIndex.events = {
     'click #btnRemove': function(e) {
         e.preventDefault();
         if (confirm("Are you sure want to remove this data?"))
             Router.current().remove(this._id);
     },
     /* sorting by parameter */
-    'click #btnSortheaderImg': function(e) {
-    MeteorisGridView.sort('headerImg');
-    },
-    /* sorting by parameter */
-    'click #btnSortcolorStyles': function(e) {
-    MeteorisGridView.sort('colorStyles');
-    },
+'click #btnSortitemId': function(e) {
+MeteorisGridView.sort('itemId');
+},
+/* sorting by parameter */
+'click #btnSortorder': function(e) {
+MeteorisGridView.sort('order');
+},
 
     'keyup #search': function(e, t) {
         e.preventDefault();
@@ -70,5 +57,4 @@ Template.newsFeedIndex.events = {
         //set checkAll header to uncheck
         $('#checkAll').attr("checked", false);
     },
-
 };

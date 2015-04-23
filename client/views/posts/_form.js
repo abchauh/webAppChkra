@@ -13,7 +13,6 @@ Template.likedOrNot.helpers({
         if (likedAlready != undefined){
             return true;
         } else return false;
-
     },
 });
 
