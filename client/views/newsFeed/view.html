@@ -11,58 +11,45 @@
         <div class="title">
             <h3 class="pull-left">View NewsFeed #{{_id}}</h3>
             <div class="toolbar pull-right">
-                <a href="{{pathFor 'newsFeedIndex'}}" class="btn btn-default">Back</a>
-                {{#if isOwner}}
-                    <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-info">Update</a>
-                    <a id="btnRemove" class="btn btn-danger">Remove</a>
-                {{/if}}
+                <a href="{{pathFor 'newsFeedIndex'}}" class="btn btn-default">Back</a> 
+                <a href="{{pathFor 'newsFeedUpdate'}}" class="btn btn-info">Update</a>
+                <a id="btnRemove" class="btn btn-danger">Remove</a>
             </div>
         </div>
         <div class="clearfix"></div>
         <table class="table">
             <tbody>
                 <tr>
-                    <td><b>userId</b></td>
-                    <td>{{userId}}</td>
-                </tr>
-                <tr>
-                    <td><b>Date Created</b></td>
-                    <td>{{meteorisFormatter 'date' dateCreated}}</td>
-                </tr>
-                <tr>
-                    <td><b>Date Status Changed</b></td>
-                    <td>{{meteorisFormatter 'date' dateStatusChanged}}</td>
-                </tr>
-                <tr>
-                    <td><b>Status</b></td>
-                    <td>{{status}}</td>
-                </tr>
-                <tr>
-                    <td><b>Post ID</b></td>
-                    <td>{{postID}}</td>
-                </tr>
-                <!--tr>
+<td><b>HeaderImg</b></td>
+<td>{{headerImg}}</td>
+</tr>
+<tr>
+<td><b>ColorStyles</b></td>
+<td>{{colorStyles}}</td>
+</tr>
+
+<!--                <tr>
                     <td><b>Image</b></td>
                     <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
-                </tr-->
+                </tr>                -->
                 <tr>
                     <td><b>Created at</b></td>
                     <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Updated at</b></td>
                     <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Created by</b></td>
                     <td>{{createdUser.profile.name}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Updated By</b></td>
                     <td>{{updatedUser.profile.name}}</td>
-                </tr>
+                </tr>                
             </tbody>
-        </table>
+        </table>        
         {{/with}}
     </div>
 </template>

@@ -1,0 +1,28 @@
+<template name="feeds_form">
+    <form id="feeds_form"> 
+        <div class="form-group {{#if error 'itemType'}}has-error{{/if}}">
+<label for="itemType" class="control-label">ItemType </label>
+<input type="text" id="itemType" value="{{itemType}}" placeholder="ItemType" class="form-control">
+<span class="help-block">{{error "itemType"}}</span>
+</div>
+<div class="form-group {{#if error 'itemId'}}has-error{{/if}}">
+<label for="itemId" class="control-label">ItemId </label>
+<input type="text" id="itemId" value="{{itemId}}" placeholder="ItemId" class="form-control">
+<span class="help-block">{{error "itemId"}}</span>
+</div>
+<div class="form-group {{#if error 'status'}}has-error{{/if}}">
+<label for="status" class="control-label">Status </label>
+<input type="text" id="status" value="{{status}}" placeholder="Status" class="form-control">
+<span class="help-block">{{error "status"}}</span>
+</div>
+<div class="form-group {{#if error 'order'}}has-error{{/if}}">
+<label for="order" class="control-label">Order </label>
+<input type="number" id="order" value="{{order}}" placeholder="Order" class="form-control">
+<span class="help-block">{{error "order"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'feedsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

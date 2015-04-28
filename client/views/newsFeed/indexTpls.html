@@ -1,0 +1,46 @@
+<template name="nFlikedOrNot">
+    {{#if nFLikedIdOrNot}}
+        <a href="#" class="btnnFLiked">Shared</a>
+    {{else}} <a href="#" class="btnnFLiked">Share</a>
+    {{/if}}
+</template>
+
+<template name="TplShowPost">
+   :::::::::: : : {{_id}} {{itemType}}<br />
+    Title: {{postItem.title}}
+       <br />
+</template>
+<template name="TplShowProject">
+    ::::::::::: : {{_id}} {{itemType}}<br />
+    Title: {{projItem.title}}
+    <br />
+</template>
+<template name="TplShowCampaign">
+    :::::::::: : :{{_id}}  {{itemType}}<br />
+    Title: {{campItem.title}}
+    <br />
+</template>
+<template name="tplSuggestPosts"><br />
+Suggested Posts <br />
+    {{#each sugPosts}}
+        {{title}} : <a href="{{pathFor 'postsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+         <img class="image2" style="width: 150px; margin: 13px;" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/>
+        {{> nFlikedOrNot}}
+    {{/each}}
+</template>
+
+<template name="tplSuggestCamps"><br />
+    Suggested Campaigns <br />{{#each sugCamps}}
+        {{title}} : <a href="{{pathFor 'campaignsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+
+        <img class="image2" style="width: 150px; margin: 13px;" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/>
+    {{/each}}
+</template>
+
+<template name="tplSuggestProjs"><br />
+Suggested Projects <br />{{#each sugProjs}}
+        {{title}} : <a href="{{pathFor 'projectsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+
+        <img class="image2" style="width: 150px; margin: 13px;" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/>
+    {{/each}}
+</template>

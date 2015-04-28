@@ -12,6 +12,11 @@ Router.route('posts/insert/', {
     controller: PostsController,
     action: 'insert',
 });
+Router.route('posts/insert/:_id?', {
+    name: 'postsInsertPostBlogId',
+    controller: PostsController,
+    action: 'InsertPostBlogId',
+});
 Router.route('posts/update/:_id?', {
     name: 'postsUpdate',
     controller: PostsController,

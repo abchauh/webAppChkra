@@ -35,6 +35,7 @@
         </div>
     </div>
     <hr/>
+
     <h4>Change Profile</h4>
     <form id="change_profile_form">
         <div class="form-group">
@@ -47,6 +48,7 @@
                     <input type="text" id="name" value="{{profile.name}}" placeholder="Name" class="form-control" disabled>
                 {{/if}}
             </div>
+
             <label for="acctType" class="control-label">Account Type</label>
             <select id="acctType" placeholder="Name" class="form-control" name="acctType" >
                 <option></option>
@@ -63,6 +65,7 @@
             <label for="lName" class="control-label">Last Name</label>
             <input type="text" id="lName" value="{{profile.lName}}" placeholder="Last Name" class="form-control">
             <label for="lName" class="control-label">Last Name</label>
+
             <label for="bio" class="control-label">User Bio</label>
             <input type="text" id="bio" value="{{profile.bio}}" placeholder="bio" class="form-control">
             {{> countryInput}}
@@ -79,14 +82,17 @@
             <label for="Avatar" class="control-label">Avatar</label>
             <input type="text" id="Avatar" value="{{profile.Avatar}}" placeholder="Avatar" class="form-control">
             <label for="dob" class="control-label">Date of Birth</label>
-            <input type="text" id="dob" value="{{profile.dob}}" placeholder="dob" class="form-control date-of-birth">
+
+            <input type="text" id="dob" value="{{profile.dob}}" placeholder="dob" class="form-control">
             <label for="sex" class="control-label">Sex</label>
             <input type="text" id="sex" value="{{profile.sex}}" placeholder="sex" class="form-control">
         </div>
-        <button id="btnChangeProfile" type="submit" class="btn btn-success">Submit</button>
+        <button id="btnChangeProfile" type="submit" class="btn btn-success">Submit</button>                
     </form>
+
     {{/with}}
     <hr/>
+
     <h4>Change Password</h4>
     <form id="change_password_form">
         <div class="form-group">

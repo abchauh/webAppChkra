@@ -1,42 +1,41 @@
+
 Template.newsFeedIndex.helpers({
-    isOwner: function() {
-        return this.data.userId === Meteor.userId();
+    feeds: function () {
+       return Feeds.find(); //return Template.instance().myAsyncValue.get();
     }
 });
+Template.newsFeedIndex.created = function (){
+    //var self = this;
+    //self.myAsyncValue = new ReactiveVar("Waiting for response from server...");
+    //Meteor.call('feedTitles', function (err, asyncValue) {
+    //    if (err)
+    //        console.log(err);
+    //    else
+    //        self.myAsyncValue.set(asyncValue);
+    //});
+}
 
 Template.newsFeedIndex.events = {
-    'click #btnRemove': function (e) {
+    'click #btnRemove': function(e) {
         e.preventDefault();
         if (confirm("Are you sure want to remove this data?"))
             Router.current().remove(this._id);
     },
     /* sorting by parameter */
-    'click #btnSortuserID': function (e) {
-        MeteorisGridView.sort('userId');
+    'click #btnSortheaderImg': function(e) {
+    MeteorisGridView.sort('headerImg');
     },
     /* sorting by parameter */
-    'click #btnSortdateCreated': function (e) {
-        MeteorisGridView.sort('dateCreated');
-    },
-    /* sorting by parameter */
-    'click #btnSortdateStatusChanged': function (e) {
-        MeteorisGridView.sort('dateStatusChanged');
-    },
-    /* sorting by parameter */
-    'click #btnSortstatus': function (e) {
-        MeteorisGridView.sort('status');
-    },
-    /* sorting by parameter */
-    'click #btnSortpostID': function (e) {
-        MeteorisGridView.sort('postID');
+    'click #btnSortcolorStyles': function(e) {
+    MeteorisGridView.sort('colorStyles');
     },
 
-    'keyup #search': function (e, t) {
+    'keyup #search': function(e, t) {
         e.preventDefault();
-        Router.current().search(t);
+        Router.current().search(t);        
     },
     /* check all checkbox */
-    'change #checkAll': function (e) {
+    'change #checkAll': function(e) {
         e.preventDefault();
         var checkboxes = $('.checkAll');
         for (var i = 0, n = checkboxes.length; i < n; i++) {
@@ -44,12 +43,11 @@ Template.newsFeedIndex.events = {
         }
     },
     /* remove all selected item */
-    'click #btnRemoveAll': function (e) {
+    'click #btnRemoveAll': function(e) {
         e.preventDefault();
         var checkboxes = $('.checkAll');
         var checkedLength = 0;
-        var i;
-        for (i = 0; i < checkboxes.length; i++) {
+        for (var i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
                 checkedLength++;
             }
@@ -58,7 +56,7 @@ Template.newsFeedIndex.events = {
         if (checkedLength > 0) {
             if (confirm("Are you sure want to remove? (total " + checkedLength + " data will be removed)")) {
                 // loop over them all
-                for (i = 0; i < checkboxes.length; i++) {
+                for (var i = 0; i < checkboxes.length; i++) {
                     // And stick the checked ones onto an array...
                     if (checkboxes[i].checked) {
                         Router.current().remove($(checkboxes[i]).val());
@@ -72,4 +70,5 @@ Template.newsFeedIndex.events = {
         //set checkAll header to uncheck
         $('#checkAll').attr("checked", false);
     },
+
 };

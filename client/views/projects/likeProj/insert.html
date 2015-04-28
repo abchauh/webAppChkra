@@ -1,0 +1,19 @@
+<template name="likeProjInsert">    
+    <div class="container">
+        <!--Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
+            <li><a href="{{pathFor 'likeProjIndex'}}">LikeProj</a></li>
+            <li class="active">insert</li>
+        </ol>
+
+        <div id="basic-form">
+            <div class="title">
+                <h3 class="pull-left">Insert LikeProj</h3>
+            </div>
+            <div class="clearfix"></div>
+
+            {{> likeProj_form}}  
+        </div>        
+    </div>
+</template>

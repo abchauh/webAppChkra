@@ -1,0 +1,30 @@
+<template name="causesShareBar">
+    <p>
+        Share bar
+        <a id="vbt" class="promote">Promote </a> :: <a id="vbt" class="flagbtn">Flag</a>
+    </p>
+
+
+    {{title}} : {{promoteCount}}
+
+    {{#each causesUpdates}}
+        <tr>
+            <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
+            <td>{{title}}</td>
+            <td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+            <td>{{createdUser.profile.name}}</td>
+            <td>UserId:{{createdUserId}}</td>
+            <td>
+                <a href="{{pathFor 'causesUpdatesView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
+                <a href="{{pathFor 'causesUpdatesUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+
+            </td>
+        </tr>
+    {{/each}}
+    {{causePromotes}}
+
+    <br />
+
+
+</template>

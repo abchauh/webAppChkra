@@ -1,5 +1,5 @@
 Template.newsFeed_form.rendered = function() {
-    $('#dateCreated').datepicker();$('#dateStatusChanged').datepicker();
+    
 };
 
 Template.newsFeed_form.helpers({
@@ -12,9 +12,5 @@ Template.newsFeed_form.helpers({
         if (this._id === _id)
             return "selected";
     },
-    CurrentUserID: function(){
-        return Meteor.userId();
-    },
-
     
 });

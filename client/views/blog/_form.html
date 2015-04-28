@@ -1,0 +1,111 @@
+<template name="blog_form">
+    <form id="campaigns_form">
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>
+        <div class="form-group {{#if error 'title'}}has-error{{/if}}">
+<label for="title" class="control-label">Title *</label>
+<input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
+<span class="help-block">{{error "title"}}</span>
+</div>
+<div class="form-group {{#if error 'headerImg'}}has-error{{/if}}">
+<label for="headerImg" class="control-label">Header Image </label>
+<input type="text" id="headerImg" value="{{headerImg}}" placeholder="Header Image" class="form-control">
+<span class="help-block">{{error "headerImg"}}</span>
+</div>
+<div class="form-group {{#if error 'about'}}has-error{{/if}}">
+<label for="about" class="control-label">About </label>
+<input type="text" id="about" value="{{about}}" placeholder="About" class="form-control">
+<span class="help-block">{{error "about"}}</span>
+</div>
+<div class="form-group {{#if error 'supporters'}}has-error{{/if}}">
+<label for="supporters" class="control-label">Supporters </label>
+<input type="text" id="supporters" value="{{supporters}}" placeholder="Supporters" class="form-control">
+<span class="help-block">{{error "supporters"}}</span>
+</div>
+<div class="form-group {{#if error 'promoteCount'}}has-error{{/if}}">
+<label for="promoteCount" class="control-label">Promote </label>
+<input type="text" id="promoteCount" value="{{promoteCount}}" placeholder="Promote" class="form-control">
+<span class="help-block">{{error "promoteCount"}}</span>
+</div>
+<div class="form-group {{#if error 'sharedCount'}}has-error{{/if}}">
+<label for="sharedCount" class="control-label">Share </label>
+<input type="text" id="sharedCount" value="{{sharedCount}}" placeholder="Share" class="form-control">
+<span class="help-block">{{error "sharedCount"}}</span>
+</div>
+<div class="form-group {{#if error 'country'}}has-error{{/if}}">
+<label for="country" class="control-label">Country </label>
+<input type="text" id="country" value="{{country}}" placeholder="Country" class="form-control">
+<span class="help-block">{{error "country"}}</span>
+</div>
+<div class="form-group {{#if error 'city'}}has-error{{/if}}">
+<label for="city" class="control-label">City </label>
+<input type="text" id="city" value="{{city}}" placeholder="City" class="form-control">
+<span class="help-block">{{error "city"}}</span>
+</div>
+<div class="form-group {{#if error 'ownerid'}}has-error{{/if}}">
+<label for="ownerid" class="control-label">ownerid </label>
+<input type="text" id="ownerid" value="{{ownerid}}" placeholder="ownerid" class="form-control">
+<span class="help-block">{{error "ownerid"}}</span>
+</div>
+<div class="form-group {{#if error 'ownernickname'}}has-error{{/if}}">
+<label for="ownernickname" class="control-label">Owner </label>
+<input type="text" id="ownernickname" value="{{ownernickname}}" placeholder="Owner" class="form-control">
+<span class="help-block">{{error "ownernickname"}}</span>
+</div>
+<div class="form-group {{#if error 'type'}}has-error{{/if}}">
+
+
+    <select id="type" placeholder="Campaign" class="form-control" name="type" >
+        <option></option>
+        <option value="1" {{getSelected type "1"}}>Project</option>
+        <option value="2" {{getSelected type "2"}}>Campaign</option>
+        <option value="3" {{getSelected type "3"}}>Cause</option>
+        <option value="4" {{getSelected type "4"}}>Blog</option>
+    </select>
+
+</div>
+<div class="form-group {{#if error 'linkedToBlocks'}}has-error{{/if}}">
+<label for="linkedToBlocks" class="control-label">Links to other blocks </label>
+<input type="text" id="linkedToBlocks" value="{{linkedToBlocks}}" placeholder="Links to other blocks" class="form-control">
+<span class="help-block">{{error "linkedToBlocks"}}</span>
+</div>
+<div class="form-group {{#if error 'status'}}has-error{{/if}}">
+<label for="status" class="control-label">Status </label>
+<input type="text" id="status" value="{{status}}" placeholder="Status" class="form-control">
+<span class="help-block">{{error "status"}}</span>
+</div>
+<div class="form-group {{#if error 'imgs'}}has-error{{/if}}">
+<label for="imgs" class="control-label">Images </label>
+<input type="text" id="imgs" value="{{imgs}}" placeholder="Images" class="form-control">
+<span class="help-block">{{error "imgs"}}</span>
+</div>
+<div class="form-group {{#if error 'thumbnail'}}has-error{{/if}}">
+<label for="thumbnail" class="control-label">Thumbnail </label>
+<input type="text" id="thumbnail" value="{{thumbnail}}" placeholder="Thumbnail" class="form-control">
+<span class="help-block">{{error "thumbnail"}}</span>
+</div>
+<div class="form-group {{#if error 'contributers'}}has-error{{/if}}">
+<label for="contributers" class="control-label">Contributers </label>
+<input type="text" id="contributers" value="{{contributers}}" placeholder="Contributers" class="form-control">
+<span class="help-block">{{error "contributers"}}</span>
+</div>
+<div class="form-group {{#if error 'organisers'}}has-error{{/if}}">
+<label for="organisers" class="control-label">Organisers </label>
+<input type="text" id="organisers" value="{{organisers}}" placeholder="Organisers" class="form-control">
+<span class="help-block">{{error "organisers"}}</span>
+</div>
+<div class="form-group {{#if error 'admins'}}has-error{{/if}}">
+<label for="admins" class="control-label">Administrators </label>
+<input type="text" id="admins" value="{{admins}}" placeholder="Administrators" class="form-control">
+<span class="help-block">{{error "admins"}}</span>
+</div>
+<div class="form-group {{#if error 'tags'}}has-error{{/if}}">
+<label for="tags" class="control-label">Tags, Keywords </label>
+<input type="text" id="tags" value="{{tags}}" placeholder="Tags, Keywords" class="form-control">
+<span class="help-block">{{error "tags"}}</span>
+</div>
+
+
+        <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
+    </form>
+</template>
+
