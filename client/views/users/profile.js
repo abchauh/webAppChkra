@@ -19,9 +19,15 @@ Template.usersProfile.events = {
   },
   'click .change-username-btn': function (e, t) {
     var element = $('#name')[0];
-    Meteor.call('UserProfile.changeUsername', element.value, function (err, res) {
-      console.log(err || res);
-    });
+      if (element.value != this.profile.name){
+          Meteor.call('UserProfile.changeUsername', element.value, function (error,  result) {
+              if (result != "notChanged"){
+                  sAlert.info('Successfully changed the username to '+element, {effect: 'jelly', position: 'bottom', timeout: '2500'});
+              } else sAlert.error('Username already taken.', {effect: 'jelly', position: 'bottom', timeout: '2500'});
+
+          });
+      }
+
   }
 };
 

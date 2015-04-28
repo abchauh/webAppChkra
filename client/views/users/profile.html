@@ -40,7 +40,7 @@
     <form id="change_profile_form">
         <div class="form-group">
             <div class="username-container">
-                <label for="name" class="control-label">Name * <i>You can to change name only once!</i></label>
+                <label for="name" class="control-label">Name * <i>You can change name only once!</i></label>
                 {{#if allowChangeName}}
                     <input type="text" id="name" value="{{profile.name}}" placeholder="Name" class="form-control" contenteditable>
                     <input type="button" value="Change" class="btn btn-default change-username-btn">
@@ -83,7 +83,7 @@
             <input type="text" id="Avatar" value="{{profile.Avatar}}" placeholder="Avatar" class="form-control">
             <label for="dob" class="control-label">Date of Birth</label>
 
-            <input type="text" id="dob" value="{{profile.dob}}" placeholder="dob" class="form-control">
+            <input type="text" id="dob" value="{{profile.dob}}" placeholder="dob" class="form-control date-of-birth">
             <label for="sex" class="control-label">Sex</label>
             <input type="text" id="sex" value="{{profile.sex}}" placeholder="sex" class="form-control">
         </div>

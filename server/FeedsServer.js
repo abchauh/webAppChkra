@@ -23,7 +23,10 @@ Meteor.publishComposite('feeds', function(doc, sort) {
 });
 
 function changeUsername(username) {
-  return Meteor.users.update({_id: Meteor.userId(), usernameEdited: { $exists: false }}, {$set: {'profile.name': username, usernameEdited: true}});
+
+    if (!Meteor.users.findOne({'profile.name':username})){
+        return Meteor.users.update({_id: Meteor.userId(), usernameEdited: { $exists: false }}, {$set: {'profile.name': username, usernameEdited: true}});
+    } else return "notChanged";
 }
 
 Meteor.methods({
@@ -43,8 +46,8 @@ Meteor.methods({
   "UserProfile.changeUsername": function(username) {
     return changeUsername(username);
   }
-});
 
+});
 /* observing collection */
 /* uncomment to use
  var query = Feeds.find({});
