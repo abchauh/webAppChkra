@@ -1,0 +1,78 @@
+.avatar-picker-step1 .panel {
+  margin-bottom: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.avatar-picker-step1 .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.avatar-picker-step1 .btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+.avatar-picker-step1 input#avatar-picker-filename {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.avatar-ready-image button.btn.btn-danger.btn-xs {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  line-height: 16pt;
+  width: 20pt;
+  height: 20pt;
+  font-size: 14pt;
+  border-radius: 50% !important;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+}
+
+.avatar-ready-image:hover button.btn.btn-danger.btn-xs{
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.avatars-container {
+  text-align: center;
+}
+
+.avatar-ready-image.col-md-3 {
+  float: initial;
+  display: inline-block;
+  height: auto;
+  width: 150px;
+  margin: 5px;
+  padding: 0;
+}
+
+.img-rounded {
+  border-radius: 6px;
+  width: 150px;
+  height: auto;
+}
+
+button.btn.btn-default.close-avatar-modal-btn {
+  float: right;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 20pt;
+  height: 20pt;
+  margin-top: -2px;
+}

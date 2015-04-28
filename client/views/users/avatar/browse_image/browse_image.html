@@ -1,0 +1,56 @@
+<template name="Step1">
+    <div class="avatar-picker-step1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Upload an image
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    Browse <input type="file" id="avatar-picker-file">
+                  </span>
+                </span>
+                            <input type="text" class="form-control" readonly id="avatar-picker-filename">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.panel -->
+
+        <!--image crop panel-->
+        {{#if image}}
+            {{> ImageCropper image}}
+        {{else}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Or select image from gallery
+                </div>
+                <div class="panel-body">
+                    <div class="container-fluid">
+                        <div class="avatars-container row">
+                            <div class="avatar-ready-image col-md-3">
+                                <img src="/images/avatars/no_image.jpg" alt="No image!" class="img-rounded">
+                            </div>
+                            {{#each avatars}}
+                                <div class="avatar-ready-image col-md-3">
+                                    <img src="{{url}}" class="img-rounded">
+                                    {{#FS.DeleteButton class="btn btn-danger btn-xs"}}<i
+                                            class="fa fa-trash"></i>{{/FS.DeleteButton}}
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>

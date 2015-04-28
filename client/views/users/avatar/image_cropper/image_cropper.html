@@ -1,0 +1,23 @@
+<template name="ImageCropper">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Crop image
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="img-container col-md-6">
+                    <img src="{{path}}" class="img-responsive cropper-hidden">
+                </div>
+                <div class="preview-wrapper col-md-2">
+                    <strong>Preview:</strong>
+
+                    <div class="image-preview"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-image" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+</template>

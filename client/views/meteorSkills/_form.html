@@ -1,0 +1,23 @@
+<template name="meteorSkills_form">
+    <form id="meteorSkills_form"> 
+        <div class="form-group {{#if error 'name'}}has-error{{/if}}">
+<label for="name" class="control-label">Name *</label>
+<input type="text" id="name" value="{{name}}" placeholder="Name" class="form-control">
+<span class="help-block">{{error "name"}}</span>
+</div>
+<div class="form-group {{#if error 'description'}}has-error{{/if}}">
+<label for="description" class="control-label">Description </label>
+<input type="text" id="description" value="{{description}}" placeholder="Description" class="form-control">
+<span class="help-block">{{error "description"}}</span>
+</div>
+<div class="form-group {{#if error 'level'}}has-error{{/if}}">
+<label for="level" class="control-label">Level </label>
+<input type="number" id="level" value="{{level}}" placeholder="Level" class="form-control">
+<span class="help-block">{{error "level"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
+        <a href="{{pathFor 'meteorSkillsIndex'}}" class="btn btn-default">Back</a>                        
+    </form>
+</template>
+

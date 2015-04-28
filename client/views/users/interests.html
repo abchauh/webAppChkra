@@ -1,0 +1,25 @@
+<template name="Interests">
+<h4>Interests</h4>
+{{#if isInterestsExists}}
+	<ul class="interests-list">
+		{{#each interests}}
+		<li>
+			<h5>{{interestName}}</h5>
+			<p>{{order}}</p>
+			<button class="btn btn-default remove-interest-btn"><i class="fa fa-trash"></i></button>
+		</li>
+		{{/each}}
+	</ul>
+{{else}}
+	<h5>You don't have not interest?</h5>
+{{/if}}
+<label for="add-interest-form" class="control-label"><h4>New interest</h4></label>
+<form id="add-interest-form">
+	<div class="form-group">
+		<div class="username-container">
+			<input type="text" id="new-interest-name" placeholder="photo" class="form-control" contenteditable>
+			<input type="button" rows="3" value="Submit" class="btn btn-primary add-interest-btn">
+		</div>
+	</div>
+</form>
+</template>

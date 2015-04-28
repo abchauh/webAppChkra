@@ -1,0 +1,32 @@
+.add-interest-btn {
+  position: relative;
+  margin-top: 10px;
+  width: inherit;
+}
+
+ul.interests-list {
+	list-style: none;
+	padding: 0;
+}
+
+ul.interests-list li {
+  box-shadow: 1px 2px 7px grey;
+  margin-bottom: 5px;
+  padding: 2px 10px;
+  position: relative;
+}
+
+button.remove-interest-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent !important;
+  border: none;
+  font-size: 16pt;
+}
+
+button.remove-interest-btn :hover{
+	background-color: transparent !important;
+	border: none;
+	color: red;
+}
