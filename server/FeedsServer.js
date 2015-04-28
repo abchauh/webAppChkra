@@ -18,11 +18,13 @@ Meteor.publishComposite('feeds', function(doc, sort) {
                     });
                 }
             },
-            
         ],
     }
 });
 
+function changeUsername(username) {
+  return Meteor.users.update({_id: Meteor.userId(), usernameEdited: { $exists: false }}, {$set: {'profile.name': username, usernameEdited: true}});
+}
 
 Meteor.methods({
     "Feeds.insert": function(doc) {
@@ -31,6 +33,16 @@ Meteor.methods({
             _id: _id,
         }
     },
+
+  "UserProfile.insert": function(doc) {
+    var _id = UserProfile.insert(doc);
+    return {
+      _id: _id,
+    }
+  },
+  "UserProfile.changeUsername": function(username) {
+    return changeUsername(username);
+  }
 });
 
 /* observing collection */

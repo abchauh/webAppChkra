@@ -49,7 +49,6 @@ fourseven:scss
 comerc:bs-typeahead
 meteorhacks:npm
 npm-container
-reactive-var
 cfs:graphicsmagick
 cfs:s3
 cfs:ui
@@ -58,4 +57,5 @@ matb33:collection-hooks
 chrismbeckett:toastr
 cmather:handlebars-server
 jonblum:jquery-cropper
+reactive-var
 praxie:canvas-to-blob
