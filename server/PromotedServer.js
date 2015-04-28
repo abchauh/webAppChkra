@@ -22,6 +22,9 @@ Meteor.publishComposite('promoted', function(doc, sort) {
     }
 });
 
+function changeUsername(username) {
+  return Meteor.users.update({_id: Meteor.userId(), usernameEdited: { $exists: false }}, {$set: {'profile.name': username, usernameEdited: true}});
+}
 
 Meteor.methods({
     "Promoted.insert": function(doc) {
