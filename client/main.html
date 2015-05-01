@@ -2,6 +2,20 @@
     <title>Meteoris</title>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/svg/logo.svg">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/component.css" />
+    <script src="/js/modernizr.custom.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/gnmenu.js"></script>
+    <script>
+        // A $( document ).ready() block.
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            console.log(document.getElementById('gn-menu'));
+            new gnMenu( document.getElementById('gn-menu'));
+        });
+    </script>
 </head>
 <template name="basic">
 {{> sAlert}}
