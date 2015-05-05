@@ -1,4 +1,4 @@
-<template name="campaignsView2">
+<template name="campaignsView">
     <div class="container">
         <!--Breadcrumbs-->
         <ol class="breadcrumb">
@@ -19,242 +19,110 @@
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
             </div>
         </div>
-        {{> campUpdatesList model}}
+            {{> campUpdatesList model}}
         <div class="clearfix"></div>
         <table class="table">
             <tbody>
                 <tr>
-                    <td><b>Title</b></td>
-                    <td>{{title}}</td>
-                </tr>
-                <tr>
-                    <td><b>Header Image</b></td>
-                    <td><img src="{{#if image}}{{app " baseUrl "}}{{image.url}}{{else}}{{app "baseUrl "}}/images/noimage.jpg{{/if}}"/></td>
+<td><b>Title</b></td>
+<td>{{title}}</td>
+</tr>
+<tr>
+<td><b>Header Image</b></td>
+    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
 
-                </tr>
-                <tr>
-                    <td><b>About</b></td>
-                    <td>{{about}}</td>
-                </tr>
-                <tr>
-                    <td><b>Supporters</b></td>
-                    <td>{{supporters}}</td>
-                </tr>
-                <tr>
-                    <td><b>Promote</b></td>
-                    <td>{{promoteCount}}</td>
-                </tr>
-                <tr>
-                    <td><b>Share</b></td>
-                    <td>{{sharedCount}}</td>
-                </tr>
-                <tr>
-                    <td><b>Country</b></td>
-                    <td>{{country}}</td>
-                </tr>
-                <tr>
-                    <td><b>City</b></td>
-                    <td>{{city}}</td>
-                </tr>
-                <tr>
-                    <td><b>ownerid</b></td>
-                    <td>{{ownerid}}</td>
-                </tr>
-                <tr>
-                    <td><b>Owner</b></td>
-                    <td>{{ownernickname}}</td>
-                </tr>
-                <tr>
-                    <td><b>Type</b></td>
-                    <td>{{type}}</td>
-                </tr>
-                <tr>
-                    <td><b>Links to other blocks</b></td>
-                    <td>{{linkedToBlocks}}</td>
-                </tr>
-                <tr>
-                    <td><b>Status</b></td>
-                    <td>{{status}}</td>
-                </tr>
-                <tr>
-                    <td><b>Images</b></td>
-                    <td>{{imgs}}</td>
-                </tr>
-                <tr>
-                    <td><b>Thumbnail</b></td>
-                    <td>{{thumbnail}}</td>
-                </tr>
-                <tr>
-                    <td><b>Contributers</b></td>
-                    <td>{{contributers}}</td>
-                </tr>
-                <tr>
-                    <td><b>Organisers</b></td>
-                    <td>{{organisers}}</td>
-                </tr>
-                <tr>
-                    <td><b>Administrators</b></td>
-                    <td>{{admins}}</td>
-                </tr>
-                <tr>
-                    <td><b>Tags, Keywords</b></td>
-                    <td>{{tags}}</td>
-                </tr>
+</tr>
+<tr>
+<td><b>About</b></td>
+<td>{{about}}</td>
+</tr>
+<tr>
+<td><b>Supporters</b></td>
+<td>{{supporters}}</td>
+</tr>
+<tr>
+<td><b>Promote</b></td>
+<td>{{promoteCount}}</td>
+</tr>
+<tr>
+<td><b>Share</b></td>
+<td>{{sharedCount}}</td>
+</tr>
+<tr>
+<td><b>Country</b></td>
+<td>{{country}}</td>
+</tr>
+<tr>
+<td><b>City</b></td>
+<td>{{city}}</td>
+</tr>
+<tr>
+<td><b>ownerid</b></td>
+<td>{{ownerid}}</td>
+</tr>
+<tr>
+<td><b>Owner</b></td>
+<td>{{ownernickname}}</td>
+</tr>
+<tr>
+<td><b>Type</b></td>
+<td>{{type}}</td>
+</tr>
+<tr>
+<td><b>Links to other blocks</b></td>
+<td>{{linkedToBlocks}}</td>
+</tr>
+<tr>
+<td><b>Status</b></td>
+<td>{{status}}</td>
+</tr>
+<tr>
+<td><b>Images</b></td>
+<td>{{imgs}}</td>
+</tr>
+<tr>
+<td><b>Thumbnail</b></td>
+<td>{{thumbnail}}</td>
+</tr>
+<tr>
+<td><b>Contributers</b></td>
+<td>{{contributers}}</td>
+</tr>
+<tr>
+<td><b>Organisers</b></td>
+<td>{{organisers}}</td>
+</tr>
+<tr>
+<td><b>Administrators</b></td>
+<td>{{admins}}</td>
+</tr>
+<tr>
+<td><b>Tags, Keywords</b></td>
+<td>{{tags}}</td>
+</tr>
 
-                <!--                <tr>
+<!--                <tr>
                     <td><b>Image</b></td>
                     <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
                 </tr>                -->
                 <tr>
                     <td><b>Created at</b></td>
                     <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Updated at</b></td>
                     <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Created by</b></td>
                     <td>{{createdUser.profile.name}}</td>
-                </tr>
+                </tr>                
                 <tr>
                     <td><b>Updated By</b></td>
                     <td>{{updatedUser.profile.name}}</td>
-                </tr>
+                </tr>                
             </tbody>
-        </table>
+        </table>        
         {{/with}}
     </div>
-</template>
-<template name="campaignsView">
-    <ol class="breadcrumb">
-        <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-        <li><a href="{{pathFor 'campaignsIndex'}}">Campaigns</a></li>
-        <li class="active">view</li>
-    </ol>
-    {{#with model}}
-    <div class="title">
-        <h3 class="pull-left">View Campaigns #{{_id}}</h3>
-        <div class="toolbar pull-right">
-            <a href="{{pathFor 'CampUpdateInsertCampUpdatesBlogId'}}" class="btn btn-default">Add Campaign Update</a>
-            <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
-            <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-info">Update</a>
-            <a id="btnRemove" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    {{> campUpdatesList model}}
-    <div class="clearfix"></div>
-<div >
-    <div id="maincontent" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment contentcontainer contentcontainer-2 clearfix">
-        <div id="cover-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment cover-image js-cimage" style="background-image: url({{#if image}}{{app " baseUrl "}}{{image.url}}{{else}}{{app "baseUrl "}}/images/noimage.jpg{{/if}})">
-            <div id="overlay-cover-right" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment overlay-cover-right overlay-cover-right-2">
-                <button id="cover-button" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-16">Promote &nbsp; &nbsp;</button>
-                <button id="cover-button" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-17">Support &nbsp; &nbsp;</button>
-                <div id="cover-overlaytop" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment element element-2"></div>
-            </div>
-            <div id="cover-overlaybottom" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment overlay-cover-bottom overlay-cover-bottom-2 clearfix">
-                <p id="cover-title" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment title title-2" style="width: 90%;">{{title}}</p>
-                <p id="Cover-s-desc" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment description description-2">{{about}}</p>
-                <div id="cover-hashtags" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment hashtags hashtags-2">
-                    <p>#hashtag1</p>
-                    <p>#hashtag2</p>
-            </div>
-        </div>
-        <div id="sharebar-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment sharebar-block">
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-18"></button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-20"></button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-22">Share ({{sharedCount}})</button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-24">Posts (25)</button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-26">Supporters (3K)</button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-28">&nbsp; Promote ({{promoteCount}})</button>
-            <button id="blockbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-29">About</button>
-        </div>
-    </div>
-    <div id="allpost" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment all-post-container all-post-container-2 clearfix">
-        <div id="About-Bar" class="aboutbar">
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-31">Home</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-32">About</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-33">Updates</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment about-buttons _button-34">Supporters</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment about-buttons _button-35">Events</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-36">Insights</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-37">Team</button>
-            <button id="bar-share1" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment _button-38">Linked with...</button>
-        </div>
-        <div class="container clearfix">
-            <div id="usercomment" class="fielddetail fielddetail-1 clearfix">
-                <p id="posttype" class="7--dashboard--profile---subheadings field-title field-title-1">Long Description</p>
-                <div id="commenttext" class="1--main-content-style field-value">
-                    <p>This is the long description of the campaign/ project/ Blog as entered by the user/ owner while creating the campaign. This will be continued.....This will be along story.</p>
-                    <p>Copy this container to include in other fields below.</p>
-                    <p>- Story behind this campaign.</p>
-                    <p>- Started On</p>
-                    <p>- Ended On - if finished.</p>
-                    <p>- Hashtags associated with the campaign</p>
-                    <p>- External website Links.</p>
-                    <p>Each&nbsp;</p>
-                </div>
-            </div>
-            <div id="usercomment" class="fielddetail fielddetail-2 clearfix">
-                <p id="posttype" class="7--dashboard--profile---subheadings field-title field-title-2">Story behind this campaign</p>
-                <div id="commenttext" class="1--main-content-style field-value">
-                    <p>This is the story as entered by the user. This is some more text as entered by the user to check the fonts size etc. peanuts containers bike motor car elon musk phoenix square.&nbsp;</p>
-                    <p>This is some more text</p>
-                    <p>and more</p>
-                </div>
-            </div>
-            <div id="usercomment" class="fielddetail fielddetail-3 clearfix">
-                <p id="posttype" class="7--dashboard--profile---subheadings field-title field-title-3">Supporters</p>
-                <div class="supporterlist supporterlist-1 clearfix">
-                    <img id="rightbar-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment image" src="/images/profileimg.svg">
-                    <div id="rightbar-username-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment userblock userblock-1 clearfix">
-                        <p id="displayname" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment display-name display-name-1">Display name - user</p>
-                        <p id="username" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment user-name user-name-1">@username</p>
-                    </div>
-                </div>
-                <div class="supporterlist supporterlist-2 clearfix">
-                    <img id="rightbar-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment image" src="/images/profileimg.svg">
-                    <div id="rightbar-username-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment userblock userblock-2 clearfix">
-                        <p id="displayname" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment display-name display-name-2">Display name - user</p>
-                        <p id="username" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment user-name user-name-2">@username</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="rightbar" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment right-bar">
-    <div id="rightbar-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment username-rightbar clearfix js-divider">
-        <p id="rightbar-heading" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment owner">Campaign Owner</p>
-        <img id="rightbar-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment image" src="/images/profileimg.svg">
-        <div id="rightbar-username-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment userblock userblock-3 clearfix">
-            <p id="displayname" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment display-name">Display name - user</p>
-            <p id="username" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment user-name">@username</p>
-        </div>
-        <button id="mid-button" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment">Follow &nbsp;</button>
-        <p id="addn-text" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment additional-text">34.5 K Followers . &nbsp;1 Campaign .&nbsp;</p>
-    </div>
-    <div id="rightbar-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment suggestion-rightbar suggestion-rightbar-1 clearfix js-divider">
-        <p id="rightbar-heading" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment owner owner-3">Suggested For You</p>
-        <img id="rightbar-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment image" src="/images/profileimg.svg">
-        <div id="rightbar-username-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment userblock userblock-5 clearfix">
-            <p id="displayname" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment display-name display-name-5">Display name - user</p>
-            <p id="username" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment user-name user-name-5">@username</p>
-        </div>
-        <button id="mid-button" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment">Follow &nbsp;</button>
-        <p id="addn-text" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment additional-text additional-text-3">34.5 K Followers . &nbsp;1 Campaign .&nbsp;</p>
-    </div>
-    <div id="rightbar-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment suggestion-rightbar suggestion-rightbar-3 clearfix js-divider">
-        <p id="rightbar-heading" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment owner owner-5">Suggested For You</p>
-        <img id="rightbar-image" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment image" src="/images/profileimg.svg">
-        <div id="rightbar-username-block" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment userblock userblock-7 clearfix">
-            <p id="displayname" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment display-name display-name-7">Display name - user</p>
-            <p id="username" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment user-name user-name-7">@username</p>
-        </div>
-        <button id="mid-button" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment">Follow &nbsp;</button>
-        <p id="addn-text" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time campaign-titles 5--display-names campaigns-description displayname-rightbar rightbar-username rightbar-additional-text buttons-mid comments---status-updates comment---username comment---time-of-comment comment---text-or-content-of-a-comment additional-text additional-text-5">34.5 K Followers . &nbsp;1 Campaign .&nbsp;</p>
-    </div>
-</div>
-</div>
-{{/with}}
 </template>

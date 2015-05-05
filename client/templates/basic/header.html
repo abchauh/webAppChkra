@@ -2,52 +2,15 @@
     <nav class="meteoris-navbar navbar navbar-default" role="navigation">
         <div class="container">
             <div id="topMenu" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names topmenubar topmenubar-1">
-                <div id="gn-menu">
-                    <div class="gn-trigger gn-menu-main" style="margin-left: 30px;width: 0px; height: 0px;">
-                        <a id="menuicon" class="gn-icon gn-icon-menu">
-                            <span>Menu</span>
-                        </a>
-                        <nav class="gn-menu-wrapper">
-                            <div class="gn-scroller">
-                                <ul class="gn-menu">
-                                    <li class="gn-search-item">
-                                        <input placeholder="Search" type="search" class="gn-search">
-                                        <a class="gn-icon gn-icon-search"><span>Search</span></a>
-                                    </li>
-                                    <li>
-                                        <a class="gn-icon gn-icon-download">Downloads</a>
-                                        <ul class="gn-submenu">
-                                            <li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a></li>
-                                            <li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="gn-icon gn-icon-cog">Settings</a></li>
-                                    <li><a class="gn-icon gn-icon-help">Help</a></li>
-                                    <li>
-                                        <a class="gn-icon gn-icon-archive">Archives</a>
-                                        <ul class="gn-submenu">
-                                            <li><a class="gn-icon gn-icon-article">Articles</a></li>
-                                            <li><a class="gn-icon gn-icon-pictures">Images</a></li>
-                                            <li><a class="gn-icon gn-icon-videos">Videos</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><!-- /gn-scroller -->
-                        </nav>
-                    </div>
-                </div>
-                
+                <img id="menuicon" class="menuicon menuicon-1" src="/images/macaw/Menu-icon-24x20.png" data-rimage data-src="/images/macaw/Menu-icon-24x20.png">
                 <img id="Chkralogo" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names chkralogo chkralogo-1" src="/images/macaw/chkra_logo-101x49.png" data-rimage data-src="images/chkra_logo-101x49.png" data-srcat2x="images/chkra_logo-101x49@2x.png">
                 <img id="searchicon" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names searchicon searchicon-1" src="/images/macaw/search.svg">
                 <img id="messageicon" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names messageicon messageicon-1" src="/images/macaw/message.svg">
                 <img id="bellicon" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names notificationicon notificationicon-1" src="/images/macaw/notification-20x20.png" data-rimage data-src="images/notification-20x20.png">
                 <img id="userpic-top" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names useravatar useravatar-1" src="/images/macaw/profileimg.svg">
                 <p id="username-top" class="6--dashboard--headings 7--dashboard--profile---subheadings 1--main-content-style 2--username-style 3--user-actions 4--time 5--display-names username-topright username-topright-1"><span>@abchauh</span></p>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
+                </div>
+            <br /> <br /><br /> <br />
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -56,13 +19,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{pathFor 'sitesIndex'}}"><img src="/svg/logo.svg" /> {{app "name"}}</a>
+                <a class="navbar-brand" href="{{pathFor 'sitesIndex'}}"><img src="/svg/logo.svg"/> {{app "name"}}</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
-                    <li class="dropdown">
+                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">CRUDs<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{pathFor 'postsIndex'}}">Posts</a></li>
@@ -88,11 +51,11 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purge em <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Teams</a></li>
-                            <li><a href="#">Jobs</a></li>
-                        </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purge em <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
                     </li>
 
                     <li><a href="{{pathFor 'usersIndex'}}">Users</a></li>
@@ -102,7 +65,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/mugen">Crudss Generator</a></li>
                             <li class="divider"></li>
-                            <li><a href="{{pathFor 'mugenRoleActionsManage'}}">Role</a></li>
+                            <li><a href="{{pathFor 'mugenRoleActionsManage'}}">Role</a></li>                                                        
                             <li><a href="{{pathFor 'mugenRoleCollections'}}">Role Collection</a></li>
                             <li><a href="{{pathFor 'mugenRoleGroups'}}">Role Group</a></li>
                             <!--<li><a href="{{pathFor 'mugenRoleActions'}}">Role Actions</a></li>-->
@@ -119,12 +82,11 @@
                             <li id="btnLogout"><a href="#">Logout</a></li>
                         </ul>
                         {{else}}
-                        <a href="{{pathFor 'usersLogin'}}">Login</a> {{/if}}
+                        <a href="{{pathFor 'usersLogin'}}">Login</a>
+                        {{/if}}
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
 </template>
