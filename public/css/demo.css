@@ -11,7 +11,8 @@
 }
 
 body {
-	background: #34495e;
+    /*changed from 34495e*/
+    background: #ffffff;
 }
 
 .container > header,
