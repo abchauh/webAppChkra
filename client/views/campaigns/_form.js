@@ -13,7 +13,7 @@ Template.campaigns_form.helpers({
             return "selected";
     },
     getSelected: function (type, currentValue) {
-        //if (currentValue == type) return 'selected'
-        if (currentValue == 2) return 'selected'
+        if (currentValue == type) return 'selected'
+//        if (currentValue == 2) return 'selected'
     },
 });

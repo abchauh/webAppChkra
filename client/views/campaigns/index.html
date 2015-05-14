@@ -38,16 +38,10 @@
                         <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
                         <th id="btnSorttitle" class="{{meteorisGridViewSortClass 'title'}}">Title</th>
 <th id="btnSortheaderImg" class="{{meteorisGridViewSortClass 'headerImg'}}">Header Image</th>
-<th id="btnSortstatus" class="{{meteorisGridViewSortClass 'status'}}">Status</th>
-<th id="btnSortimgs" class="{{meteorisGridViewSortClass 'imgs'}}">Images</th>
-<th id="btnSortthumbnail" class="{{meteorisGridViewSortClass 'thumbnail'}}">Thumbnail</th>
-<th id="btnSortcontributers" class="{{meteorisGridViewSortClass 'contributers'}}">Contributers</th>
-<th id="btnSortorganisers" class="{{meteorisGridViewSortClass 'organisers'}}">Organisers</th>
-<th id="btnSortadmins" class="{{meteorisGridViewSortClass 'admins'}}">Administrators</th>
-<th id="btnSorttags" class="{{meteorisGridViewSortClass 'tags'}}">Tags, Keywords</th>
-
-                        <!--<th>Image</th>-->                    
-                        <th>Created by</th>                    
+<th id="btnSortstatus" class="{{meteorisGridViewSortClass 'ctype'}}">Campaign Type</th>
+<th id="btnSortimgs" class="{{meteorisGridViewSortClass 'location'}}">Campaign Location</th>
+<th id="btnSortimgs" class="{{meteorisGridViewSortClass 'tlocation'}}">Target location</th>
+<th id="btnSortthumbnail" class="{{meteorisGridViewSortClass 'causes'}}">Causes</th>
                         <th style="width: 145px;">Actions</th>
                     </tr>
                 </thead>
@@ -56,19 +50,11 @@
                     <tr>
                         <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
                         <td>{{title}}</td>
-<td>{{headerImg}}</td>
 <td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
-
-<td>{{status}}</td>
-<td>{{imgs}}</td>
-<td>{{thumbnail}}</td>
-<td>{{contributers}}</td>
-<td>{{organisers}}</td>
-<td>{{admins}}</td>
-<td>{{tags}}</td>
-
-                        <!--<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>-->
-                        <td>{{createdUser.profile.name}}</td>
+<td>{{ctype}}</td>
+<td>{{location}}</td>
+<td>{{tlocation}}</td>
+<td>{{causes}}</td>
                         <td>
                             <a href="{{pathFor 'campaignsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
                             <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
