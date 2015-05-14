@@ -61,3 +61,6 @@ reactive-var
 praxie:canvas-to-blob
 juliancwirko:s-alert-jelly
 juliancwirko:s-alert
+semantic:ui
+flemay:less-autoprefixer
+semantic:ui-css
