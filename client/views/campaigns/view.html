@@ -17,6 +17,10 @@
                 <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
                 <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-info">Update</a>
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
+                {{#if pubstatus==1}}
+                    {{else}}
+                {{/if}}
+                <a id="btnPublish" class="btn btn-danger">Publish</a>
             </div>
         </div>
         <!--{{> campUpdatesList model}}-->
@@ -28,6 +32,7 @@
                         <td><b>Campaign Type</b></td>
                         <td>{{ctype}}</td>
                     </tr>
+
                     <tr>
                         <td><b>Campaign Location</b></td>
                         <td>{{location}}</td>
