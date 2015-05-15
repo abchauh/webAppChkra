@@ -1,41 +1,74 @@
 <template name="campaigns_form">
     <form id="campaigns_form">
-        <div class="form-group {{#if error 'title'}}has-error{{/if}}">
-            <label for="title" class="control-label">Title *</label> 
-            <input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
-            <span class="help-block">{{error "title"}}</span>
-        </div>
-          <div class="form-group {{#if error 'headerImg'}}has-error{{/if}}">
-            <label for="headerImg" class="control-label">File</label>
-            <input type="file" id="headerImg" class="form-control">
-            <span class="help-block">{{error "headerImg"}}</span>
-        </div>
-        <div class="form-group {{#if error 'ctype'}}has-error{{/if}}">
-            <label for="ctype" class="control-label">Campaign Type *</label>
-            <select id="ctype" placeholder="Campaign Type" class="form-control" name="ctype" >
-                <option></option>
-                <option value="1" {{getSelected ctype "1"}}>I want to spread awareness for a cause.</option>
-                <option value="2" {{getSelected ctype "2"}}>I want to raise my voice: write an open letter</option>
-                <option value="3" {{getSelected ctype "3"}}>I want to start a petition</option>
-                <option value="4" {{getSelected ctype "4"}}>I want to fundraise and help.</option>
-            </select>
+
+        <div class="capm-step1">
+            <h2>Step 1 </h2>
+            <!--I want to campaign-->
+            <div class="form-group {{#if error 'ctype'}}has-error{{/if}}">
+                <label for="ctype" class="control-label">I want to campaign</label>
+                <select id="ctype" placeholder="Campaign Type" class="form-control" name="ctype" >
+                    <option>--- Select campaign type ---</option>
+                    <option value="1" {{getSelected ctype "1"}}>Spread awareness for a cause.</option>
+                    <option value="2" {{getSelected ctype "2"}}>Raise my voice with an open letter.</option>
+                    <option value="3" {{getSelected ctype "3"}}>Help using my project.</option>
+                    <option value="4" {{getSelected ctype "4"}}>Start a petition.</option>
+                    <option value="5" {{getSelected ctype "5"}}>Promote my cause.</option>
+                </select>
+            </div>
+            <!--Campaign location-->
+            <div class="form-group {{#if error 'location'}}has-error{{/if}}">
+                <label for="location" class="control-label">Campaign Location *</label> 
+                <input type="text" id="location" value="{{location}}" placeholder="Campaign Location" class="form-control">
+                <span class="help-block">{{error "location"}}</span>
+            </div>
+            <!--Target location-->
+            <div class="form-group {{#if error 'tlocation'}}has-error{{/if}}">
+                <label for="tlocation" class="control-label">Target location *</label> 
+                <input type="text" id="tlocation" value="{{tlocation}}" placeholder="Across World" class="form-control">
+                <span class="help-block">{{error "tlocation"}}</span>
+            </div>
+            <!--Causes-->
+            <div class="form-group {{#if error 'causes'}}has-error{{/if}}">
+                <label for="causes" class="control-label">Causes *</label> 
+                <input type="text" id="causes" value="{{causes}}" placeholder="Causes" class="form-control">
+                <span class="help-block">{{error "causes"}}</span>
+            </div>
         </div>
 
-        <div class="form-group {{#if error 'location'}}has-error{{/if}}">
-            <label for="location" class="control-label">Campaign Location *</label> 
-            <input type="text" id="location" value="{{location}}" placeholder="Campaign Location" class="form-control">
-            <span class="help-block">{{error "location"}}</span>
+        <div class="camp-step2">
+            <h2>Step 2</h2>
+            <!--Title-->
+            <div class="form-group {{#if error 'title'}}has-error{{/if}}">
+                <label for="title" class="control-label">Title *</label> 
+                <input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
+                <span class="help-block">{{error "title"}}</span>
+            </div>
+            <!--Short Description-->
+            <div class="form-group {{#if error 'shortdscrption'}}has-error{{/if}}">
+                <label for="shortdscrption" class="control-label">Short Description *</label> 
+                <input type="text" id="shortdscrption" value="{{shortdscrption}}" placeholder="Short Description" class="form-control">
+                <span class="help-block">{{error "shortdscrption"}}</span>
+            </div>
+            <!--Long Description-->
+            <div class="form-group {{#if error 'longdscrption'}}has-error{{/if}}">
+                <label for="longdscrption" class="control-label">Long Description *</label> 
+                <input type="text" id="longdscrption" value="{{longdscrption}}" placeholder="Long Description" class="form-control">
+                <span class="help-block">{{error "longdscrption"}}</span>
+            </div>
+            <!--Your Story behind this-->
+            <div class="form-group {{#if error 'story'}}has-error{{/if}}">
+                <label for="story" class="control-label">Your Story behind this</label> 
+                <input type="text" id="story" value="{{story}}" placeholder="Your Story behind this" class="form-control">
+                <span class="help-block">{{error "story"}}</span>
+            </div>
+            <!--Upload a cover image.-->
+            <div class="form-group {{#if error 'headerImg'}}has-error{{/if}}">
+                <label for="headerImg" class="control-label">Upload a cover image.</label>
+                <input type="file" id="headerImg" class="form-control">
+                <span class="help-block">{{error "headerImg"}}</span>
+            </div>
         </div>
-        <div class="form-group {{#if error 'tlocation'}}has-error{{/if}}">
-            <label for="tlocation" class="control-label">Target location *</label> 
-            <input type="text" id="tlocation" value="{{tlocation}}" placeholder="Target location" class="form-control">
-            <span class="help-block">{{error "tlocation"}}</span>
-        </div>
-        <div class="form-group {{#if error 'causes'}}has-error{{/if}}">
-            <label for="causes" class="control-label">Causes *</label> 
-            <input type="text" id="causes" value="{{causes}}" placeholder="Causes" class="form-control">
-            <span class="help-block">{{error "causes"}}</span>
-        </div>
+        
         <button id="btnSave" type="submit" class="btn btn-success">Submit</button>                
         <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
     </form>

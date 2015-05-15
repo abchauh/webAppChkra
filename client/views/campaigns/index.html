@@ -37,11 +37,11 @@
                     <tr>
                         <th style="width: 30px;"><input type="checkbox" id="checkAll"/></th>                        
                         <th id="btnSorttitle" class="{{meteorisGridViewSortClass 'title'}}">Title</th>
-<th id="btnSortheaderImg" class="{{meteorisGridViewSortClass 'headerImg'}}">Header Image</th>
-<th id="btnSortstatus" class="{{meteorisGridViewSortClass 'ctype'}}">Campaign Type</th>
-<th id="btnSortimgs" class="{{meteorisGridViewSortClass 'location'}}">Campaign Location</th>
-<th id="btnSortimgs" class="{{meteorisGridViewSortClass 'tlocation'}}">Target location</th>
-<th id="btnSortthumbnail" class="{{meteorisGridViewSortClass 'causes'}}">Causes</th>
+                        <th id="btnSortheaderImg" class="{{meteorisGridViewSortClass 'headerImg'}}">Header Image</th>
+                        <th id="btnlocation" class="{{meteorisGridViewSortClass 'location'}}">Campaign Location</th>
+                        <th id="btntlocation" class="{{meteorisGridViewSortClass 'tlocation'}}">Target Location</th>
+                        <th id="btncauses" class="{{meteorisGridViewSortClass 'causes'}}">Causes</th>
+                        <th>Created by</th>                    
                         <th style="width: 145px;">Actions</th>
                     </tr>
                 </thead>
@@ -50,11 +50,11 @@
                     <tr>
                         <td><input type="checkbox" class="checkAll" value="{{_id}}"/></td>
                         <td>{{title}}</td>
-<td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
-<td>{{ctype}}</td>
-<td>{{location}}</td>
-<td>{{tlocation}}</td>
-<td>{{causes}}</td>
+                        <td><img class="image" src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                        <td>{{location}}</td>
+                        <td>{{tlocation}}</td>
+                        <td>{{causes}}</td>
+                        <td>{{createdUser.profile.name}}</td>
                         <td>
                             <a href="{{pathFor 'campaignsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
                             <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>

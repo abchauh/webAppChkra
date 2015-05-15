@@ -19,59 +19,75 @@
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
             </div>
         </div>
-        {{> campUpdatesList model}}
-        <div class="clearfix"></div>
-        <table class="table">
-            <tbody>
+        <!--{{> campUpdatesList model}}-->
+        <div class="clearfix"></div><br><br>
+        <div class="sampaign-details">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><b>Campaign Type</b></td>
+                        <td>{{ctype}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Campaign Location</b></td>
+                        <td>{{location}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Target location</b></td>
+                        <td>{{tlocation}}</td>
+                    </tr>
 
-                <tr>
-                    <td><b>Title</b></td>
-                    <td>{{title}}</td>
-                </tr>
+                    <tr>
+                        <td><b>Causes</b></td>
+                        <td>{{causes}}</td>
+                    </tr>
 
-                <tr>
-                    <td><b>Header Image</b></td>
-                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                    <tr>
+                        <td><b>Title</b></td>
+                        <td>{{title}}</td>
+                    </tr>
 
-                </tr>
-                <tr>
-                    <td><b>Campaign Type</b></td>
-                    <td>{{ctype}}</td>
-                </tr>
-                <tr>
-                    <td><b>Campaign Location</b></td>
-                    <td>{{location}}</td>
-                </tr>
-                <tr>
-                    <td><b>Target location</b></td>
-                    <td>{{tlocation}}</td>
-                </tr>
-                <tr>
-                    <td><b>Causes</b></td>
-                    <td>{{causes}}</td>
-                </tr>
-                <!--                                <tr>
-                                                    <td><b>Image</b></td>
-                                                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
-                                                </tr>                -->
-                <tr>
-                    <td><b>Created at</b></td>
-                    <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                </tr>                
-                <tr>
-                    <td><b>Updated at</b></td>
-                    <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
-                </tr>                
-                <tr>
-                    <td><b>Created by</b></td>
-                    <td>{{createdUser.profile.name}}</td>
-                </tr>                
-                <tr>
-                    <td><b>Updated By</b></td>
-                    <td>{{updatedUser.profile.name}}</td>
-                </tr>                
-            </tbody>
-        </table>        
+                    <tr>
+                        <td><b>Short Description</b></td>
+                        <td>{{shortdscrption}}</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Long Description</b></td>
+                        <td>{{longdscrption}}</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Your Story behind this</b></td>
+                        <td>{{story}}</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Cover Image</b></td>
+                        <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                    </tr>
+
+
+                    <!-- Auto save Fields-->
+                    <tr>
+                        <td><b>Created at</b></td>
+                        <td>{{meteorisFormatter "dateTime" createdAt}}</td>
+                    </tr>                
+                    <tr>
+                        <td><b>Updated at</b></td>
+                        <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
+                    </tr>                
+                    <tr>
+                        <td><b>Created by</b></td>
+                        <td>{{createdUser.profile.name}}</td>
+                    </tr>                
+                    <tr>
+                        <td><b>Updated By</b></td>
+                        <td>{{updatedUser.profile.name}}</td>
+                    </tr>                
+                </tbody>
+            </table>
+        </div>
         {{/with}}
     </div>
 </template>
