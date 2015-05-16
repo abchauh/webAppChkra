@@ -6,6 +6,10 @@ Template.campaignsView.events = {
             Router.go("campaignsIndex")
         }
     },
+    'click #btnPublish': function(e) {
+        Router.current().publish(this._id);
+        return false;
+    }
 };
 
 Template.campaignsView.helpers({

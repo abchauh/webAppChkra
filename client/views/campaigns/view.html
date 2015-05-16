@@ -11,15 +11,10 @@
         <div class="title">
             <h3 class="pull-left">View Campaigns #{{_id}}</h3>
             <div class="toolbar pull-right">
-
                 <a href="{{pathFor 'CampUpdateInsertCampUpdatesBlogId'}}" class="btn btn-default">Add Campaign Update</a>
-
                 <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
                 <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-info">Update</a>
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
-                {{#if pubstatus==1}}
-                    {{else}}
-                {{/if}}
                 <a id="btnPublish" class="btn btn-danger">Publish</a>
             </div>
         </div>
@@ -29,6 +24,10 @@
             <table class="table">
                 <tbody>
                     <tr>
+                        <td><b>Current Status : </b></td>
+                        <td>{{pubstatus}}</td>
+                    </tr>
+                    <tr>
                         <td><b>Campaign Type</b></td>
                         <td>{{ctype}}</td>
                     </tr>
@@ -37,6 +36,7 @@
                         <td><b>Campaign Location</b></td>
                         <td>{{location}}</td>
                     </tr>
+
                     <tr>
                         <td><b>Target location</b></td>
                         <td>{{tlocation}}</td>
@@ -71,25 +71,27 @@
                         <td><b>Cover Image</b></td>
                         <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
                     </tr>
-
-
                     <!-- Auto save Fields-->
                     <tr>
                         <td><b>Created at</b></td>
                         <td>{{meteorisFormatter "dateTime" createdAt}}</td>
-                    </tr>                
+                    </tr>    
+
                     <tr>
                         <td><b>Updated at</b></td>
                         <td>{{meteorisFormatter "dateTime" updatedAt}}</td>
-                    </tr>                
+                    </tr>          
+
                     <tr>
                         <td><b>Created by</b></td>
                         <td>{{createdUser.profile.name}}</td>
-                    </tr>                
+                    </tr>              
+
                     <tr>
                         <td><b>Updated By</b></td>
                         <td>{{updatedUser.profile.name}}</td>
-                    </tr>                
+                    </tr>      
+
                 </tbody>
             </table>
         </div>
