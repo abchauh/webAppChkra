@@ -14,8 +14,16 @@
                 <a href="{{pathFor 'CampUpdateInsertCampUpdatesBlogId'}}" class="btn btn-default">Add Campaign Update</a>
                 <a href="{{pathFor 'campaignsIndex'}}" class="btn btn-default">Back</a>
                 <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-info">Update</a>
+                {{#if campFinish pubstatus}}
+                <a id="btnRepublish" class="btn btn-danger">Republish</a>
+                {{else}}
+                {{#if campPublish pubstatus}}
+                <a id="btnFinish" class="btn btn-danger">Finish</a>
+                {{else}}
                 <a id="btnRemove" class="btn btn-danger">Remove</a>
                 <a id="btnPublish" class="btn btn-danger">Publish</a>
+                {{/if}}
+                {{/if}}
             </div>
         </div>
         <!--{{> campUpdatesList model}}-->
@@ -29,7 +37,7 @@
                     </tr>
                     <tr>
                         <td><b>Campaign Type</b></td>
-                        <td>{{ctype}}</td>
+                        <td>{{campType ctype}}</td>
                     </tr>
 
                     <tr>

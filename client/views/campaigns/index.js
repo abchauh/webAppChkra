@@ -1,5 +1,9 @@
 Template.campaignsIndex.helpers({
-
+    campStatus: function(pubstatus) {
+        if (pubstatus === "Published" || pubstatus === "Finished" ) {
+            return true;
+        }
+    },
 });
 
 Template.campaignsIndex.events = {
@@ -9,85 +13,84 @@ Template.campaignsIndex.events = {
             Router.current().remove(this._id);
     },
     /* sorting by parameter */
-'click #btnSorttitle': function(e) {
-MeteorisGridView.sort('title');
-},
-/* sorting by parameter */
-'click #btnSortheaderImg': function(e) {
-MeteorisGridView.sort('headerImg');
-},
-/* sorting by parameter */
-'click #btnSortabout': function(e) {
-MeteorisGridView.sort('about');
-},
-/* sorting by parameter */
-'click #btnSortsupporters': function(e) {
-MeteorisGridView.sort('supporters');
-},
-/* sorting by parameter */
-'click #btnSortpromoteCount': function(e) {
-MeteorisGridView.sort('promoteCount');
-},
-/* sorting by parameter */
-'click #btnSortsharedCount': function(e) {
-MeteorisGridView.sort('sharedCount');
-},
-/* sorting by parameter */
-'click #btnSortcountry': function(e) {
-MeteorisGridView.sort('country');
-},
-/* sorting by parameter */
-'click #btnSortcity': function(e) {
-MeteorisGridView.sort('city');
-},
-/* sorting by parameter */
-'click #btnSortownerid': function(e) {
-MeteorisGridView.sort('ownerid');
-},
-/* sorting by parameter */
-'click #btnSortownernickname': function(e) {
-MeteorisGridView.sort('ownernickname');
-},
-/* sorting by parameter */
-'click #btnSorttype': function(e) {
-MeteorisGridView.sort('type');
-},
-/* sorting by parameter */
-'click #btnSortlinkedToBlocks': function(e) {
-MeteorisGridView.sort('linkedToBlocks');
-},
-/* sorting by parameter */
-'click #btnSortstatus': function(e) {
-MeteorisGridView.sort('status');
-},
-/* sorting by parameter */
-'click #btnSortimgs': function(e) {
-MeteorisGridView.sort('imgs');
-},
-/* sorting by parameter */
-'click #btnSortthumbnail': function(e) {
-MeteorisGridView.sort('thumbnail');
-},
-/* sorting by parameter */
-'click #btnSortcontributers': function(e) {
-MeteorisGridView.sort('contributers');
-},
-/* sorting by parameter */
-'click #btnSortorganisers': function(e) {
-MeteorisGridView.sort('organisers');
-},
-/* sorting by parameter */
-'click #btnSortadmins': function(e) {
-MeteorisGridView.sort('admins');
-},
-/* sorting by parameter */
-'click #btnSorttags': function(e) {
-MeteorisGridView.sort('tags');
-},
-
+    'click #btnSorttitle': function(e) {
+        MeteorisGridView.sort('title');
+    },
+    /* sorting by parameter */
+    'click #btnSortheaderImg': function(e) {
+        MeteorisGridView.sort('headerImg');
+    },
+    /* sorting by parameter */
+    'click #btnSortabout': function(e) {
+        MeteorisGridView.sort('about');
+    },
+    /* sorting by parameter */
+    'click #btnSortsupporters': function(e) {
+        MeteorisGridView.sort('supporters');
+    },
+    /* sorting by parameter */
+    'click #btnSortpromoteCount': function(e) {
+        MeteorisGridView.sort('promoteCount');
+    },
+    /* sorting by parameter */
+    'click #btnSortsharedCount': function(e) {
+        MeteorisGridView.sort('sharedCount');
+    },
+    /* sorting by parameter */
+    'click #btnSortcountry': function(e) {
+        MeteorisGridView.sort('country');
+    },
+    /* sorting by parameter */
+    'click #btnSortcity': function(e) {
+        MeteorisGridView.sort('city');
+    },
+    /* sorting by parameter */
+    'click #btnSortownerid': function(e) {
+        MeteorisGridView.sort('ownerid');
+    },
+    /* sorting by parameter */
+    'click #btnSortownernickname': function(e) {
+        MeteorisGridView.sort('ownernickname');
+    },
+    /* sorting by parameter */
+    'click #btnSorttype': function(e) {
+        MeteorisGridView.sort('type');
+    },
+    /* sorting by parameter */
+    'click #btnSortlinkedToBlocks': function(e) {
+        MeteorisGridView.sort('linkedToBlocks');
+    },
+    /* sorting by parameter */
+    'click #btnSortstatus': function(e) {
+        MeteorisGridView.sort('status');
+    },
+    /* sorting by parameter */
+    'click #btnSortimgs': function(e) {
+        MeteorisGridView.sort('imgs');
+    },
+    /* sorting by parameter */
+    'click #btnSortthumbnail': function(e) {
+        MeteorisGridView.sort('thumbnail');
+    },
+    /* sorting by parameter */
+    'click #btnSortcontributers': function(e) {
+        MeteorisGridView.sort('contributers');
+    },
+    /* sorting by parameter */
+    'click #btnSortorganisers': function(e) {
+        MeteorisGridView.sort('organisers');
+    },
+    /* sorting by parameter */
+    'click #btnSortadmins': function(e) {
+        MeteorisGridView.sort('admins');
+    },
+    /* sorting by parameter */
+    'click #btnSorttags': function(e) {
+        MeteorisGridView.sort('tags');
+    },
     'keyup #search': function(e, t) {
         e.preventDefault();
-        Router.current().search(t);        
+        Router.current().search(t);
     },
     /* check all checkbox */
     'change #checkAll': function(e) {

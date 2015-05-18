@@ -4,7 +4,7 @@
         <ol class="breadcrumb">
             <li><a href="{{pathFor 'sitesIndex'}}">Home</a></li>
             <li><a href="{{pathFor 'campaignsIndex'}}">Campaigns</a></li>
-            <li class="active">index</li>
+            <li class="active">Index</li>
         </ol>
 
         <div class="title">
@@ -42,6 +42,7 @@
                         <th id="btntlocation" class="{{meteorisGridViewSortClass 'tlocation'}}">Target Location</th>
                         <th id="btncauses" class="{{meteorisGridViewSortClass 'causes'}}">Causes</th>
                         <th>Created by</th>                    
+                        <th id="btnstatus" class="{{meteorisGridViewSortClass 'status'}}">Status</th>
                         <th style="width: 145px;">Actions</th>
                     </tr>
                 </thead>
@@ -55,10 +56,14 @@
                         <td>{{tlocation}}</td>
                         <td>{{causes}}</td>
                         <td>{{createdUser.profile.name}}</td>
+                        <td>{{pubstatus}}</td>
                         <td>
                             <a href="{{pathFor 'campaignsView'}}" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i></a>
                             <a href="{{pathFor 'campaignsUpdate'}}" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            {{#if campStatus pubstatus}}
+                            {{else}}
                             <a id="btnRemove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                            {{/if}}
                         </td>
                     </tr>
                     {{/each}}
