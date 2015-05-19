@@ -1,0 +1,93 @@
+<template name="templateHome">
+
+    <div class="ui grid">
+        <div class="two wide column"></div>
+        <!--right gird-->
+        <div class="eight wide column left_panel">
+            <div class="banner_box">
+               <br>
+                <br>
+                <div class="ui grid">
+                    <div class="eleven wide column"></div>
+                    <div class="five wide column ">
+                        <div class="large ui orange button button_text" style="font-weight:normal;"><i class="check circle outline icon"></i>Support</div>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="eleven wide column"></div>
+                    <div class="five wide column button_text">
+                        <div class="large ui orange button button_text" style="font-weight:normal;"><i class="check circle outline icon"></i>Promote</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttons_back">
+                    <div class="ui tiny buttons ">
+                        <div class="ui button">About</div>
+                        <div class="ui button">Promote ( 2.5K ) </div>
+                        <div class="ui button">Supporters ( 3K )</div>
+                        <div class="ui button">Post ( 25 )</div>
+                        <div class="ui button">Share ( 200 ) </div>
+                    </div>
+            </div>
+            <br>
+            <div class="ui grid">
+                <div class="one wide column"></div>
+                <div class="twelve wide column">
+                    <div class="ui grid">
+                        <div class="two wide column">
+                            <img src="/images/macaw/IMG2.jpg" class="searchimg" style="width: 40px; height: 40px">
+                        </div>
+                        <div class="eleven wide column">
+                            <div class="posttext_field">
+                                <input class="fieldstyle" name="" type="text" value="Share your thoughts...they do make a difference" maxlength="100">
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <button class="postbutton_box">Post
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--end right grid-->
+        <!--left most grid-->
+        <div class="four wide column leftgrid">
+            {{#each users}}
+                <div class="">
+                    <div class="right_panel_usernametext">
+                        {{ user.campaignOwner}}
+                    </div>
+
+                    <br>
+                    <div class="ui grid">
+                            <div class="four wide column">
+                                <img class=right_panel_userImg src="{{ user.img }}">
+                            </div>
+                            <div class="six wide column">
+                                <div class="right_panel_post_text">Display name - {{user.displayName}}<br>
+                                    <span style="font-weight:bold">{{user.userName}}</span>
+                                </div>
+                            </div>
+                            <div class="six wide column">
+
+                                <div class="mini ui orange button right_panel_post_box_button">
+                                   <div class="followerButtonName">
+                                       <i class="add user icon"></i> Follow
+                                   </div>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="ui divider"></div>
+                </div>
+            {{/each}}
+        </div>
+        <!--end left grid-->
+        <div class="two wide column"></div>
+    </div>
+</template>
